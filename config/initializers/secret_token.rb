@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Navigation::Application.config.secret_token = '464e53739730ce3021dbaa74c2e36b5780306f74c8f505e3145418aec8233a5a997c6ef87a0c8fb5d7e233b04dd89fed256bbc1ffa6cc3ab8cda072886dc0aeb'
+Navigation::Application.config.secret_token = '2d5739d9fbfc9f37d515a667b50a70a35350a64ddb9267a399ff08276003be85f6b15e7f3feda38a128e0ace45899814f400ac3db82536275bed49c336bddca0'
