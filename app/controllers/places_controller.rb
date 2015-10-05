@@ -8,14 +8,9 @@ class PlacesController < ApplicationController
       @places = Place.all
     end
    #debugger
-   if @places == []
-     redirect_to places_nearby_path
-     flash[:notice] = "No match found"
-   else
    respond_to do |format|
      format.html 
      format.json { render json: @places }
-   end
    end
   end
   def nearby
