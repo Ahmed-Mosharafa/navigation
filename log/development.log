@@ -2502,3 +2502,260 @@ Geokit is using the domain:
  SIN(0.5410520681182421)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
  <= 1000))[0m
 Completed 200 OK in 5245.4ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2015-10-05 00:09:38 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#new as HTML
+Geokit is using the domain: 
+  Rendered places/_form.html.erb (11.2ms)
+  Rendered places/new.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 106.0ms (Views: 83.6ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-05 00:09:39 -0300
+Served asset /places.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-05 00:09:39 -0300
+Served asset /places.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-05 00:09:39 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-05 00:09:39 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-05 00:09:39 -0300
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePlaces (20151003153101)
+Migrating to AddNameToPlaces (20151004150646)
+Migrating to RemoveRangeFromPlaces (20151005031927)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (23.2ms)[0m  [1mALTER TABLE "places" DROP "range"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20151005031927')
+  [1m[36m (21.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/places/new" for 127.0.0.1 at 2015-10-05 00:20:24 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#new as HTML
+Geokit is using the domain: 
+  Rendered places/_form.html.erb (13.5ms)
+  Rendered places/new.html.erb within layouts/application (43.1ms)
+Completed 500 Internal Server Error in 93.4ms
+
+ActionView::Template::Error (undefined method `range' for #<Place:0xabdea70>):
+    24:   </div>
+    25:   <div class="field">
+    26:     <%= f.label :range %><br />
+    27:     <%= f.number_field :range %>
+    28:   </div>
+    29:   <div class="actions">
+    30:     <%= f.submit %>
+  app/views/places/_form.html.erb:27:in `block in _app_views_places__form_html_erb__115783147__619837188'
+  app/views/places/_form.html.erb:1:in `_app_views_places__form_html_erb__115783147__619837188'
+  app/views/places/new.html.erb:3:in `_app_views_places_new_html_erb___926266650_88464240'
+  app/controllers/places_controller.rb:42:in `new'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2015-10-05 00:21:39 -0300
+Processing by PlacesController#new as HTML
+Geokit is using the domain: 
+  Rendered places/_form.html.erb (3.0ms)
+  Rendered places/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 32.5ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-05 00:21:39 -0300
+Served asset /places.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-05 00:21:39 -0300
+Served asset /scaffolds.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-05 00:21:39 -0300
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-05 00:21:39 -0300
+Served asset /places.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-05 00:21:39 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-05 00:21:42 -0300
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (2.4ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 19.6ms
+
+ActionView::Template::Error (undefined method `range' for #<Place:0xadd3aec>):
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+    18:     <td><%= place.longitude %></td>
+    19:     <td><%= place.range %></td>
+    20:     <td><%= link_to 'Show', place %></td>
+    21:     <td><%= link_to 'Edit', edit_place_path(place) %></td>
+    22:     <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  app/views/places/index.html.erb:19:in `block in _app_views_places_index_html_erb__326973022_87464350'
+  app/views/places/index.html.erb:14:in `each'
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb__326973022_87464350'
+  app/controllers/places_controller.rb:15:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-05 00:21:45 -0300
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (1.6ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 5.1ms
+
+ActionView::Template::Error (undefined method `range' for #<Place:0xb5c158f8>):
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+    18:     <td><%= place.longitude %></td>
+    19:     <td><%= place.range %></td>
+    20:     <td><%= link_to 'Show', place %></td>
+    21:     <td><%= link_to 'Edit', edit_place_path(place) %></td>
+    22:     <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  app/views/places/index.html.erb:19:in `block in _app_views_places_index_html_erb__326973022_87464350'
+  app/views/places/index.html.erb:14:in `each'
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb__326973022_87464350'
+  app/controllers/places_controller.rb:15:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.9ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-05 00:21:47 -0300
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 5.8ms
+
+ActionView::Template::Error (undefined method `range' for #<Place:0xb44fdd0>):
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+    18:     <td><%= place.longitude %></td>
+    19:     <td><%= place.range %></td>
+    20:     <td><%= link_to 'Show', place %></td>
+    21:     <td><%= link_to 'Edit', edit_place_path(place) %></td>
+    22:     <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  app/views/places/index.html.erb:19:in `block in _app_views_places_index_html_erb__326973022_87464350'
+  app/views/places/index.html.erb:14:in `each'
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb__326973022_87464350'
+  app/controllers/places_controller.rb:15:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.6ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-05 00:22:12 -0300
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (1.3ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 20.8ms (Views: 18.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-05 00:22:12 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-05 00:22:12 -0300
+Served asset /places.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-05 00:22:12 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-05 00:22:12 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-05 00:22:12 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-05 00:22:14 -0300
+Processing by PlacesController#nearby as HTML
+Geokit is using the domain: 
+  Rendered places/nearby.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 16.2ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-05 00:22:15 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-05 00:22:15 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-05 00:22:15 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-05 00:22:15 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-05 00:22:15 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2015-10-05 00:22:19 -0300
+Processing by PlacesController#new as HTML
+Geokit is using the domain: 
+  Rendered places/_form.html.erb (2.6ms)
+  Rendered places/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 11.0ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-05 00:22:20 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-05 00:22:20 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-05 00:22:20 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-05 00:22:20 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-05 00:22:20 -0300
+Served asset /places.css - 304 Not Modified (0ms)
