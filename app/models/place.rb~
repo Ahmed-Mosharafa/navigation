@@ -6,6 +6,7 @@ class Place < ActiveRecord::Base
                    :lat_column_name => :latitude,
                    :lng_column_name => :longitude
   def self.find_nearby(range, lat, long)
-    return Place.within(range,:origin => [lat,long]) 
+    scoped = Place.within(range,:origin => [lat,long]) 
+    return scoped
   end
 end

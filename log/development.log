@@ -145,3 +145,2360 @@ Served asset /places.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-03 16:04:32 -0300
 Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Compiled jquery.js  (2ms)  (pid 9455)
+Compiled jquery_ujs.js  (0ms)  (pid 9455)
+Compiled places.js  (300ms)  (pid 9455)
+Compiled application.js  (320ms)  (pid 9455)
+Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0x942dd04>
+Compiled places.css  (4ms)  (pid 9455)
+Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0x942dd04>
+Compiled scaffolds.css  (10ms)  (pid 9455)
+Compiled application.css  (26ms)  (pid 9455)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePlaces (20151003153101)
+Migrating to AddNameToPlaces (20151004150646)
+  [1m[35m (1.8ms)[0m  BEGIN
+  [1m[36m (1.2ms)[0m  [1mALTER TABLE "places" ADD COLUMN "name" character varying(255)[0m
+  [1m[35m (1.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20151004150646')
+  [1m[36m (17.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 12:07:04 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (4.5ms)
+Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0xa3fdec8>
+Compiled places.css  (8ms)  (pid 12111)
+Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0xa3fdec8>
+Compiled scaffolds.css  (12ms)  (pid 12111)
+Compiled application.css  (27ms)  (pid 12111)
+Compiled jquery.js  (22ms)  (pid 12111)
+Compiled jquery_ujs.js  (0ms)  (pid 12111)
+Compiled places.js  (308ms)  (pid 12111)
+Compiled application.js  (345ms)  (pid 12111)
+Completed 200 OK in 478.6ms (Views: 437.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 12:07:05 -0300
+Served asset /places.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 12:07:05 -0300
+Served asset /places.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 12:07:05 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 12:07:05 -0300
+Served asset /jquery.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 12:07:05 -0300
+Served asset /scaffolds.css - 304 Not Modified (15ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 12:07:07 -0300
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (2.1ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7.7ms (Views: 4.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 12:07:07 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 12:07:07 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 12:07:07 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 12:07:07 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 12:07:07 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 12:07:10 -0300
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (2.0ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6.4ms (Views: 4.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 12:07:10 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 12:07:10 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 12:07:10 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 12:07:10 -0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 12:07:10 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2015-10-04 12:07:12 -0300
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (7.6ms)
+  Rendered places/new.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 56.0ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 12:07:12 -0300
+Served asset /places.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 12:07:12 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 12:07:12 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 12:07:12 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 12:07:12 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2015-10-04 12:11:58 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#new as HTML
+  Rendered places/_form.html.erb (7.9ms)
+  Rendered places/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 122.7ms (Views: 57.7ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 12:11:59 -0300
+Served asset /places.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 12:11:59 -0300
+Served asset /places.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 12:11:59 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 12:11:59 -0300
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 12:11:59 -0300
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2015-10-04 12:12:25 -0300
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gEPfHt3sSs4G54rVjLTFGJiTu+qr+n2RMpEetF1HE8k=", "place"=>{"name"=>"Nile University", "latitude"=>"12.4", "longitude"=>"12.2", "range"=>"1"}, "commit"=>"Create Place"}
+Completed 500 Internal Server Error in 8.5ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name):
+  app/controllers/places_controller.rb:43:in `new'
+  app/controllers/places_controller.rb:43:in `create'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 12:13:09 -0300
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10.6ms (Views: 6.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 12:13:09 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 12:13:10 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 12:13:10 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 12:13:10 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 12:13:10 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2015-10-04 12:13:17 -0300
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gEPfHt3sSs4G54rVjLTFGJiTu+qr+n2RMpEetF1HE8k=", "place"=>{"name"=>"Nile University", "latitude"=>"12.4", "longitude"=>"12.2", "range"=>"1"}, "commit"=>"Create Place"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "places" ("created_at", "latitude", "longitude", "name", "range", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Sun, 04 Oct 2015 15:13:17 UTC +00:00], ["latitude", 12.4], ["longitude", 12.2], ["name", "Nile University"], ["range", 1], ["updated_at", Sun, 04 Oct 2015 15:13:17 UTC +00:00]]
+  [1m[35m (197.0ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/places/1
+Completed 302 Found in 231.7ms (ActiveRecord: 203.1ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-10-04 12:13:18 -0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 11.6ms (Views: 5.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 12:13:18 -0300
+Served asset /places.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 12:13:18 -0300
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 12:13:18 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 12:13:18 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 12:13:18 -0300
+Served asset /places.js - 304 Not Modified (1ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 12:13:20 -0300
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 9.4ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 12:13:20 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 12:13:20 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 12:13:20 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 12:13:20 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 12:13:20 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 12:13:59 -0300
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (1.3ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 20.6ms (Views: 18.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 12:13:59 -0300
+Served asset /places.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 12:14:00 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 12:14:00 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 12:14:00 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 12:14:00 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/places/index" for 127.0.0.1 at 2015-10-04 19:47:35 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"index"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (2.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "index"]]
+Completed 404 Not Found in 48.5ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=index):
+  app/controllers/places_controller.rb:16:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 19:50:01 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 150.0ms (Views: 91.9ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 19:50:02 -0300
+Served asset /places.css - 200 OK (25ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 19:50:02 -0300
+Served asset /scaffolds.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 19:50:02 -0300
+Served asset /jquery_ujs.js - 200 OK (11ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 19:50:02 -0300
+Served asset /places.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 19:50:02 -0300
+Served asset /jquery.js - 200 OK (5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-04 19:54:33 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 159.5ms (Views: 87.8ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 19:54:33 -0300
+Served asset /scaffolds.css - 200 OK (5ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 19:54:33 -0300
+Served asset /places.css - 200 OK (5ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 19:54:33 -0300
+Served asset /places.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 19:54:33 -0300
+Served asset /jquery_ujs.js - 200 OK (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 19:54:33 -0300
+Served asset /jquery.js - 200 OK (18ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2015-10-04 20:37:08 -0300
+Processing by PlacesController#new as HTML
+Geokit is using the domain: 
+  Rendered places/_form.html.erb (8.3ms)
+  Rendered places/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 31.8ms (Views: 21.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 20:37:09 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 20:37:09 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 20:37:09 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 20:37:09 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 20:37:09 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/new.json" for 127.0.0.1 at 2015-10-04 20:37:18 -0300
+Processing by PlacesController#new as JSON
+Geokit is using the domain: 
+Completed 200 OK in 3.8ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places.json" for 127.0.0.1 at 2015-10-04 20:45:46 -0300
+Processing by PlacesController#index as JSON
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" 
+Completed 200 OK in 13.3ms (Views: 7.6ms | ActiveRecord: 0.4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/places/" for 127.0.0.1 at 2015-10-04 20:49:25 -0300
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 40.7ms (Views: 33.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 20:49:25 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 20:49:25 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 20:49:25 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 20:49:25 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 20:49:25 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2015-10-04 20:49:27 -0300
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (1.4ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/_form.html.erb (3.5ms)
+  Rendered places/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 13.2ms (Views: 9.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 20:49:27 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 20:49:27 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 20:49:27 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 20:49:27 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 20:49:27 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started PUT "/places/1" for 127.0.0.1 at 2015-10-04 20:51:48 -0300
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gEPfHt3sSs4G54rVjLTFGJiTu+qr+n2RMpEetF1HE8k=", "place"=>{"name"=>"Nile University", "latitude"=>"30.0674266", "longitude"=>"31.0187273", "range"=>"1"}, "commit"=>"Update Place", "id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (45.1ms)[0m  [1mUPDATE "places" SET "latitude" = 30.0674266, "longitude" = 31.0187273, "updated_at" = '2015-10-04 23:51:48.758813' WHERE "places"."id" = 1[0m
+  [1m[35m (137.0ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/places/1
+Completed 302 Found in 217.4ms (ActiveRecord: 182.5ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-10-04 20:51:48 -0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8.3ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 20:51:49 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 20:51:49 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 20:51:49 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 20:51:49 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 20:51:49 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 20:52:58 -0300
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (1.9ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 18.8ms (Views: 16.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 20:52:58 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 20:52:58 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 20:52:58 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 20:52:58 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 20:52:58 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 21:15:55 -0300
+
+SyntaxError (/home/saasbook/project/navigation/app/models/place.rb:8: syntax error, unexpected ':'):
+  app/controllers/places_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 21:16:11 -0300
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 20.4ms (Views: 7.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 21:16:11 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 21:16:11 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 21:16:11 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 21:16:11 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 21:16:11 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 21:16:25 -0300
+
+SyntaxError (/home/saasbook/project/navigation/app/models/place.rb:11: syntax error, unexpected '\n', expecting tASSOC):
+  app/controllers/places_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.7ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 21:16:31 -0300
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 20.7ms (Views: 8.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 21:16:32 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 21:16:32 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 21:16:32 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 21:16:32 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 21:16:32 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 22:51:20 -0300
+
+SyntaxError (/home/saasbook/project/navigation/app/controllers/places_controller.rb:94: syntax error, unexpected keyword_end, expecting $end):
+  activesupport (3.2.18) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.18) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.18) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.18) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.7) lib/rack/etag.rb:23:in `call'
+  rack (1.4.7) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.18) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.18) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `_run__791328741__call__665523824__callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 22:51:44 -0300
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (31.0ms)
+Completed 500 Internal Server Error in 48.8ms
+
+ActionView::Template::Error (undefined local variable or method `places_nearby' for #<#<Class:0x93b0638>:0x95e294c>):
+    27: <br />
+    28: 
+    29: <%= link_to 'New Place', new_place_path %>
+    30: <%= link_to 'Nearby Place', places_nearby %>
+  app/views/places/index.html.erb:30:in `_app_views_places_index_html_erb___867943680_77719680'
+  app/controllers/places_controller.rb:11:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.7ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 22:52:30 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (46.4ms)
+Completed 500 Internal Server Error in 97.6ms
+
+ActionView::Template::Error (undefined local variable or method `places_nearby' for #<#<Class:0xb5813b74>:0xb5811cac>):
+    27: <br />
+    28: 
+    29: <%= link_to 'New Place', new_place_path %>
+    30: <%= link_to 'Nearby Place', places_nearby %>
+  app/views/places/index.html.erb:30:in `_app_views_places_index_html_erb__201612327__621483398'
+  app/controllers/places_controller.rb:11:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.9ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 22:56:16 -0300
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 51.4ms (Views: 49.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 22:56:16 -0300
+Served asset /places.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 22:56:17 -0300
+Served asset /places.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 22:56:17 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 22:56:17 -0300
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 22:56:17 -0300
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 22:56:18 -0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"nearby"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.7ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "nearby"]]
+Completed 404 Not Found in 5.8ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=nearby):
+  app/controllers/places_controller.rb:27:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.9ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 22:58:25 -0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"nearby"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.1ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "nearby"]]
+Completed 404 Not Found in 3.3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=nearby):
+  app/controllers/places_controller.rb:27:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.7ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 22:58:31 -0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"nearby"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "nearby"]]
+Completed 404 Not Found in 1.2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=nearby):
+  app/controllers/places_controller.rb:27:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 22:58:49 -0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"nearby"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "nearby"]]
+Completed 404 Not Found in 2.1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=nearby):
+  app/controllers/places_controller.rb:27:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.3ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 22:59:07 -0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"nearby"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.9ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "nearby"]]
+Completed 404 Not Found in 2.1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=nearby):
+  app/controllers/places_controller.rb:27:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 22:59:32 -0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"nearby"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.1ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "nearby"]]
+Completed 404 Not Found in 3.8ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=nearby):
+  app/controllers/places_controller.rb:27:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:00:15 -0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"nearby"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "nearby"]]
+Completed 404 Not Found in 47520.0ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=nearby):
+  app/controllers/places_controller.rb:28:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.8ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2015-10-04 23:01:08 -0300
+Processing by PlacesController#new as HTML
+Geokit is using the domain: 
+  Rendered places/_form.html.erb (26.7ms)
+  Rendered places/new.html.erb within layouts/application (74.2ms)
+Completed 200 OK in 116.7ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:01:08 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:01:08 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:01:08 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:01:08 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:01:08 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:01:14 -0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"nearby"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.7ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "nearby"]]
+Completed 404 Not Found in 44727.7ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=nearby):
+  app/controllers/places_controller.rb:28:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.9ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:02:06 -0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"nearby"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.5ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "nearby"]]
+Completed 404 Not Found in 11208.3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=nearby):
+  app/controllers/places_controller.rb:28:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.4ms)
+
+
+Started GET "/places/" for 127.0.0.1 at 2015-10-04 23:02:27 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 128.0ms (Views: 72.9ms | ActiveRecord: 43.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:02:28 -0300
+Served asset /scaffolds.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:02:28 -0300
+Served asset /places.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:02:28 -0300
+Served asset /places.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:02:28 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:02:28 -0300
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:02:29 -0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"nearby"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (1.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "nearby"]]
+Completed 404 Not Found in 60560.7ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=nearby):
+  app/controllers/places_controller.rb:28:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:03:35 -0300
+Processing by PlacesController#nearby as HTML
+Geokit is using the domain: 
+  Rendered places/nearby.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 22092.6ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:03:57 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:03:57 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:03:57 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:03:57 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:03:57 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2015-10-04 23:04:00 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+Geokit is using the domain: 
+Completed 500 Internal Server Error in 2.7ms
+
+NoMethodError (undefined method `find_nearby' for #<PlacesController:0xb4ba6bd4>):
+  app/controllers/places_controller.rb:7:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.8ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:05:29 -0300
+Processing by PlacesController#nearby as HTML
+Geokit is using the domain: 
+  Rendered places/nearby.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 7141.5ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:05:36 -0300
+Served asset /places.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:05:36 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:05:36 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:05:36 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:05:36 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=2&range=2" for 127.0.0.1 at 2015-10-04 23:05:45 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"2", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 38.8ms (Views: 14.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:05:46 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:05:46 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:05:46 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:05:46 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:05:46 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=2&range=2" for 127.0.0.1 at 2015-10-04 23:06:19 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"2", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 32.4ms (Views: 13.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:06:19 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:06:19 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:06:19 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:06:19 -0300
+Served asset /places.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:06:19 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=2&range=2" for 127.0.0.1 at 2015-10-04 23:06:22 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"2", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 26.0ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:06:22 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:06:22 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:06:22 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:06:22 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:06:22 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=2&range=2" for 127.0.0.1 at 2015-10-04 23:06:37 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"2", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 118614.4ms (Views: 20.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:08:43 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#nearby as HTML
+Geokit is using the domain: 
+  Rendered places/nearby.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 80.6ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:08:44 -0300
+Served asset /places.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:08:44 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:08:44 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:08:44 -0300
+Served asset /places.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:08:44 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (14ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=21&range=5" for 127.0.0.1 at 2015-10-04 23:08:51 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"21", "range"=>"5"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 120506.0ms (Views: 15.0ms | ActiveRecord: 26.5ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:10:51 -0300
+Processing by PlacesController#nearby as HTML
+Geokit is using the domain: 
+  Rendered places/nearby.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 54.4ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:10:51 -0300
+Processing by PlacesController#nearby as HTML
+Geokit is using the domain: 
+  Rendered places/nearby.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 38.2ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:10:51 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:10:51 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:10:51 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:10:51 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:10:51 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:11:00 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#nearby as HTML
+Geokit is using the domain: 
+  Rendered places/nearby.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 89.1ms (Views: 88.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:11:01 -0300
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:11:01 -0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:11:01 -0300
+Served asset /places.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:11:01 -0300
+Served asset /places.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:11:01 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:11:05 -0300
+Processing by PlacesController#nearby as HTML
+Geokit is using the domain: 
+  Rendered places/nearby.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8.4ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:11:05 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:11:05 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:11:05 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:11:05 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:11:05 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:11:24 -0300
+Processing by PlacesController#nearby as HTML
+Geokit is using the domain: 
+  Rendered places/nearby.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8.8ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:11:24 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:11:24 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:11:24 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:11:24 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:11:24 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:11:41 -0300
+Processing by PlacesController#nearby as HTML
+Geokit is using the domain: 
+  Rendered places/nearby.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 20.1ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:11:41 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:11:41 -0300
+Served asset /places.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:11:41 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:11:41 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:11:41 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:11:43 -0300
+Processing by PlacesController#nearby as HTML
+Geokit is using the domain: 
+  Rendered places/nearby.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46.4ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:11:43 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:11:43 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:11:43 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:11:43 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:11:43 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=12&range=2" for 127.0.0.1 at 2015-10-04 23:11:52 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"12", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.6ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 23857.3ms (Views: 39.7ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:12:16 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:12:16 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:12:16 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:12:16 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:12:16 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=12&range=2" for 127.0.0.1 at 2015-10-04 23:12:24 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"12", "range"=>"2"}
+Geokit is using the domain: 
+Completed 500 Internal Server Error in 51945.8ms
+
+NoMethodError (undefined method `find_nearby' for #<PlacesController:0xb53059c>):
+  app/controllers/places_controller.rb:7:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (61.2ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=12&range=2" for 127.0.0.1 at 2015-10-04 23:13:45 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"12", "range"=>"2"}
+Geokit is using the domain: 
+Completed 500 Internal Server Error in 14270.3ms
+
+NameError (uninitialized constant PlacesController::PLace):
+  app/controllers/places_controller.rb:8:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.5ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=12&range=2" for 127.0.0.1 at 2015-10-04 23:14:37 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"12", "range"=>"2"}
+Geokit is using the domain: 
+Completed 500 Internal Server Error in 9599.2ms
+
+NoMethodError (undefined method `find_nearby' for #<Class:0xb5dd3b54>):
+  app/controllers/places_controller.rb:7:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.2ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=12&range=2" for 127.0.0.1 at 2015-10-04 23:15:16 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"12", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (33.6ms)[0m  SELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.20943951023931953)*COS(0.03490658503988659)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.20943951023931953)*SIN(0.03490658503988659)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.20943951023931953)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 12))
+  Rendered places/index.html.erb within layouts/application (86.6ms)
+Completed 500 Internal Server Error in 144.6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb___371849496__621891178'
+  app/controllers/places_controller.rb:10:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (14.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (46.5ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=30&long=31&range=5" for 127.0.0.1 at 2015-10-04 23:16:04 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"30", "long"=>"31", "range"=>"5"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.7ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5410520681182421)*COS(0.08726646259971647)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5410520681182421)*SIN(0.08726646259971647)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5410520681182421)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 30))[0m
+  Rendered places/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5.5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb___371849496__621891178'
+  app/controllers/places_controller.rb:10:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.3ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=30&long=31&range=5" for 127.0.0.1 at 2015-10-04 23:16:30 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"30", "long"=>"31", "range"=>"5"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5410520681182421)*COS(0.08726646259971647)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5410520681182421)*SIN(0.08726646259971647)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5410520681182421)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 30))
+  [1m[36mPlace Load (0.8ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5235987755982988)*COS(0.5235987755982988)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5235987755982988)*SIN(0.5235987755982988)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5235987755982988)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 30))[0m
+  [1m[35mPlace Load (0.7ms)[0m  SELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5235987755982988)*COS(1745329.2519943293)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5235987755982988)*SIN(1745329.2519943293)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5235987755982988)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 30))
+  [1m[36mPlace Load (0.7ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5235987755982988)*COS(174532925199432.94)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5235987755982988)*SIN(174532925199432.94)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5235987755982988)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 30))[0m
+  [1m[35mPlace Load (1.1ms)[0m  SELECT "places".* FROM "places" WHERE "places"."name" = 'Nile University' LIMIT 1
+  [1m[36mPlace Load (1.7ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5413789211632508)*COS(174532925199432.94)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5413789211632508)*SIN(174532925199432.94)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5413789211632508)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 30.0674266))[0m
+  [1m[35mPlace Load (0.7ms)[0m  SELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5247755917717241)*COS(0.5413789211632508)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5247755917717241)*SIN(0.5413789211632508)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5247755917717241)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 100))
+  [1m[36mPlace Load (0.7ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.4363323129985824)*COS(0.593411945678072)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.4363323129985824)*SIN(0.593411945678072)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.4363323129985824)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 100))[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5410520681182421)*COS(0.08726646259971647)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5410520681182421)*SIN(0.08726646259971647)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5410520681182421)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 30))
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 556551.1ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb___371849496__621891178'
+  app/controllers/places_controller.rb:11:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (35.8ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=12&range=2" for 127.0.0.1 at 2015-10-04 23:25:53 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"12", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.20943951023931953)*COS(0.20943951023931953)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.20943951023931953)*SIN(0.20943951023931953)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.20943951023931953)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 2))[0m
+  Rendered places/index.html.erb within layouts/application (34.6ms)
+Completed 500 Internal Server Error in 4201.7ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb___587362332__622919928'
+  app/controllers/places_controller.rb:11:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.1ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=12&range=2" for 127.0.0.1 at 2015-10-04 23:30:27 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"12", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.5ms)[0m  SELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.20943951023931953)*COS(0.20943951023931953)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.20943951023931953)*SIN(0.20943951023931953)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.20943951023931953)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 2))
+  Rendered places/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 7029.8ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb___587362332__622919928'
+  app/controllers/places_controller.rb:16:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.3ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=12&range=2" for 127.0.0.1 at 2015-10-04 23:30:48 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"12", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.20943951023931953)*COS(0.20943951023931953)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.20943951023931953)*SIN(0.20943951023931953)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.20943951023931953)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 2))[0m
+  Rendered places/index.html.erb within layouts/application (34.4ms)
+Completed 500 Internal Server Error in 5087.5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb__403514482__623179648'
+  app/controllers/places_controller.rb:16:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.0ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=12&range=2" for 127.0.0.1 at 2015-10-04 23:33:08 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"12", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (1.2ms)[0m  SELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.20943951023931953)*COS(0.20943951023931953)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.20943951023931953)*SIN(0.20943951023931953)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.20943951023931953)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 2))
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 9144.0ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb__403514482__623179648'
+  app/controllers/places_controller.rb:16:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.4ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=12&range=2" for 127.0.0.1 at 2015-10-04 23:34:29 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"12", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.20943951023931953)*COS(0.20943951023931953)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.20943951023931953)*SIN(0.20943951023931953)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.20943951023931953)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 2))[0m
+  Rendered places/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4605.8ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb__403514482__623179648'
+  app/controllers/places_controller.rb:15:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.1ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=12&range=2" for 127.0.0.1 at 2015-10-04 23:35:16 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"12", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.20943951023931953)*COS(0.20943951023931953)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.20943951023931953)*SIN(0.20943951023931953)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.20943951023931953)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 2))
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 29332.2ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb__403514482__623179648'
+  app/controllers/places_controller.rb:16:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.2ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=12&range=2" for 127.0.0.1 at 2015-10-04 23:35:59 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"12", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.20943951023931953)*COS(0.20943951023931953)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.20943951023931953)*SIN(0.20943951023931953)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.20943951023931953)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 2))[0m
+Redirected to http://0.0.0.0:3000/places
+Completed 500 Internal Server Error in 6346.6ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/places_controller.rb:16:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (88.7ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=12&range=2" for 127.0.0.1 at 2015-10-04 23:37:08 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"12", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.1ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.20943951023931953)*COS(0.20943951023931953)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.20943951023931953)*SIN(0.20943951023931953)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.20943951023931953)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 2))[0m
+Redirected to http://0.0.0.0:3000/places
+Completed 302 Found in 1612.8ms (ActiveRecord: 31.4ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 23:37:11 -0300
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 102.8ms (Views: 83.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:37:11 -0300
+Served asset /places.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:37:11 -0300
+Served asset /places.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:37:11 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:37:11 -0300
+Served asset /jquery.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:37:11 -0300
+Served asset /scaffolds.css - 304 Not Modified (14ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:37:37 -0300
+Processing by PlacesController#nearby as HTML
+Geokit is using the domain: 
+  Rendered places/nearby.html.erb within layouts/application (83.7ms)
+Completed 200 OK in 107.3ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:37:37 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:37:37 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:37:37 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:37:37 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:37:37 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=11&range=2" for 127.0.0.1 at 2015-10-04 23:37:42 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"11", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.9ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.20943951023931953)*COS(0.19198621771937624)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.20943951023931953)*SIN(0.19198621771937624)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.20943951023931953)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 2))[0m
+Redirected to http://0.0.0.0:3000/places
+Completed 302 Found in 3018.0ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 23:37:45 -0300
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 17.6ms (Views: 15.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:37:45 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:37:45 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:37:45 -0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:37:45 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:37:45 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=11&range=2" for 127.0.0.1 at 2015-10-04 23:38:32 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"11", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.20943951023931953)*COS(0.19198621771937624)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.20943951023931953)*SIN(0.19198621771937624)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.20943951023931953)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 2))[0m
+Redirected to http://0.0.0.0:3000/places
+Completed 302 Found in 11530.6ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 23:38:44 -0300
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 44.9ms (Views: 31.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:38:44 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:38:44 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:38:44 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:38:44 -0300
+Served asset /places.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:38:44 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=11&range=2" for 127.0.0.1 at 2015-10-04 23:39:24 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"11", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (4.0ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.20943951023931953)*COS(0.19198621771937624)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.20943951023931953)*SIN(0.19198621771937624)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.20943951023931953)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 2))[0m
+Redirected to http://0.0.0.0:3000/places
+Completed 302 Found in 12324.4ms (ActiveRecord: 51.1ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-10-04 23:39:37 -0300
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 100.1ms (Views: 75.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:39:38 -0300
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:39:38 -0300
+Served asset /scaffolds.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:39:38 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:39:38 -0300
+Served asset /places.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:39:38 -0300
+Served asset /places.js - 304 Not Modified (11ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=12&long=11&range=2" for 127.0.0.1 at 2015-10-04 23:39:59 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"12", "long"=>"11", "range"=>"2"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.20943951023931953)*COS(0.19198621771937624)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.20943951023931953)*SIN(0.19198621771937624)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.20943951023931953)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 2))[0m
+Redirected to http://0.0.0.0:3000/places/nearby
+Completed 302 Found in 13767.6ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:40:12 -0300
+Processing by PlacesController#nearby as HTML
+Geokit is using the domain: 
+  Rendered places/nearby.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 11.9ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:40:13 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:40:13 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:40:13 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:40:13 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:40:13 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=31&long=31&range=1000" for 127.0.0.1 at 2015-10-04 23:42:26 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"31", "long"=>"31", "range"=>"1000"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (1.5ms)[0m  SELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5410520681182421)*COS(0.5410520681182421)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5410520681182421)*SIN(0.5410520681182421)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5410520681182421)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 1000))
+  Rendered places/index.html.erb within layouts/application (98.3ms)
+Completed 500 Internal Server Error in 190.3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb___481285389__627894958'
+  app/controllers/places_controller.rb:15:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (50.7ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=31&long=31&range=1000" for 127.0.0.1 at 2015-10-04 23:42:30 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"31", "long"=>"31", "range"=>"1000"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.6ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5410520681182421)*COS(0.5410520681182421)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5410520681182421)*SIN(0.5410520681182421)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5410520681182421)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 1000))[0m
+  Rendered places/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 13.9ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb___481285389__627894958'
+  app/controllers/places_controller.rb:15:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (32.6ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=31&long=31&range=1000" for 127.0.0.1 at 2015-10-04 23:42:45 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"31", "long"=>"31", "range"=>"1000"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.5ms)[0m  SELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5410520681182421)*COS(0.5410520681182421)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5410520681182421)*SIN(0.5410520681182421)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5410520681182421)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 1000))
+  Rendered places/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 23.5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb___481285389__627894958'
+  app/controllers/places_controller.rb:15:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.0ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=31&long=31&range=1000" for 127.0.0.1 at 2015-10-04 23:43:13 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"31", "long"=>"31", "range"=>"1000"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5410520681182421)*COS(0.5410520681182421)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5410520681182421)*SIN(0.5410520681182421)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5410520681182421)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 1000))[0m
+  Rendered places/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 211911.6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb___481285389__627894958'
+  app/controllers/places_controller.rb:15:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.2ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2015-10-04 23:46:45 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=31&lo.ng=31&range=1000" for 127.0.0.1 at 2015-10-04 23:46:45 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"31", "lo.ng"=>"31", "range"=>"1000"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5410520681182421)*COS(0.0)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5410520681182421)*SIN(0.0)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5410520681182421)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 1000))
+Redirected to http://0.0.0.0:3000/places/nearby
+Completed 302 Found in 55059.1ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=31&long=31&range=1000" for 127.0.0.1 at 2015-10-04 23:47:40 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"31", "long"=>"31", "range"=>"1000"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.6ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5410520681182421)*COS(0.5410520681182421)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5410520681182421)*SIN(0.5410520681182421)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5410520681182421)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 1000))[0m
+  Rendered places/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 4032.9ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb___481285389__627894958'
+  app/controllers/places_controller.rb:15:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-04 23:47:52 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (46.3ms)
+Completed 500 Internal Server Error in 10351.6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb___887186887__626725438'
+  app/controllers/places_controller.rb:15:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-04 23:48:18 -0300
+Connecting to database specified by database.yml
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (32.9ms)
+Completed 500 Internal Server Error in 50893.5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <th></th>
+    12:   </tr>
+    13: 
+    14: <% @places.each do |place| %>
+    15:   <tr> 
+    16:     <td><%= place.name %></td>
+    17:     <td><%= place.latitude %></td>
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb___247335614__626701458'
+  app/controllers/places_controller.rb:15:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-04 23:49:15 -0300
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 20186.8ms (Views: 78.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:49:36 -0300
+Served asset /places.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:49:36 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:49:36 -0300
+Served asset /scaffolds.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:49:36 -0300
+Served asset /places.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:49:36 -0300
+Served asset /jquery.js - 304 Not Modified (20ms)
+
+
+Started GET "/places/nearby" for 127.0.0.1 at 2015-10-04 23:49:41 -0300
+Processing by PlacesController#nearby as HTML
+Geokit is using the domain: 
+  Rendered places/nearby.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 19.3ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:49:41 -0300
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:49:41 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:49:41 -0300
+Served asset /places.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:49:41 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:49:41 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=31&long=31&range=1000" for 127.0.0.1 at 2015-10-04 23:49:48 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"31", "long"=>"31", "range"=>"1000"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (3.5ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5410520681182421)*COS(0.5410520681182421)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5410520681182421)*SIN(0.5410520681182421)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5410520681182421)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 1000))[0m
+  Rendered places/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 5766.7ms (Views: 10.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-10-04 23:49:54 -0300
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-04 23:49:54 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-10-04 23:49:54 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-10-04 23:49:54 -0300
+Served asset /places.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-04 23:49:54 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/places?utf8=%E2%9C%93&lat=31&long=31&range=1000.json" for 127.0.0.1 at 2015-10-04 23:52:27 -0300
+Processing by PlacesController#index as HTML
+  Parameters: {"utf8"=>"✓", "lat"=>"31", "long"=>"31", "range"=>"1000.json"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (4.6ms)[0m  SELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5410520681182421)*COS(0.5410520681182421)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5410520681182421)*SIN(0.5410520681182421)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5410520681182421)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 1000.json))
+PG::SyntaxError: ERROR:  syntax error at or near "json"
+LINE 5:           <= 1000.json))
+                          ^
+: SELECT "places".* FROM "places"  WHERE ((
+          (ACOS(least(1,COS(0.5410520681182421)*COS(0.5410520681182421)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+          COS(0.5410520681182421)*SIN(0.5410520681182421)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+          SIN(0.5410520681182421)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+          <= 1000.json))
+Completed 500 Internal Server Error in 6.2ms
+
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near "json"
+LINE 5:           <= 1000.json))
+                          ^
+: SELECT "places".* FROM "places"  WHERE ((
+          (ACOS(least(1,COS(0.5410520681182421)*COS(0.5410520681182421)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+          COS(0.5410520681182421)*SIN(0.5410520681182421)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+          SIN(0.5410520681182421)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+          <= 1000.json))):
+  app/controllers/places_controller.rb:6:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.7ms)
+
+
+Started GET "/places.json?utf8=%E2%9C%93&lat=31&long=31&range=1000" for 127.0.0.1 at 2015-10-04 23:52:38 -0300
+Processing by PlacesController#index as JSON
+  Parameters: {"utf8"=>"✓", "lat"=>"31", "long"=>"31", "range"=>"1000"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places" WHERE ((
+ (ACOS(least(1,COS(0.5410520681182421)*COS(0.5410520681182421)*COS(RADIANS(places.latitude))*COS(RADIANS(places.longitude))+
+ COS(0.5410520681182421)*SIN(0.5410520681182421)*COS(RADIANS(places.latitude))*SIN(RADIANS(places.longitude))+
+ SIN(0.5410520681182421)*SIN(RADIANS(places.latitude))))*3963.1899999999996)
+ <= 1000))[0m
+Completed 200 OK in 5245.4ms (Views: 2.4ms | ActiveRecord: 0.4ms)

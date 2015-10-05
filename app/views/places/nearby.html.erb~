@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+  <title>Search for nearby venues</title>
+</head>
+<body>
+  <!-- When submit the form, the view rendered will be the index view of our articles resource -->
+  <%= form_tag(places_path, :method => "get", class: "navbar-form", id: "search-form") do %>
+    <div class="input-append">
+      <%= text_field_tag :lat, params[:search], class: "span2", placeholder: "Latitude" %>
+      <%= text_field_tag :long, params[:search], class: "span2", placeholder: "Longitude" %>
+      <%= text_field_tag :range, params[:search], class: "span2", placeholder: "Range" %>
+      <button class="btn" type="submit"><i class="icon-search"></i>search</button>
+    </div>
+  <% end %>
+  <%= yield %>
+</body>

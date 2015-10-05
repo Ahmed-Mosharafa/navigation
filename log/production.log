@@ -1,124 +1,20 @@
 Connecting to database specified by database.yml
+Compiled jquery.js  (1ms)  (pid 9470)
+Compiled jquery_ujs.js  (0ms)  (pid 9470)
+Compiled places.js  (272ms)  (pid 9470)
+Compiled application.js  (302ms)  (pid 9470)
+Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0xa031fb0>
+Compiled places.css  (4ms)  (pid 9470)
+Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0xa031fb0>
+Compiled scaffolds.css  (8ms)  (pid 9470)
+Compiled application.css  (22ms)  (pid 9470)
 Connecting to database specified by database.yml
-Connecting to database specified by database.yml
-Connecting to database specified by database.yml
-Connecting to database specified by database.yml
-Compiled jquery.js  (2ms)  (pid 3388)
-Compiled jquery_ujs.js  (0ms)  (pid 3388)
-Compiled places.js  (700ms)  (pid 3388)
-Compiled application.js  (720ms)  (pid 3388)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0xb08a4ac>
-Compiled places.css  (19ms)  (pid 3388)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0xb08a4ac>
-Compiled scaffolds.css  (7ms)  (pid 3388)
-Compiled application.css  (44ms)  (pid 3388)
-Connecting to database specified by database.yml
-Compiled jquery.js  (1ms)  (pid 3388)
-Compiled jquery_ujs.js  (0ms)  (pid 3388)
-Compiled places.js  (214ms)  (pid 3388)
-Compiled application.js  (231ms)  (pid 3388)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0xab8ac18>
-Compiled places.css  (4ms)  (pid 3388)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0xab8ac18>
-Compiled scaffolds.css  (7ms)  (pid 3388)
-Compiled application.css  (23ms)  (pid 3388)
-Connecting to database specified by database.yml
-Compiled jquery.js  (1ms)  (pid 4398)
-Compiled jquery_ujs.js  (0ms)  (pid 4398)
-Compiled places.js  (220ms)  (pid 4398)
-Compiled application.js  (239ms)  (pid 4398)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0xadc93d0>
-Compiled places.css  (4ms)  (pid 4398)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0xadc93d0>
-Compiled scaffolds.css  (6ms)  (pid 4398)
-Compiled application.css  (20ms)  (pid 4398)
-Connecting to database specified by database.yml
-Compiled jquery.js  (1ms)  (pid 4398)
-Compiled jquery_ujs.js  (0ms)  (pid 4398)
-Compiled places.js  (219ms)  (pid 4398)
-Compiled application.js  (238ms)  (pid 4398)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0xa4e9364>
-Compiled places.css  (3ms)  (pid 4398)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0xa4e9364>
-Compiled scaffolds.css  (7ms)  (pid 4398)
-Compiled application.css  (20ms)  (pid 4398)
-Connecting to database specified by database.yml
-Compiled jquery.js  (1ms)  (pid 4933)
-Compiled jquery_ujs.js  (0ms)  (pid 4933)
-Compiled places.js  (227ms)  (pid 4933)
-Compiled application.js  (245ms)  (pid 4933)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0xa7867c0>
-Compiled places.css  (4ms)  (pid 4933)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0xa7867c0>
-Compiled scaffolds.css  (8ms)  (pid 4933)
-Compiled application.css  (20ms)  (pid 4933)
-Connecting to database specified by database.yml
-Compiled jquery.js  (1ms)  (pid 4933)
-Compiled jquery_ujs.js  (0ms)  (pid 4933)
-Compiled places.js  (222ms)  (pid 4933)
-Compiled application.js  (238ms)  (pid 4933)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0xa54d058>
-Compiled places.css  (3ms)  (pid 4933)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0xa54d058>
-Compiled scaffolds.css  (7ms)  (pid 4933)
-Compiled application.css  (18ms)  (pid 4933)
-Connecting to database specified by database.yml
-Compiled jquery.js  (1ms)  (pid 5021)
-Compiled jquery_ujs.js  (0ms)  (pid 5021)
-Compiled places.js  (238ms)  (pid 5021)
-Compiled application.js  (255ms)  (pid 5021)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0x9485680>
-Compiled places.css  (4ms)  (pid 5021)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0x9485680>
-Compiled scaffolds.css  (12ms)  (pid 5021)
-Compiled application.css  (26ms)  (pid 5021)
-Connecting to database specified by database.yml
-Compiled jquery.js  (1ms)  (pid 5021)
-Compiled jquery_ujs.js  (0ms)  (pid 5021)
-Compiled places.js  (227ms)  (pid 5021)
-Compiled application.js  (244ms)  (pid 5021)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0xb2a2c94>
-Compiled places.css  (4ms)  (pid 5021)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0xb2a2c94>
-Compiled scaffolds.css  (6ms)  (pid 5021)
-Compiled application.css  (19ms)  (pid 5021)
-Connecting to database specified by database.yml
-Compiled jquery.js  (2ms)  (pid 5120)
-Compiled jquery_ujs.js  (0ms)  (pid 5120)
-Compiled places.js  (212ms)  (pid 5120)
-Compiled application.js  (228ms)  (pid 5120)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0xa4abce4>
-Compiled places.css  (4ms)  (pid 5120)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0xa4abce4>
-Compiled scaffolds.css  (8ms)  (pid 5120)
-Compiled application.css  (19ms)  (pid 5120)
-Connecting to database specified by database.yml
-Compiled jquery.js  (1ms)  (pid 5120)
-Compiled jquery_ujs.js  (0ms)  (pid 5120)
-Compiled places.js  (226ms)  (pid 5120)
-Compiled application.js  (242ms)  (pid 5120)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0xacf7cb8>
-Compiled places.css  (4ms)  (pid 5120)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0xacf7cb8>
-Compiled scaffolds.css  (7ms)  (pid 5120)
-Compiled application.css  (19ms)  (pid 5120)
-Connecting to database specified by database.yml
-Compiled jquery.js  (1ms)  (pid 7178)
-Compiled jquery_ujs.js  (0ms)  (pid 7178)
-Compiled places.js  (216ms)  (pid 7178)
-Compiled application.js  (235ms)  (pid 7178)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0x94b1028>
-Compiled places.css  (4ms)  (pid 7178)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0x94b1028>
-Compiled scaffolds.css  (7ms)  (pid 7178)
-Compiled application.css  (20ms)  (pid 7178)
-Connecting to database specified by database.yml
-Compiled jquery.js  (1ms)  (pid 7178)
-Compiled jquery_ujs.js  (0ms)  (pid 7178)
-Compiled places.js  (211ms)  (pid 7178)
-Compiled application.js  (230ms)  (pid 7178)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0xa5a7df0>
-Compiled places.css  (3ms)  (pid 7178)
-Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0xa5a7df0>
-Compiled scaffolds.css  (7ms)  (pid 7178)
-Compiled application.css  (18ms)  (pid 7178)
+Compiled jquery.js  (2ms)  (pid 9470)
+Compiled jquery_ujs.js  (0ms)  (pid 9470)
+Compiled places.js  (280ms)  (pid 9470)
+Compiled application.js  (305ms)  (pid 9470)
+Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/places.css.scssc: can't dump anonymous class #<Class:0xa08a818>
+Compiled places.css  (4ms)  (pid 9470)
+Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/scaffolds.css.scssc: can't dump anonymous class #<Class:0xa08a818>
+Compiled scaffolds.css  (10ms)  (pid 9470)
+Compiled application.css  (24ms)  (pid 9470)
