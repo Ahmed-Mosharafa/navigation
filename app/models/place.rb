@@ -1,5 +1,5 @@
 class Place < ActiveRecord::Base
-  attr_accessible :name, :range
+  attr_accessible :name, :latitude, :longitude
   acts_as_mappable :default_units => :miles,
                    :default_formula => :sphere,
                    :distance_field_name => :distance,
