@@ -3,18 +3,18 @@ class PlacesController < ApplicationController
   # GET /places.json
   def index
     if (params[:lat]) 
-      @place = Place.find_nearby(params[:range], params[:lat], params[:long]).all
+      @places = Place.find_nearby(params[:range], params[:lat], params[:long]).all
     else
-      @place = Place.all
+      @places = Place.all
     end
    debugger
-   if @place == []
+   if @places == []
      redirect_to places_nearby_path
      flash[:notice] = "No match found"
    else
    respond_to do |format|
      format.html 
-     format.json { render json: @place }
+     format.json { render json: @places }
    end
    end
   end
