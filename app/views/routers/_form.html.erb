@@ -1,0 +1,37 @@
+<%= form_for(@router) do |f| %>
+  <% if @router.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@router.errors.count, "error") %> prohibited this router from being saved:</h2>
+
+      <ul>
+      <% @router.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :mac %><br />
+    <%= f.text_field :mac %>
+  </div>
+  <div class="field">
+    <%= f.label :coord_x %><br />
+    <%= f.text_field :coord_x %>
+  </div>
+  <div class="field">
+    <%= f.label :coord_y %><br />
+    <%= f.text_field :coord_y %>
+  </div>
+  <div class="field">
+    <%= f.label :coord_z %><br />
+    <%= f.text_field :coord_z %>
+  </div>
+  <div class="field">
+    <%= f.label :place_id %><br />
+    <%= f.number_field :place_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

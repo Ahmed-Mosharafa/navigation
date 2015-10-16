@@ -7,7 +7,7 @@ class PlacesController < ApplicationController
     else
       @places = Place.all
     end
-   debugger
+   #debugger
    if @places == []
      redirect_to places_nearby_path
      flash[:notice] = "No match found"

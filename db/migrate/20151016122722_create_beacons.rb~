@@ -1,0 +1,13 @@
+class CreateBeacons < ActiveRecord::Migration
+  def change
+    create_table :beacons do |t|
+      t.int :place_id
+      t.int :coord_x
+      t.int :coord_y
+      t.int :coord_z
+
+      t.timestamps
+      add_foreign_key(:places, :beacons)
+    end
+  end
+end

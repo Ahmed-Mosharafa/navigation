@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20151005031927) do
+ActiveRecord::Schema.define(:version => 20151016130456) do
+
+  create_table "beacons", :force => true do |t|
+    t.integer  "place_id"
+    t.float    "coord_x"
+    t.float    "coord_y"
+    t.float    "coord_z"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "places", :force => true do |t|
     t.float    "latitude"
@@ -19,6 +28,17 @@ ActiveRecord::Schema.define(:version => 20151005031927) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "name"
+    t.string   "address"
+  end
+
+  create_table "routers", :force => true do |t|
+    t.string   "mac"
+    t.float    "coord_x"
+    t.float    "coord_y"
+    t.float    "coord_z"
+    t.integer  "place_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

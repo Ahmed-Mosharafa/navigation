@@ -1,0 +1,31 @@
+<h1>Listing routers</h1>
+
+<table>
+  <tr>
+    <th>Mac</th>
+    <th>Coord x</th>
+    <th>Coord y</th>
+    <th>Coord z</th>
+    <th>Place</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @routers.each do |router| %>
+  <tr>
+    <td><%= router.mac %></td>
+    <td><%= router.coord_x %></td>
+    <td><%= router.coord_y %></td>
+    <td><%= router.coord_z %></td>
+    <td><%= router.place_id %></td>
+    <td><%= link_to 'Show', router %></td>
+    <td><%= link_to 'Edit', edit_router_path(router) %></td>
+    <td><%= link_to 'Destroy', router, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Router', new_router_path %>

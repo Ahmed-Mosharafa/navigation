@@ -2,9 +2,13 @@
 
 <table>
   <tr>
+    <th>ID</th>
     <th>Name</th>
     <th>Latitude</th>
     <th>Longitude</th>
+    <th>Address</th>
+    <th></th>
+    <th></th>
     <th></th>
     <th></th>
     <th></th>
@@ -12,9 +16,11 @@
 
 <% @places.each do |place| %>
   <tr> 
+    <td><%= place.id %></td>
     <td><%= place.name %></td>
     <td><%= place.latitude %></td>
     <td><%= place.longitude %></td>
+    <td><%= place.address %></td>
     <td><%= link_to 'Show', place %></td>
     <td><%= link_to 'Edit', edit_place_path(place) %></td>
     <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -26,3 +32,7 @@
 
 <%= link_to 'New Place', new_place_path %>
 <%= link_to 'Nearby Place', places_nearby_path %>
+<p>
+    <%= link_to 'View Beacons', beacons_path %>
+    <%= link_to 'View Routers', routers_path %>
+</p>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  mac: MyString
+  coord_x: 1.5
+  coord_y: 1.5
+  coord_z: 1.5
+  place_id: 1
+
+two:
+  mac: MyString
+  coord_x: 1.5
+  coord_y: 1.5
+  coord_z: 1.5
+  place_id: 1

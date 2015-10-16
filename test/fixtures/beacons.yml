@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  place_id: 1
+  coord_x: 1
+  coord_y: 1
+  coord_z: 1
+
+two:
+  place_id: 1
+  coord_x: 1
+  coord_y: 1
+  coord_z: 1

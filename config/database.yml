@@ -51,5 +51,5 @@ production:
   encoding: unicode
   database: navigation_production
   pool: 5
-  username: saasbook
+  username: saasbook 
   password: saasbook

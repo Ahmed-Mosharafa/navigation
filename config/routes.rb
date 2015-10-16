@@ -1,4 +1,10 @@
 Navigation::Application.routes.draw do
+  resources :routers
+
+
+  resources :beacons
+
+
   get 'places/nearby' => 'places#nearby'
   resources :places
   # You can have the root of your site routed with "root"
