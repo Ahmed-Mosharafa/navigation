@@ -1,0 +1,46 @@
+<h1>Listing Beacons and Routers</h1>
+<h3> beacons </h3>
+<table>
+  <br>
+  <tr>
+    <th>Place</th>
+    <th>Coord x</th>
+    <th>Coord y</th>
+    <th>Coord z</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @beacons.each do |beacon| %>
+  <tr>
+    <td><%= beacon.place_id %></td>
+    <td><%= beacon.coord_x %></td>
+    <td><%= beacon.coord_y %></td>
+    <td><%= beacon.coord_z %></td>
+  </tr>
+<% end %>
+</table>
+<h3>Routers </h3>
+<table>
+  <tr>
+    <th>Place</th>
+    <th>Coord x</th>
+    <th>Coord y</th>
+    <th>Coord z</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @routers.each do |router| %>
+  <tr>
+    <td><%= router.place_id %></td>
+    <td><%= router.coord_x %></td>
+    <td><%= router.coord_y %></td>
+    <td><%= router.coord_z %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+

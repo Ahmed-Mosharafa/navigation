@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+  <title>Fetch Metadata</title>
+</head>
+<body>
+  <!-- When submit the form, the view rendered will be the metadata view of our articles resource -->
+  <%= form_tag(places_metadata_path, :method => "get", class: "navbar-form", id: "search-form") do %>
+    <div class="input-append">
+      <%= text_field_tag :PlaceID, params[:PlaceID], class: "span2", placeholder: "Latitude" %>
+      <button class="btn" type="submit"><i class="icon-search"></i>search</button>
+    </div>
+  <% end %>
+  <%= yield %>
+</body>

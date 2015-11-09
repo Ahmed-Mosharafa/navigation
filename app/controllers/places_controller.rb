@@ -6,6 +6,7 @@ class PlacesController < ApplicationController
       @places = Place.find_nearby(params[:range], params[:lat], params[:long]).all
     else
       @places = Place.all
+      debugger
     end
    #debugger
    respond_to do |format|
@@ -14,12 +15,22 @@ class PlacesController < ApplicationController
    end
   end
   def nearby
+    
+  end
+  #renders view search_metadata
+  def search_metadata
+
+  end
+  #calls fetch_metadata on beacons and routers to respond with the routers and beacons information of the place
+  def metadata
+    @beacons = Beacon.fetch_metadata(params[:PlaceID])
+    @routers = Router.fetch_metadata(params[:PlaceID])
     respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @place }
+      format.html # nearby.html.erb
+      format.json { render :json => {:beacon => @beacons, :router => @routers } }
+
     end
   end
-
   # GET /places/1
   # GET /places/1.json
   def show

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20151016130456) do
+ActiveRecord::Schema.define(:version => 20151016142536) do
 
   create_table "beacons", :force => true do |t|
     t.integer  "place_id"
