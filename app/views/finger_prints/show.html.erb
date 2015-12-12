@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Place:</b>
+  <%= @finger_print.place_id %>
+</p>
+
+<p>
+  <b>Xcoord:</b>
+  <%= @finger_print.xcoord %>
+</p>
+
+<p>
+  <b>Ycoord:</b>
+  <%= @finger_print.ycoord %>
+</p>
+
+<p>
+  <b>Bssid:</b>
+  <%= @finger_print.BSSID %>
+</p>
+
+<p>
+  <b>Ssid:</b>
+  <%= @finger_print.SSID %>
+</p>
+
+<p>
+  <b>Mrssi:</b>
+  <%= @finger_print.MRSSI %>
+</p>
+
+<p>
+  <b>Sd:</b>
+  <%= @finger_print.SD %>
+</p>
+
+
+<%= link_to 'Edit', edit_finger_print_path(@finger_print) %> |
+<%= link_to 'Back', finger_prints_path %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20151016142536) do
+ActiveRecord::Schema.define(:version => 20151210014359) do
 
   create_table "beacons", :force => true do |t|
     t.integer  "place_id"
@@ -25,10 +25,15 @@ ActiveRecord::Schema.define(:version => 20151016142536) do
   create_table "places", :force => true do |t|
     t.float    "latitude"
     t.float    "longitude"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
     t.string   "name"
     t.string   "address"
+    t.string   "map_file_name"
+    t.string   "map_content_type"
+    t.integer  "map_file_size"
+    t.datetime "map_updated_at"
+    t.string   "maplink"
   end
 
   create_table "routers", :force => true do |t|

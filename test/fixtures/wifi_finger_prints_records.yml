@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fingerprint_id: 
+  BSSID: 
+  SSID: 
+  RSSI: 
+  channel: 1
+
+two:
+  fingerprint_id: 
+  BSSID: 
+  SSID: 
+  RSSI: 
+  channel: 1

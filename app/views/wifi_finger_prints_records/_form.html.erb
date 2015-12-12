@@ -1,0 +1,37 @@
+<%= form_for(@wifi_finger_prints_record) do |f| %>
+  <% if @wifi_finger_prints_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wifi_finger_prints_record.errors.count, "error") %> prohibited this wifi_finger_prints_record from being saved:</h2>
+
+      <ul>
+      <% @wifi_finger_prints_record.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fingerprint_id %><br />
+    <%= f.text_field :fingerprint_id %>
+  </div>
+  <div class="field">
+    <%= f.label :BSSID %><br />
+    <%= f.text_field :BSSID %>
+  </div>
+  <div class="field">
+    <%= f.label :SSID %><br />
+    <%= f.text_field :SSID %>
+  </div>
+  <div class="field">
+    <%= f.label :RSSI %><br />
+    <%= f.text_field :RSSI %>
+  </div>
+  <div class="field">
+    <%= f.label :channel %><br />
+    <%= f.number_field :channel %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

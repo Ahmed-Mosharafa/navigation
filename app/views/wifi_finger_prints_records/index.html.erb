@@ -1,0 +1,31 @@
+<h1>Listing wifi_finger_prints_records</h1>
+
+<table>
+  <tr>
+    <th>Fingerprint</th>
+    <th>Bssid</th>
+    <th>Ssid</th>
+    <th>Rssi</th>
+    <th>Channel</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @wifi_finger_prints_records.each do |wifi_finger_prints_record| %>
+  <tr>
+    <td><%= wifi_finger_prints_record.fingerprint_id %></td>
+    <td><%= wifi_finger_prints_record.BSSID %></td>
+    <td><%= wifi_finger_prints_record.SSID %></td>
+    <td><%= wifi_finger_prints_record.RSSI %></td>
+    <td><%= wifi_finger_prints_record.channel %></td>
+    <td><%= link_to 'Show', wifi_finger_prints_record %></td>
+    <td><%= link_to 'Edit', edit_wifi_finger_prints_record_path(wifi_finger_prints_record) %></td>
+    <td><%= link_to 'Destroy', wifi_finger_prints_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Wifi finger prints record', new_wifi_finger_prints_record_path %>

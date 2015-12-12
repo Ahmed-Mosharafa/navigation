@@ -8259,3 +8259,3428 @@ Served asset /places.js - 304 Not Modified (0ms)
 
 Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-11-09 15:43:30 -0400
 Served asset /routers.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePlaces (20151003153101)
+Migrating to RemoveRangeFromPlaces (20151005031927)
+Migrating to AddAddressToPlaces (20151016120802)
+Migrating to CreateBeacons (20151016123113)
+Migrating to CreateRouters (20151016125419)
+Migrating to ModifyTheBeacons (20151016142536)
+Migrating to AddAttachmentMapToPlaces (20151126234552)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (41.0ms)[0m  [1mALTER TABLE "places" ADD COLUMN "map_file_name" character varying(255)[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "places" ADD COLUMN "map_content_type" character varying(255)
+  [1m[36m (9.9ms)[0m  [1mALTER TABLE "places" ADD COLUMN "map_file_size" integer[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "places" ADD COLUMN "map_updated_at" timestamp
+  [1m[36m (34.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20151126234552')[0m
+  [1m[35m (42.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 20:01:03 -0400
+Connecting to database specified by database.yml
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (11.8ms)[0m  [1mSELECT "places".* FROM "places" [0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  Rendered places/index.html.erb within layouts/application (42.9ms)
+Completed 200 OK in 336.9ms (Views: 300.3ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 20:01:04 -0400
+Served asset /jquery.js - 304 Not Modified (75ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 20:01:04 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-11-26 20:01:04 -0400
+Served asset /routers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 20:01:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-11-26 20:01:04 -0400
+Served asset /places.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-11-26 20:01:04 -0400
+Served asset /beacons.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-11-26 20:01:04 -0400
+Served asset /places.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-11-26 20:01:04 -0400
+Served asset /routers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-11-26 20:01:04 -0400
+Served asset /beacons.js - 304 Not Modified (13ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2015-11-26 20:01:20 -0400
+Processing by PlacesController#new as HTML
+Geokit is using the domain: 
+  Rendered places/_form.html.erb (46.4ms)
+  Rendered places/new.html.erb within layouts/application (74.4ms)
+Completed 200 OK in 82.2ms (Views: 81.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-11-26 20:01:21 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-11-26 20:01:21 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 20:01:21 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 20:01:21 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 20:01:21 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-11-26 20:01:21 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-11-26 20:01:21 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-11-26 20:01:21 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-11-26 20:01:21 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2015-11-26 20:03:08 -0400
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (32.7ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/_form.html.erb (3.6ms)
+  Rendered places/edit.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 50.2ms (Views: 11.7ms | ActiveRecord: 34.3ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-11-26 20:03:08 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-11-26 20:03:08 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 20:03:08 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 20:03:08 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 20:03:08 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-11-26 20:03:08 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-11-26 20:03:08 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-11-26 20:03:08 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-11-26 20:03:08 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started PUT "/places/1" for 127.0.0.1 at 2015-11-26 20:12:49 -0400
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Am0Flomx1TMKkZr+7WvPwzfoteYlmXuAsi5uuCTu0o=", "place"=>{"name"=>"Nile University", "latitude"=>"30.0674266", "longitude"=>"31.0187273", "address"=>"Sheikh Zayed", "map"=>#<ActionDispatch::Http::UploadedFile:0xb60ab9e4 @original_filename="NU-1st-Floor_3try.svg", @content_type="image/svg+xml", @headers="Content-Disposition: form-data; name=\"place[map]\"; filename=\"NU-1st-Floor_3try.svg\"\r\nContent-Type: image/svg+xml\r\n", @tempfile=#<File:/tmp/RackMultipart20151126-5037-1fle1x3>>}, "commit"=>"Update Place", "id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+Command :: file -b --mime '/tmp/ef6765546b2b7be0170b84a501b439d620151126-5037-lafpgi.svg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/ef6765546b2b7be0170b84a501b439d620151126-5037-17bwjzj.svg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/ef6765546b2b7be0170b84a501b439d620151126-5037-17bwjzj.svg[0]'
+Command :: convert '/tmp/ef6765546b2b7be0170b84a501b439d620151126-5037-17bwjzj.svg[0]' -auto-orient -resize "300x300>" '/tmp/cfee1f54644a636157684bc0524d145f20151126-5037-1fqfdzv'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/ef6765546b2b7be0170b84a501b439d620151126-5037-17bwjzj.svg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/ef6765546b2b7be0170b84a501b439d620151126-5037-17bwjzj.svg[0]'
+Command :: convert '/tmp/ef6765546b2b7be0170b84a501b439d620151126-5037-17bwjzj.svg[0]' -auto-orient -resize "100x100>" '/tmp/cfee1f54644a636157684bc0524d145f20151126-5037-1otauzc'
+Command :: file -b --mime '/tmp/ef6765546b2b7be0170b84a501b439d620151126-5037-1tiwlnf.svg'
+  [1m[36m (0.6ms)[0m  [1mUPDATE "places" SET "map_file_name" = 'NU-1st-Floor_3try.svg', "map_content_type" = 'image/svg+xml', "map_file_size" = 194614, "map_updated_at" = '2015-11-27 00:12:49.764225', "updated_at" = '2015-11-27 00:13:15.949182' WHERE "places"."id" = 1[0m
+  [1m[35m (20.5ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/places/1
+Completed 302 Found in 26381.8ms (ActiveRecord: 21.5ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-11-26 20:13:16 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.7ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (52.2ms)
+Completed 500 Internal Server Error in 63.4ms
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    26: <p>
+    27:   <b>Map: </b>
+    28:   <%= image_tag @place.map.url %>
+    29:   <%= image_tag @user.map.url(:medium) %>
+    30:   <%= image_tag @user.map.url(:thumb) %>
+    31: </p>
+    32: <%= link_to 'Edit', edit_place_path(@place) %> |
+  app/views/places/show.html.erb:29:in `_app_views_places_show_html_erb__431322312_86820080'
+  app/controllers/places_controller.rb:38:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.9ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-11-26 20:13:58 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (3.7ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 26.6ms (Views: 21.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-11-26 20:13:58 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-11-26 20:13:58 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-11-26 20:13:58 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 20:13:58 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 20:13:58 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 20:13:58 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-11-26 20:13:58 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-11-26 20:13:58 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-11-26 20:13:58 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1.json" for 127.0.0.1 at 2015-11-26 20:14:54 -0400
+Processing by PlacesController#show as JSON
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (3.0ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 5.6ms (Views: 1.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 17:47:59 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16.2ms (Views: 14.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 17:47:59 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 17:47:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 17:47:59 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 17:47:59 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 17:47:59 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 17:47:59 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 17:47:59 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 17:47:59 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 17:47:59 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1.json" for 127.0.0.1 at 2015-12-09 17:48:20 -0400
+Processing by PlacesController#show as JSON
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.7ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 5.3ms (Views: 0.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 18:13:54 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  Rendered places/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25.0ms (Views: 9.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 18:13:55 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 18:13:55 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 18:13:55 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 18:13:55 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 18:13:55 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 18:13:55 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 18:13:55 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 18:13:55 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 18:13:55 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 18:13:57 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  Rendered places/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 29.2ms (Views: 24.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 18:13:57 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 18:13:57 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 18:13:57 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 18:13:57 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 18:13:57 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 18:13:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 18:13:57 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 18:13:57 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 18:13:57 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 18:14:03 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (4.7ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  Rendered places/show.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 51.6ms (Views: 41.5ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:03 -0400
+Served asset /beacons.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:03 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:03 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:03 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:03 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:03 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:03 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:03 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:03 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-09 18:14:13 -0400
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (3.8ms)[0m  [1mSELECT "places".* FROM "places" [0m
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  Rendered places/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 34.0ms (Views: 27.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:13 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:13 -0400
+Served asset /routers.css - 304 Not Modified (57ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:13 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:13 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:13 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:13 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:13 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:13 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:13 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 18:14:16 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  Rendered places/show.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 25.4ms (Views: 19.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:16 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:16 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:16 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:16 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:16 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:16 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:16 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:16 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:16 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 18:14:35 -0400
+Connecting to database specified by database.yml
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.8ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+
+  Rendered places/show.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 84.0ms (Views: 59.9ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:36 -0400
+Served asset /beacons.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:36 -0400
+Served asset /jquery.js - 304 Not Modified (38ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:36 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:36 -0400
+Served asset /routers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 18:14:36 -0400
+Served asset /places.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:36 -0400
+Served asset /beacons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:36 -0400
+Served asset /places.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 18:14:36 -0400
+Served asset /routers.js - 304 Not Modified (7ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 18:15:36 -0400
+Connecting to database specified by database.yml
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.8ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (109.9ms)
+Completed 200 OK in 11863152.7ms (Views: 267.4ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2015-12-09 21:34:04 -0400
+Connecting to database specified by database.yml
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (7.4ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/_form.html.erb (27.9ms)
+  Rendered places/edit.html.erb within layouts/application (180.8ms)
+Completed 200 OK in 509.9ms (Views: 433.1ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 21:34:06 -0400
+Served asset /places.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 21:34:06 -0400
+Served asset /beacons.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 21:34:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 21:34:06 -0400
+Served asset /jquery.js - 304 Not Modified (61ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 21:34:06 -0400
+Served asset /routers.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 21:34:06 -0400
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 21:34:06 -0400
+Served asset /beacons.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 21:34:06 -0400
+Served asset /places.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 21:34:06 -0400
+Served asset /routers.js - 304 Not Modified (3ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 21:34:54 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 24515.6ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 21:35:19 -0400
+Served asset /beacons.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 21:35:19 -0400
+Served asset /routers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 21:35:19 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 21:35:19 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 21:35:19 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 21:35:19 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 21:35:19 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 21:35:19 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 21:35:19 -0400
+Served asset /routers.js - 304 Not Modified (4ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 21:35:33 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.6ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 23265.2ms (Views: 22.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2015-12-09 21:35:56 -0400
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/_form.html.erb (14.2ms)
+  Rendered places/edit.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 115.4ms (Views: 84.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 21:35:56 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 21:35:57 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 21:35:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 21:35:57 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 21:35:57 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 21:35:57 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 21:35:57 -0400
+Served asset /beacons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 21:35:57 -0400
+Served asset /places.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 21:35:57 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started PUT "/places/1" for 127.0.0.1 at 2015-12-09 21:36:07 -0400
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Am0Flomx1TMKkZr+7WvPwzfoteYlmXuAsi5uuCTu0o=", "place"=>{"name"=>"Nile University", "latitude"=>"30.0674266", "longitude"=>"31.0187273", "address"=>"Sheikh Zayed", "map"=>#<ActionDispatch::Http::UploadedFile:0xb5a8e098 @original_filename="openlayers.html", @content_type="text/html", @headers="Content-Disposition: form-data; name=\"place[map]\"; filename=\"openlayers.html\"\r\nContent-Type: text/html\r\n", @tempfile=#<File:/tmp/RackMultipart20151209-7290-1sxawjs>>}, "commit"=>"Update Place", "id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+Command :: file -b --mime '/tmp/8475ff644653183785b613cdc4f654e620151209-7290-bugxr2.html'
+Command :: file -b --mime '/tmp/8475ff644653183785b613cdc4f654e620151209-7290-1rrfzq4.html'
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered places/_form.html.erb (18.2ms)
+  Rendered places/edit.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 137.5ms (Views: 37.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 21:36:07 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 21:36:07 -0400
+Served asset /beacons.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 21:36:07 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 21:36:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 21:36:07 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 21:36:07 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 21:36:07 -0400
+Served asset /beacons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 21:36:07 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 21:36:07 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-12-09 21:37:06 -0400
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.8ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (71.1ms)
+Completed 200 OK in 41285.8ms (Views: 92.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-12-09 21:37:48 -0400
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 75.8ms (Views: 33.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 21:37:48 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 21:37:48 -0400
+Served asset /beacons.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 21:37:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 21:37:48 -0400
+Served asset /jquery.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 21:37:48 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 21:37:48 -0400
+Served asset /routers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 21:37:48 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 21:37:48 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 21:37:48 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 21:37:52 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.6ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 30.7ms (Views: 23.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 21:37:52 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 21:37:52 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 21:37:52 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 21:37:52 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 21:37:52 -0400
+Served asset /routers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 21:37:52 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 21:37:52 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 21:37:52 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 21:37:52 -0400
+Served asset /routers.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePlaces (20151003153101)
+Migrating to RemoveRangeFromPlaces (20151005031927)
+Migrating to AddAddressToPlaces (20151016120802)
+Migrating to CreateBeacons (20151016123113)
+Migrating to CreateRouters (20151016125419)
+Migrating to ModifyTheBeacons (20151016142536)
+Migrating to AddAttachmentMapToPlaces (20151126234552)
+Migrating to AddMaplinkToPlaces (20151210014359)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "places" ADD COLUMN "maplink" character varying(255)[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20151210014359')
+  [1m[36m (53.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2015-12-09 21:54:37 -0400
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.5ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/_form.html.erb (19.0ms)
+  Rendered places/edit.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 77.1ms (Views: 40.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 21:54:38 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 21:54:38 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 21:54:38 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 21:54:38 -0400
+Served asset /routers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 21:54:38 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 21:54:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 21:54:38 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 21:54:38 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 21:54:38 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2015-12-09 21:59:28 -0400
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.5ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/_form.html.erb (100.8ms)
+  Rendered places/edit.html.erb within layouts/application (102.2ms)
+Completed 500 Internal Server Error in 108.8ms
+
+ActionView::Template::Error (undefined method `map_link' for #<Place:0xbc8296c>):
+    35:   </div>
+    36:   <div class="field">
+    37:     <%= f.label :map_link %><br />
+    38:     <%= f.text_field :map_link %>
+    39:   </div>
+    40: <% end %>
+  app/views/places/_form.html.erb:38:in `block in _app_views_places__form_html_erb__1049592004_100670500'
+  app/views/places/_form.html.erb:1:in `_app_views_places__form_html_erb__1049592004_100670500'
+  app/views/places/edit.html.erb:3:in `_app_views_places_edit_html_erb___966927103__619572828'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.7ms)
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2015-12-09 22:00:58 -0400
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.7ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/_form.html.erb (16.8ms)
+  Rendered places/edit.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 50.2ms (Views: 39.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 22:00:58 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 22:00:58 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 22:00:58 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 22:00:58 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 22:00:58 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 22:00:58 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 22:00:58 -0400
+Served asset /beacons.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 22:00:58 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 22:00:58 -0400
+Served asset /routers.js - 304 Not Modified (1ms)
+
+
+Started PUT "/places/1" for 127.0.0.1 at 2015-12-09 22:02:46 -0400
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Am0Flomx1TMKkZr+7WvPwzfoteYlmXuAsi5uuCTu0o=", "place"=>{"name"=>"Nile University", "latitude"=>"30.0674266", "longitude"=>"31.0187273", "address"=>"Sheikh Zayed", "maplink"=>"/app/assets/map_tiler/openlayers.html"}, "commit"=>"Update Place", "id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.9ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.7ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 24.5ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: maplink):
+  app/controllers/places_controller.rb:82:in `block in update'
+  app/controllers/places_controller.rb:81:in `update'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.4ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 22:03:01 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 86.6ms (Views: 38.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 22:03:02 -0400
+Served asset /routers.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 22:03:02 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 22:03:02 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 22:03:02 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 22:03:02 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 22:03:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 22:03:02 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 22:03:02 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 22:03:02 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2015-12-09 22:03:06 -0400
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (1.8ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/_form.html.erb (51.9ms)
+  Rendered places/edit.html.erb within layouts/application (64.6ms)
+Completed 200 OK in 112.0ms (Views: 91.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 22:03:06 -0400
+Served asset /beacons.css - 304 Not Modified (107ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 22:03:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 22:03:06 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 22:03:06 -0400
+Served asset /routers.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 22:03:06 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 22:03:06 -0400
+Served asset /places.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 22:03:06 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 22:03:06 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 22:03:07 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started PUT "/places/1" for 127.0.0.1 at 2015-12-09 22:03:11 -0400
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Am0Flomx1TMKkZr+7WvPwzfoteYlmXuAsi5uuCTu0o=", "place"=>{"name"=>"Nile University", "latitude"=>"30.0674266", "longitude"=>"31.0187273", "address"=>"Sheikh Zayed", "maplink"=>"/app/assets/map_tiler/openlayers.html"}, "commit"=>"Update Place", "id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.1ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mUPDATE "places" SET "maplink" = '/app/assets/map_tiler/openlayers.html', "updated_at" = '2015-12-10 02:03:11.400069' WHERE "places"."id" = 1[0m
+  [1m[35m (102.0ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/places/1
+Completed 302 Found in 205.7ms (ActiveRecord: 104.1ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 22:03:11 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.1ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 85.8ms (Views: 74.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 22:03:12 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 22:03:12 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 22:03:12 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 22:03:12 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 22:03:12 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 22:03:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 22:03:12 -0400
+Served asset /beacons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 22:03:12 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 22:03:12 -0400
+Served asset /routers.js - 304 Not Modified (1ms)
+
+
+Started GET "/places/app/assets/map_tiler/openlayers.html" for 127.0.0.1 at 2015-12-09 22:03:49 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/app/assets/map_tiler/openlayers.html"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2015-12-09 22:16:27 -0400
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.5ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/_form.html.erb (79.6ms)
+  Rendered places/edit.html.erb within layouts/application (84.8ms)
+Completed 200 OK in 150.5ms (Views: 104.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 22:16:27 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 22:16:27 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 22:16:27 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 22:16:28 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 22:16:28 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 22:16:28 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 22:16:28 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 22:16:28 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 22:16:28 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started PUT "/places/1" for 127.0.0.1 at 2015-12-09 22:16:35 -0400
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Am0Flomx1TMKkZr+7WvPwzfoteYlmXuAsi5uuCTu0o=", "place"=>{"name"=>"Nile University", "latitude"=>"30.0674266", "longitude"=>"31.0187273", "address"=>"Sheikh Zayed", "map"=>#<ActionDispatch::Http::UploadedFile:0xb55c0930 @original_filename="openlayers.html", @content_type="text/html", @headers="Content-Disposition: form-data; name=\"place[map]\"; filename=\"openlayers.html\"\r\nContent-Type: text/html\r\n", @tempfile=#<File:/tmp/RackMultipart20151209-7290-177zvxm>>, "maplink"=>"/app/assets/map_tiler/openlayers.html"}, "commit"=>"Update Place", "id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (6.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/tmp/8475ff644653183785b613cdc4f654e620151209-7290-7gl4i8.html'
+Command :: file -b --mime '/tmp/8475ff644653183785b613cdc4f654e620151209-7290-1onun21.html'
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  Rendered places/_form.html.erb (25.7ms)
+  Rendered places/edit.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 109.2ms (Views: 45.1ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 22:16:36 -0400
+Served asset /places.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 22:16:36 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 22:16:36 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 22:16:36 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 22:16:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 22:16:36 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 22:16:36 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 22:16:36 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 22:16:36 -0400
+Served asset /routers.js - 304 Not Modified (1ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 22:16:52 -0400
+
+ActionController::RoutingError (undefined method `before_html_post_process' for #<Class:0xbd3b05c>):
+  app/models/place.rb:7:in `<class:Place>'
+  app/models/place.rb:1:in `<top (required)>'
+  app/controllers/places_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 22:23:29 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  Rendered places/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 5.2ms
+
+ActionView::Template::Error (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+    2: 
+    3: <p>
+    4:   <b>ID:</b>
+    5:   <%= @place.id %>
+    6: </p>
+    7: 
+    8: <p>
+  app/views/places/show.html.erb:5:in `_app_views_places_show_html_erb___929979455__626136398'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.1ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 22:23:31 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  Rendered places/show.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 6.3ms
+
+ActionView::Template::Error (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+    2: 
+    3: <p>
+    4:   <b>ID:</b>
+    5:   <%= @place.id %>
+    6: </p>
+    7: 
+    8: <p>
+  app/views/places/show.html.erb:5:in `_app_views_places_show_html_erb___929979455__626136398'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (42.5ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 22:24:00 -0400
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (undefined method `before_html_post_process' for #<Class:0xb54fc0d0>):
+  app/models/place.rb:7:in `<class:Place>'
+  app/models/place.rb:1:in `<top (required)>'
+  app/controllers/places_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.4ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 22:26:02 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  Rendered places/show.html.erb within layouts/application (57.5ms)
+Completed 500 Internal Server Error in 63.1ms
+
+ActionView::Template::Error (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+    2: 
+    3: <p>
+    4:   <b>ID:</b>
+    5:   <%= @place.id %>
+    6: </p>
+    7: 
+    8: <p>
+  app/views/places/show.html.erb:5:in `_app_views_places_show_html_erb__128189430__625262098'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.7ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 22:26:24 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  Rendered places/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 7.3ms
+
+ActionView::Template::Error (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+    2: 
+    3: <p>
+    4:   <b>ID:</b>
+    5:   <%= @place.id %>
+    6: </p>
+    7: 
+    8: <p>
+  app/views/places/show.html.erb:5:in `_app_views_places_show_html_erb__128189430__621316758'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.9ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-12-09 22:26:46 -0400
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  Rendered places/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 11.4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    14:     <th></th>
+    15:   </tr>
+    16: 
+    17: <% @places.each do |place| %>
+    18:   <tr> 
+    19:     <td><%= place.id %></td>
+    20:     <td><%= place.name %></td>
+  app/views/places/index.html.erb:17:in `_app_views_places_index_html_erb___480212142__628091168'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.6ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-12-09 22:28:29 -0400
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 110.4ms (Views: 41.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 22:28:30 -0400
+Served asset /beacons.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 22:28:30 -0400
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 22:28:30 -0400
+Served asset /places.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 22:28:30 -0400
+Served asset /routers.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 22:28:30 -0400
+Served asset /jquery.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 22:28:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 22:28:30 -0400
+Served asset /beacons.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 22:28:30 -0400
+Served asset /places.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 22:28:30 -0400
+Served asset /routers.js - 304 Not Modified (4ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 22:28:33 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (1.8ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (81.5ms)
+Completed 200 OK in 108.3ms (Views: 99.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 22:28:33 -0400
+Served asset /beacons.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 22:28:33 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 22:28:33 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 22:28:33 -0400
+Served asset /routers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 22:28:33 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 22:28:33 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 22:28:33 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 22:28:33 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 22:28:33 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 22:46:55 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 43.1ms (Views: 12.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 22:46:55 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 22:46:55 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 22:46:55 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 22:46:55 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 22:46:55 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 22:46:55 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 22:46:55 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 22:46:55 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 22:46:55 -0400
+Served asset /routers.js - 304 Not Modified (1ms)
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2015-12-09 22:47:00 -0400
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (1.1ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/_form.html.erb (30.1ms)
+  Rendered places/edit.html.erb within layouts/application (103.7ms)
+Completed 200 OK in 126.3ms (Views: 116.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:01 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:01 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:01 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:01 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:01 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:01 -0400
+Served asset /beacons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:01 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:01 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started PUT "/places/1" for 127.0.0.1 at 2015-12-09 22:47:08 -0400
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Am0Flomx1TMKkZr+7WvPwzfoteYlmXuAsi5uuCTu0o=", "place"=>{"name"=>"Nile University", "latitude"=>"30.0674266", "longitude"=>"31.0187273", "address"=>"Sheikh Zayed", "map"=>#<ActionDispatch::Http::UploadedFile:0xb520d3b0 @original_filename="openlayers.html", @content_type="text/html", @headers="Content-Disposition: form-data; name=\"place[map]\"; filename=\"openlayers.html\"\r\nContent-Type: text/html\r\n", @tempfile=#<File:/tmp/RackMultipart20151209-8012-sfd2zv>>, "maplink"=>"/app/assets/map_tiler/openlayers.html"}, "commit"=>"Update Place", "id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+Command :: file -b --mime '/tmp/8475ff644653183785b613cdc4f654e620151209-8012-1ncphvx.html'
+Command :: file -b --mime '/tmp/8475ff644653183785b613cdc4f654e620151209-8012-1nz0lvu.html'
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered places/_form.html.erb (12.4ms)
+  Rendered places/edit.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 75.7ms (Views: 26.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:08 -0400
+Served asset /beacons.css - 304 Not Modified (34ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:08 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:08 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:08 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:08 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:08 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:08 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:08 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:08 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-09 22:47:50 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (1.0ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 96.7ms (Views: 88.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:50 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:50 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:50 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:50 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:50 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:51 -0400
+Served asset /beacons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:51 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:51 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2015-12-09 22:47:53 -0400
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (5.7ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/_form.html.erb (6.4ms)
+  Rendered places/edit.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 29.6ms (Views: 22.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:53 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:53 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:53 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:53 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:53 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:53 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:53 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:53 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:53 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started PUT "/places/1" for 127.0.0.1 at 2015-12-09 22:47:59 -0400
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Am0Flomx1TMKkZr+7WvPwzfoteYlmXuAsi5uuCTu0o=", "place"=>{"name"=>"Nile University", "latitude"=>"30.0674266", "longitude"=>"31.0187273", "address"=>"Sheikh Zayed", "map"=>#<ActionDispatch::Http::UploadedFile:0xb62da9a4 @original_filename="openlayers.html", @content_type="text/html", @headers="Content-Disposition: form-data; name=\"place[map]\"; filename=\"openlayers.html\"\r\nContent-Type: text/html\r\n", @tempfile=#<File:/tmp/RackMultipart20151209-8012-18rnqw8>>, "maplink"=>"/app/assets/map_tiler/openlayers.html"}, "commit"=>"Update Place", "id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/tmp/8475ff644653183785b613cdc4f654e620151209-8012-1rl74aj.html'
+Command :: file -b --mime '/tmp/8475ff644653183785b613cdc4f654e620151209-8012-gz2fi6.html'
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered places/_form.html.erb (9.6ms)
+  Rendered places/edit.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 71.8ms (Views: 19.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:59 -0400
+Served asset /beacons.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:59 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:59 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 22:47:59 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:59 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:59 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:59 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 22:47:59 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-12-09 22:48:02 -0400
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 11.8ms (Views: 9.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-09 22:48:02 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 22:48:02 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 22:48:03 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-09 22:48:03 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-09 22:48:03 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 22:48:03 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-09 22:48:03 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-09 22:48:03 -0400
+Served asset /places.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-09 22:48:03 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2015-12-10 14:00:07 -0400
+Processing by PlacesController#new as HTML
+Geokit is using the domain: 
+  Rendered places/_form.html.erb (13.6ms)
+  Rendered places/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 100.2ms (Views: 26.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-10 14:00:07 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-10 14:00:07 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-10 14:00:07 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-10 14:00:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-10 14:00:07 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-10 14:00:07 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-10 14:00:07 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-10 14:00:07 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-10 14:00:07 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/places/new" for 127.0.0.1 at 2015-12-11 09:48:56 -0400
+Connecting to database specified by database.yml
+Processing by PlacesController#new as HTML
+Geokit is using the domain: 
+  Rendered places/_form.html.erb (76.8ms)
+  Rendered places/new.html.erb within layouts/application (120.1ms)
+Completed 200 OK in 409.3ms (Views: 380.2ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-11 09:48:58 -0400
+Served asset /beacons.css - 200 OK (6ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-11 09:48:58 -0400
+Served asset /routers.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-11 09:48:58 -0400
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-11 09:48:58 -0400
+Served asset /places.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-11 09:48:58 -0400
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-11 09:48:58 -0400
+Served asset /jquery_ujs.js - 200 OK (6ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-11 09:48:59 -0400
+Served asset /beacons.js - 200 OK (7ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-11 09:48:59 -0400
+Served asset /places.js - 200 OK (5ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-11 09:48:59 -0400
+Served asset /routers.js - 200 OK (4ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2015-12-11 09:49:01 -0400
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.9ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 21.4ms (Views: 14.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-11 09:49:01 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-11 09:49:01 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-11 09:49:02 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-11 09:49:02 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-11 09:49:02 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-11 09:49:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-11 09:49:02 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-11 09:49:02 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-11 09:49:02 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-11 09:49:04 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (1.1ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 16.4ms (Views: 12.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-11 09:49:04 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-11 09:49:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-11 09:49:04 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-11 09:49:04 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-11 09:49:04 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-11 09:49:04 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-11 09:49:04 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-11 09:49:04 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-11 09:49:04 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-11 09:49:49 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.9ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 24.2ms (Views: 18.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-11 09:49:50 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-11 09:49:50 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-11 09:49:50 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-11 09:49:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-11 09:49:50 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-11 09:49:50 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-11 09:49:50 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-11 09:49:50 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-11 09:49:50 -0400
+Served asset /routers.js - 304 Not Modified (2ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-11 09:50:30 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.8ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (98.4ms)
+Completed 500 Internal Server Error in 111.8ms
+
+ActionView::Template::Error (undefined method `map_link_path' for #<#<Class:0xb548f7c8>:0xb58b87dc>):
+    33:   <%= image_tag @place.map.url(:thumb) %>
+    34: </p>
+    35: ads
+    36: <%= link_to 'Webview Map', map_link_path(@place.id) %>
+    37: <%= link_to 'Edit', edit_place_path(@place) %> |
+    38: <%= link_to 'Back', places_path %>
+  app/views/places/show.html.erb:36:in `_app_views_places_show_html_erb__558064773__624574858'
+  app/controllers/places_controller.rb:40:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-11 14:37:52 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 33.3ms
+
+ActionView::Template::Error (undefined method `map_link_path' for #<#<Class:0xb58bc490>:0xb59a11bc>):
+    33:   <%= image_tag @place.map.url(:thumb) %>
+    34: </p>
+    35: ads
+    36: <%= link_to 'Webview Map', map_link_path(@place.id) %>
+    37: <%= link_to 'Edit', edit_place_path(@place) %> |
+    38: <%= link_to 'Back', places_path %>
+  app/views/places/show.html.erb:36:in `_app_views_places_show_html_erb__558064773__624574858'
+  app/controllers/places_controller.rb:40:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.5ms)
+
+
+Started GET "/places/" for 127.0.0.1 at 2015-12-11 14:38:04 -0400
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 12.5ms (Views: 10.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-11 14:38:05 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-11 14:38:05 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-11 14:38:05 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-11 14:38:05 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-11 14:38:05 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-11 14:38:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-11 14:38:05 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-11 14:38:05 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-11 14:38:05 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-11 14:38:07 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.1ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (55.9ms)
+Completed 500 Internal Server Error in 67.4ms
+
+ActionView::Template::Error (undefined method `map_link_path' for #<#<Class:0xb58bc490>:0xb556d154>):
+    33:   <%= image_tag @place.map.url(:thumb) %>
+    34: </p>
+    35: ads
+    36: <%= link_to 'Webview Map', map_link_path(@place.id) %>
+    37: <%= link_to 'Edit', edit_place_path(@place) %> |
+    38: <%= link_to 'Back', places_path %>
+  app/views/places/show.html.erb:36:in `_app_views_places_show_html_erb__558064773__624574858'
+  app/controllers/places_controller.rb:40:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.7ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-11 14:38:28 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.5ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (17.7ms)
+Completed 500 Internal Server Error in 32.0ms
+
+ActionView::Template::Error (undefined method `map_view_path' for #<#<Class:0xb58bc490>:0xb5b867c0>):
+    33:   <%= image_tag @place.map.url(:thumb) %>
+    34: </p>
+    35: 
+    36: <%= link_to 'Webview Map', map_view_path(@place.id) %>
+    37: <%= link_to 'Edit', edit_place_path(@place) %> |
+    38: <%= link_to 'Back', places_path %>
+  app/views/places/show.html.erb:36:in `_app_views_places_show_html_erb__558064773__626866778'
+  app/controllers/places_controller.rb:40:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-11 14:45:32 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 30.1ms
+
+ActionView::Template::Error (undefined method `map_view_path' for #<#<Class:0xb5b1c640>:0xb5b1afac>):
+    33:   <%= image_tag @place.map.url(:thumb) %>
+    34: </p>
+    35: 
+    36: <%= link_to 'Webview Map', map_view_path(@place.id) %>
+    37: <%= link_to 'Edit', edit_place_path(@place) %> |
+    38: <%= link_to 'Back', places_path %>
+  app/views/places/show.html.erb:36:in `_app_views_places_show_html_erb__558064773__626866778'
+  app/controllers/places_controller.rb:40:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (36.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (46.6ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-11 14:45:44 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (13.5ms)
+Completed 500 Internal Server Error in 17.3ms
+
+ActionView::Template::Error (undefined method `map_view_path' for #<#<Class:0xb5b1c640>:0xb5ebacc0>):
+    33:   <%= image_tag @place.map.url(:thumb) %>
+    34: </p>
+    35: 
+    36: <%= link_to 'Webview Map', map_view_path(@place.id) %>
+    37: <%= link_to 'Edit', edit_place_path(@place) %> |
+    38: <%= link_to 'Back', places_path %>
+  app/views/places/show.html.erb:36:in `_app_views_places_show_html_erb__558064773__626866778'
+  app/controllers/places_controller.rb:40:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.5ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-11 14:46:46 -0400
+Connecting to database specified by database.yml
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.0ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (51.7ms)
+Completed 500 Internal Server Error in 119.2ms
+
+ActionView::Template::Error (undefined method `map_view_path' for #<#<Class:0xb520b790>:0xb5209e7c>):
+    33:   <%= image_tag @place.map.url(:thumb) %>
+    34: </p>
+    35: 
+    36: <%= link_to 'Webview Map', map_view_path(@place.id) %>
+    37: <%= link_to 'Edit', edit_place_path(@place) %> |
+    38: <%= link_to 'Back', places_path %>
+  app/views/places/show.html.erb:36:in `_app_views_places_show_html_erb___207361645__625507628'
+  app/controllers/places_controller.rb:40:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-11 14:49:01 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 27.1ms
+
+ActionView::Template::Error (undefined method `places_map_view_path' for #<#<Class:0xb520b790>:0xb55dc0f4>):
+    33:   <%= image_tag @place.map.url(:thumb) %>
+    34: </p>
+    35: 
+    36: <%= link_to 'Webview Map', places_map_view_path(@place.id) %>
+    37: <%= link_to 'Edit', edit_place_path(@place) %> |
+    38: <%= link_to 'Back', places_path %>
+  app/views/places/show.html.erb:36:in `_app_views_places_show_html_erb___207361645__626075768'
+  app/controllers/places_controller.rb:40:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.6ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-12 10:14:58 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.6ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (24.7ms)
+Completed 500 Internal Server Error in 39.6ms
+
+ActionView::Template::Error (undefined method `places_map_view_path' for #<#<Class:0xb520b790>:0xb5e1cae8>):
+    33:   <%= image_tag @place.map.url(:thumb) %>
+    34: </p>
+    35: 
+    36: <%= link_to 'Webview Map', places_map_view_path(@place) %>
+    37: <%= link_to 'Edit', edit_place_path(@place) %> |
+    38: <%= link_to 'Back', places_path %>
+  app/views/places/show.html.erb:36:in `_app_views_places_show_html_erb___207361645__621745528'
+  app/controllers/places_controller.rb:40:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.3ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/places/14" for 127.0.0.1 at 2015-12-12 10:27:24 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"14"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.1ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "14"]]
+Completed 404 Not Found in 4.7ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=14):
+  app/controllers/places_controller.rb:38:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-12 10:27:27 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 116.2ms (Views: 93.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 10:27:27 -0400
+Served asset /beacons.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 10:27:27 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 10:27:27 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 10:27:27 -0400
+Served asset /places.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 10:27:27 -0400
+Served asset /routers.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 10:27:27 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 10:27:27 -0400
+Served asset /beacons.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 10:27:27 -0400
+Served asset /places.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 10:27:27 -0400
+Served asset /routers.js - 304 Not Modified (2ms)
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2015-12-12 10:27:30 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+Completed 500 Internal Server Error in 0.8ms
+
+NoMethodError (undefined method `get_map_link' for #<Class:0xb57777d8>):
+  app/controllers/places_controller.rb:47:in `map_view'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2015-12-12 10:27:58 -0400
+
+SyntaxError (/home/saasbook/project/navigation/app/models/place.rb:18: syntax error, unexpected $end, expecting keyword_end):
+  app/controllers/places_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2015-12-12 10:29:29 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (4.4ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered places/map_view.html.erb within layouts/application (38.1ms)
+Completed 500 Internal Server Error in 66.2ms
+
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object that returns a valid partial path.):
+    1: <h1>New place</h1>
+    2: 
+    3: <%= render @maplink %>
+    4: 
+    5: <%= link_to 'Back', places_path %>
+  app/views/places/map_view.html.erb:3:in `_app_views_places_map_view_html_erb__487780360__623349808'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.1ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-12 10:30:09 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 18.4ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 10:30:09 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 10:30:09 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 10:30:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 10:30:09 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 10:30:09 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 10:30:09 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 10:30:09 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 10:30:09 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 10:30:09 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2015-12-12 10:31:51 -0400
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (2.0ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/_form.html.erb (20.6ms)
+  Rendered places/edit.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 39.8ms (Views: 32.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 10:31:51 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 10:31:52 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 10:31:52 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 10:31:52 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 10:31:52 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 10:31:52 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 10:31:52 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 10:31:52 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 10:31:52 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started PUT "/places/1" for 127.0.0.1 at 2015-12-12 10:32:24 -0400
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"63ij11B+cx/h8+t30S1Ir8ywxcovAiTk+JC3YcJJEwA=", "place"=>{"name"=>"Nile University", "latitude"=>"30.0674266", "longitude"=>"31.0187273", "address"=>"Sheikh Zayed", "maplink"=>"/map_tiler/openlayers.html"}, "commit"=>"Update Place", "id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.6ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE "places" SET "maplink" = '/map_tiler/openlayers.html', "updated_at" = '2015-12-12 14:32:24.894830' WHERE "places"."id" = 1[0m
+  [1m[35m (89.4ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/places/1
+Completed 302 Found in 222.7ms (ActiveRecord: 90.7ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-12 10:32:25 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.6ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21.0ms (Views: 18.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 10:32:25 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 10:32:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 10:32:25 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 10:32:25 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 10:32:25 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 10:32:25 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 10:32:25 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 10:32:25 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 10:32:25 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2015-12-12 10:32:31 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 18.4ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/places_controller.rb:47:in `map_view'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.9ms)
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2015-12-12 10:33:06 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 18.7ms
+
+NoMethodError (undefined method `asset_url' for #<PlacesController:0xb56be51c>):
+  app/controllers/places_controller.rb:47:in `map_view'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2015-12-12 11:26:48 -0400
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/_form.html.erb (9.8ms)
+  Rendered places/edit.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 46.6ms (Views: 23.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 11:26:49 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 11:26:49 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 11:26:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 11:26:49 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 11:26:49 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 11:26:49 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 11:26:49 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 11:26:49 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 11:26:49 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started PUT "/places/1" for 127.0.0.1 at 2015-12-12 11:26:57 -0400
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"63ij11B+cx/h8+t30S1Ir8ywxcovAiTk+JC3YcJJEwA=", "place"=>{"name"=>"Nile University", "latitude"=>"30.0674266", "longitude"=>"31.0187273", "address"=>"Sheikh Zayed", "maplink"=>"//map_tiler//openlayers.html"}, "commit"=>"Update Place", "id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.1ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mUPDATE "places" SET "maplink" = '//map_tiler//openlayers.html', "updated_at" = '2015-12-12 15:26:57.295548' WHERE "places"."id" = 1[0m
+  [1m[35m (207.6ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/places/1
+Completed 302 Found in 226.5ms (ActiveRecord: 209.1ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-12 11:26:57 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 57.4ms (Views: 52.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 11:26:57 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 11:26:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 11:26:57 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 11:26:57 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 11:26:57 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 11:26:57 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 11:26:57 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 11:26:58 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 11:26:58 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2015-12-12 11:27:01 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (2.9ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 12.7ms
+
+NoMethodError (undefined method `asset_url' for #<PlacesController:0xb5209ecc>):
+  app/controllers/places_controller.rb:47:in `map_view'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.3ms)
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2015-12-12 11:28:52 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.9ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 7.1ms
+
+NoMethodError (undefined method `asset_url' for #<PlacesController:0xb5875e8c>):
+  app/controllers/places_controller.rb:47:in `map_view'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.1ms)
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2015-12-12 11:29:01 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered places/map_view.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 30.8ms
+
+ActionView::Template::Error (undefined method `asset_url' for #<#<Class:0xb558d954>:0xb558c018>):
+    1: <h1>New place</h1>
+    2: 
+    3: <%= render asset_url(@maplink) %>
+    4: 
+    5: <%= link_to 'Back', places_path %>
+  app/views/places/map_view.html.erb:3:in `_app_views_places_map_view_html_erb__487780360__626238908'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2015-12-12 11:33:22 -0400
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/_form.html.erb (12.8ms)
+  Rendered places/edit.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 30.5ms (Views: 27.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:22 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:22 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:22 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:22 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:22 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:22 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:22 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:22 -0400
+Served asset /routers.js - 304 Not Modified (1ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-12 11:33:30 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (1.5ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 28.1ms (Views: 21.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:30 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:30 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:30 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:30 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:30 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:31 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:31 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:31 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/1/edit" for 127.0.0.1 at 2015-12-12 11:33:38 -0400
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered places/_form.html.erb (5.6ms)
+  Rendered places/edit.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 20.4ms (Views: 18.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:39 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:39 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:39 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:39 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:39 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:39 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:39 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:39 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started PUT "/places/1" for 127.0.0.1 at 2015-12-12 11:33:46 -0400
+Processing by PlacesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"63ij11B+cx/h8+t30S1Ir8ywxcovAiTk+JC3YcJJEwA=", "place"=>{"name"=>"Nile University", "latitude"=>"30.0674266", "longitude"=>"31.0187273", "address"=>"Sheikh Zayed", "maplink"=>"/map_tiler/openlayers.html"}, "commit"=>"Update Place", "id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.3ms)[0m  UPDATE "places" SET "maplink" = '/map_tiler/openlayers.html', "updated_at" = '2015-12-12 15:33:46.154640' WHERE "places"."id" = 1
+  [1m[36m (122.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/places/1
+Completed 302 Found in 140.0ms (ActiveRecord: 124.6ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2015-12-12 11:33:46 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.5ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 16.3ms (Views: 14.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:46 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:46 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:46 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:46 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 11:33:46 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:46 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:46 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 11:33:46 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2015-12-12 11:33:49 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered places/map_view.html.erb within layouts/application (53.2ms)
+Completed 500 Internal Server Error in 56.3ms
+
+ActionView::Template::Error (undefined method `asset_url' for #<#<Class:0xb558d954>:0xa54e23c>):
+    1: <h1>New place</h1>
+    2: 
+    3: <%= render asset_url(@maplink) %>
+    4: 
+    5: <%= link_to 'Back', places_path %>
+  app/views/places/map_view.html.erb:3:in `_app_views_places_map_view_html_erb__487780360__626238908'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/places/" for 127.0.0.1 at 2015-12-12 12:24:14 -0400
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.5ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (4.9ms)
+Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/finger_prints.css.scssc: can't dump anonymous class #<Class:0xa1d6348>
+Compiled finger_prints.css  (66ms)  (pid 3814)
+Warning. Error encountered while saving cache /home/saasbook/project/navigation/tmp/cache/sass/4bdfa0e561f57a59b0e242f2dc5396ac15394e8b/wifi_finger_prints_records.css.scssc: can't dump anonymous class #<Class:0xa1d6348>
+Compiled wifi_finger_prints_records.css  (2ms)  (pid 3814)
+Compiled application.css  (89ms)  (pid 3814)
+Compiled finger_prints.js  (912ms)  (pid 3814)
+Compiled wifi_finger_prints_records.js  (222ms)  (pid 3814)
+Compiled application.js  (1164ms)  (pid 3814)
+Completed 200 OK in 1426.1ms (Views: 1401.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 12:24:16 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2015-12-12 12:24:16 -0400
+Served asset /finger_prints.css - 200 OK (5ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 12:24:16 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2015-12-12 12:24:16 -0400
+Served asset /wifi_finger_prints_records.css - 200 OK (6ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 12:24:16 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 12:24:16 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 12:24:16 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 12:24:16 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 12:24:16 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2015-12-12 12:24:16 -0400
+Served asset /finger_prints.js - 200 OK (7ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 12:24:16 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 12:24:16 -0400
+Served asset /routers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2015-12-12 12:24:16 -0400
+Served asset /wifi_finger_prints_records.js - 200 OK (5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/beacons" for 127.0.0.1 at 2015-12-12 12:51:07 -0400
+Processing by BeaconsController#index as HTML
+Geokit is using the domain: 
+  [1m[36mBeacon Load (16.1ms)[0m  [1mSELECT "beacons".* FROM "beacons" [0m
+  Rendered beacons/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 64.7ms (Views: 31.2ms | ActiveRecord: 18.4ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:07 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:07 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:07 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:07 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:07 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:07 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:07 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:07 -0400
+Served asset /beacons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:07 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:07 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:07 -0400
+Served asset /routers.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:07 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/beacons/new" for 127.0.0.1 at 2015-12-12 12:51:10 -0400
+Processing by BeaconsController#new as HTML
+Geokit is using the domain: 
+  Rendered beacons/_form.html.erb (4.6ms)
+  Rendered beacons/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 40.0ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:10 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:10 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:10 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:10 -0400
+Served asset /finger_prints.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:10 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:10 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:10 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:10 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:10 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:10 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:10 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:10 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started POST "/beacons" for 127.0.0.1 at 2015-12-12 12:51:17 -0400
+Processing by BeaconsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"63ij11B+cx/h8+t30S1Ir8ywxcovAiTk+JC3YcJJEwA=", "beacon"=>{"place_id"=>"fsd", "coord_x"=>"", "coord_y"=>"", "coord_z"=>""}, "commit"=>"Create Beacon"}
+Geokit is using the domain: 
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (77.1ms)[0m  [1mINSERT INTO "beacons" ("coord_x", "coord_y", "coord_z", "created_at", "place_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["coord_x", nil], ["coord_y", nil], ["coord_z", nil], ["created_at", Sat, 12 Dec 2015 16:51:17 UTC +00:00], ["place_id", 0], ["updated_at", Sat, 12 Dec 2015 16:51:17 UTC +00:00]]
+  [1m[35m (144.1ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/beacons/2
+Completed 302 Found in 297.4ms (ActiveRecord: 221.3ms)
+
+
+Started GET "/beacons/2" for 127.0.0.1 at 2015-12-12 12:51:17 -0400
+Processing by BeaconsController#show as HTML
+  Parameters: {"id"=>"2"}
+Geokit is using the domain: 
+  [1m[36mBeacon Load (0.5ms)[0m  [1mSELECT "beacons".* FROM "beacons" WHERE "beacons"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered beacons/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 33.4ms (Views: 30.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:17 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:17 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:17 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:17 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:17 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:17 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:17 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:17 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:17 -0400
+Served asset /finger_prints.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:18 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:18 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:18 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/beacons" for 127.0.0.1 at 2015-12-12 12:51:20 -0400
+Processing by BeaconsController#index as HTML
+Geokit is using the domain: 
+  [1m[35mBeacon Load (0.3ms)[0m  SELECT "beacons".* FROM "beacons" 
+  Rendered beacons/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 12.9ms (Views: 10.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:20 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:20 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:20 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:20 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:20 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:20 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:20 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:20 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:20 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:20 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:20 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:20 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:20 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/beacons/2" for 127.0.0.1 at 2015-12-12 12:51:26 -0400
+Processing by BeaconsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"63ij11B+cx/h8+t30S1Ir8ywxcovAiTk+JC3YcJJEwA=", "id"=>"2"}
+Geokit is using the domain: 
+  [1m[36mBeacon Load (3.7ms)[0m  [1mSELECT "beacons".* FROM "beacons" WHERE "beacons"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "beacons" WHERE "beacons"."id" = $1[0m  [["id", 2]]
+  [1m[35m (53.4ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/beacons
+Completed 302 Found in 69.9ms (ActiveRecord: 58.0ms)
+
+
+Started GET "/beacons" for 127.0.0.1 at 2015-12-12 12:51:26 -0400
+Processing by BeaconsController#index as HTML
+Geokit is using the domain: 
+  [1m[36mBeacon Load (0.4ms)[0m  [1mSELECT "beacons".* FROM "beacons" [0m
+  Rendered beacons/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 18.0ms (Views: 16.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:26 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:26 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:26 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:27 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:27 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2015-12-12 12:51:27 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:27 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:27 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:27 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:27 -0400
+Served asset /finger_prints.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:27 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:27 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2015-12-12 12:51:27 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)

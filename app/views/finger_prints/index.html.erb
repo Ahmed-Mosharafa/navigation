@@ -1,0 +1,35 @@
+<h1>Listing finger_prints</h1>
+
+<table>
+  <tr>
+    <th>Place</th>
+    <th>Xcoord</th>
+    <th>Ycoord</th>
+    <th>Bssid</th>
+    <th>Ssid</th>
+    <th>Mrssi</th>
+    <th>Sd</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @finger_prints.each do |finger_print| %>
+  <tr>
+    <td><%= finger_print.place_id %></td>
+    <td><%= finger_print.xcoord %></td>
+    <td><%= finger_print.ycoord %></td>
+    <td><%= finger_print.BSSID %></td>
+    <td><%= finger_print.SSID %></td>
+    <td><%= finger_print.MRSSI %></td>
+    <td><%= finger_print.SD %></td>
+    <td><%= link_to 'Show', finger_print %></td>
+    <td><%= link_to 'Edit', edit_finger_print_path(finger_print) %></td>
+    <td><%= link_to 'Destroy', finger_print, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Finger print', new_finger_print_path %>

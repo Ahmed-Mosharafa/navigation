@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fingerprint:</b>
+  <%= @wifi_finger_prints_record.fingerprint_id %>
+</p>
+
+<p>
+  <b>Bssid:</b>
+  <%= @wifi_finger_prints_record.BSSID %>
+</p>
+
+<p>
+  <b>Ssid:</b>
+  <%= @wifi_finger_prints_record.SSID %>
+</p>
+
+<p>
+  <b>Rssi:</b>
+  <%= @wifi_finger_prints_record.RSSI %>
+</p>
+
+<p>
+  <b>Channel:</b>
+  <%= @wifi_finger_prints_record.channel %>
+</p>
+
+
+<%= link_to 'Edit', edit_wifi_finger_prints_record_path(@wifi_finger_prints_record) %> |
+<%= link_to 'Back', wifi_finger_prints_records_path %>

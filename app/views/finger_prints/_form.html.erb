@@ -1,0 +1,45 @@
+<%= form_for(@finger_print) do |f| %>
+  <% if @finger_print.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@finger_print.errors.count, "error") %> prohibited this finger_print from being saved:</h2>
+
+      <ul>
+      <% @finger_print.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :place_id %><br />
+    <%= f.text_field :place_id %>
+  </div>
+  <div class="field">
+    <%= f.label :xcoord %><br />
+    <%= f.text_field :xcoord %>
+  </div>
+  <div class="field">
+    <%= f.label :ycoord %><br />
+    <%= f.text_field :ycoord %>
+  </div>
+  <div class="field">
+    <%= f.label :BSSID %><br />
+    <%= f.text_field :BSSID %>
+  </div>
+  <div class="field">
+    <%= f.label :SSID %><br />
+    <%= f.text_field :SSID %>
+  </div>
+  <div class="field">
+    <%= f.label :MRSSI %><br />
+    <%= f.text_field :MRSSI %>
+  </div>
+  <div class="field">
+    <%= f.label :SD %><br />
+    <%= f.text_field :SD %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
