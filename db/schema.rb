@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20151210014359) do
+ActiveRecord::Schema.define(:version => 20151214004202) do
 
   create_table "beacons", :force => true do |t|
     t.integer  "place_id"
@@ -20,6 +20,19 @@ ActiveRecord::Schema.define(:version => 20151210014359) do
     t.float    "coord_z"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "finger_prints", :force => true do |t|
+    t.integer  "place_id"
+    t.float    "xcoord"
+    t.float    "ycoord"
+    t.string   "BSSID"
+    t.string   "SSID"
+    t.float    "RSSI"
+    t.float    "SD"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "mac"
   end
 
   create_table "places", :force => true do |t|
@@ -44,6 +57,17 @@ ActiveRecord::Schema.define(:version => 20151210014359) do
     t.integer  "place_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "wifi_finger_prints_records", :force => true do |t|
+    t.integer  "fingerprint_id"
+    t.string   "BSSID"
+    t.string   "SSID"
+    t.integer  "RSSI"
+    t.integer  "channel"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.string   "mac"
   end
 
 end

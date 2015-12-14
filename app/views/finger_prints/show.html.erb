@@ -26,15 +26,18 @@
 </p>
 
 <p>
-  <b>Mrssi:</b>
-  <%= @finger_print.MRSSI %>
+  <b>Rssi:</b>
+  <%= @finger_print.RSSI %>
 </p>
 
 <p>
   <b>Sd:</b>
   <%= @finger_print.SD %>
 </p>
-
+<p>
+  <b>Mac Address:</b>
+  <%= @finger_print.mac %>
+</p>
 
 <%= link_to 'Edit', edit_finger_print_path(@finger_print) %> |
 <%= link_to 'Back', finger_prints_path %>

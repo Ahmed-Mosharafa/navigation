@@ -25,7 +25,6 @@ class FingerPrintsController < ApplicationController
   # GET /finger_prints/new.json
   def new
     @finger_print = FingerPrint.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @finger_print }
@@ -40,16 +39,36 @@ class FingerPrintsController < ApplicationController
   # POST /finger_prints
   # POST /finger_prints.json
   def create
-    @finger_print = FingerPrint.new(params[:finger_print])
-
-    respond_to do |format|
-      if @finger_print.save
-        format.html { redirect_to @finger_print, notice: 'Finger print was successfully created.' }
-        format.json { render json: @finger_print, status: :created, location: @finger_print }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @finger_print.errors, status: :unprocessable_entity }
+    label = false 
+    parameters = params[:finger_print]
+    available = FingerPrint.new_fingerprint(parameters[:xcoord] , parameters[:ycoord], parameters[:mac])
+    #debugger
+    # available = 0  means that it's a new fingerprint for a new mac address 
+    # this means that I want to save it
+    if (available == 0)
+      @finger_print = FingerPrint.new(parameters)
+      available = FingerPrint.fetch_last_id() + 1  
+      #debugger
+      respond_to do |format|
+        if @finger_print.save
+          format.html { redirect_to @finger_print, notice: 'Finger print was successfully created.' }
+          format.json { render json: @finger_print, status: :created, location: @finger_print }
+        else
+          format.html { render action: "new" }
+          format.json { render json: @finger_print.errors, status: :unprocessable_entity }
+        end
       end
+      label = true
+    end
+    #I need to save the fingerprint to the record in both wats 
+    WifiFingerPrintsRecord.new_record(available, parameters[:BSSID], parameters[:SSID], parameters[:RSSI], parameters[:channel], parameters[:mac])
+    debugger
+    if (label)
+      return 0
+    end
+    respond_to do |format|
+      format.html 
+      format.json { render json: parameters}
     end
   end
 

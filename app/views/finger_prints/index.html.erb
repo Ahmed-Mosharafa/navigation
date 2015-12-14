@@ -7,8 +7,9 @@
     <th>Ycoord</th>
     <th>Bssid</th>
     <th>Ssid</th>
-    <th>Mrssi</th>
+    <th>Rssi</th>
     <th>Sd</th>
+    <th>Mac Address</th>
     <th></th>
     <th></th>
     <th></th>
@@ -21,8 +22,9 @@
     <td><%= finger_print.ycoord %></td>
     <td><%= finger_print.BSSID %></td>
     <td><%= finger_print.SSID %></td>
-    <td><%= finger_print.MRSSI %></td>
+    <td><%= finger_print.RSSI %></td>
     <td><%= finger_print.SD %></td>
+    <td><%= finger_print.mac %></td>
     <td><%= link_to 'Show', finger_print %></td>
     <td><%= link_to 'Edit', edit_finger_print_path(finger_print) %></td>
     <td><%= link_to 'Destroy', finger_print, method: :delete, data: { confirm: 'Are you sure?' } %></td>

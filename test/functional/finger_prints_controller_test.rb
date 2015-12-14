@@ -18,7 +18,7 @@ class FingerPrintsControllerTest < ActionController::TestCase
 
   test "should create finger_print" do
     assert_difference('FingerPrint.count') do
-      post :create, finger_print: { BSSID: @finger_print.BSSID, MRSSI: @finger_print.MRSSI, SD: @finger_print.SD, SSID: @finger_print.SSID, place_id: @finger_print.place_id, xcoord: @finger_print.xcoord, ycoord: @finger_print.ycoord }
+      post :create, finger_print: { BSSID: @finger_print.BSSID, RSSI: @finger_print.RSSI, SD: @finger_print.SD, SSID: @finger_print.SSID, place_id: @finger_print.place_id, xcoord: @finger_print.xcoord, ycoord: @finger_print.ycoord }
     end
 
     assert_redirected_to finger_print_path(assigns(:finger_print))
@@ -35,7 +35,7 @@ class FingerPrintsControllerTest < ActionController::TestCase
   end
 
   test "should update finger_print" do
-    put :update, id: @finger_print, finger_print: { BSSID: @finger_print.BSSID, MRSSI: @finger_print.MRSSI, SD: @finger_print.SD, SSID: @finger_print.SSID, place_id: @finger_print.place_id, xcoord: @finger_print.xcoord, ycoord: @finger_print.ycoord }
+    put :update, id: @finger_print, finger_print: { BSSID: @finger_print.BSSID, RSSI: @finger_print.RSSI, SD: @finger_print.SD, SSID: @finger_print.SSID, place_id: @finger_print.place_id, xcoord: @finger_print.xcoord, ycoord: @finger_print.ycoord }
     assert_redirected_to finger_print_path(assigns(:finger_print))
   end
 

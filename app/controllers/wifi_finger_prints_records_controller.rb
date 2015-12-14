@@ -41,7 +41,6 @@ class WifiFingerPrintsRecordsController < ApplicationController
   # POST /wifi_finger_prints_records.json
   def create
     @wifi_finger_prints_record = WifiFingerPrintsRecord.new(params[:wifi_finger_prints_record])
-
     respond_to do |format|
       if @wifi_finger_prints_record.save
         format.html { redirect_to @wifi_finger_prints_record, notice: 'Wifi finger prints record was successfully created.' }

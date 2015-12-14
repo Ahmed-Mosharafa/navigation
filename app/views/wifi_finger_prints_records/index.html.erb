@@ -7,6 +7,7 @@
     <th>Ssid</th>
     <th>Rssi</th>
     <th>Channel</th>
+    <th>Mac Address</th>
     <th></th>
     <th></th>
     <th></th>
@@ -19,6 +20,7 @@
     <td><%= wifi_finger_prints_record.SSID %></td>
     <td><%= wifi_finger_prints_record.RSSI %></td>
     <td><%= wifi_finger_prints_record.channel %></td>
+    <td><%= wifi_finger_prints_record.mac %></td>
     <td><%= link_to 'Show', wifi_finger_prints_record %></td>
     <td><%= link_to 'Edit', edit_wifi_finger_prints_record_path(wifi_finger_prints_record) %></td>
     <td><%= link_to 'Destroy', wifi_finger_prints_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
