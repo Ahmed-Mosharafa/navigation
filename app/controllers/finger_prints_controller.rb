@@ -40,7 +40,11 @@ class FingerPrintsController < ApplicationController
   # POST /finger_prints.json
   def create
     label = false 
-    parameters = params[:finger_print]
+    begin:
+      parameters = ActiveSupport::JSON.decode(request.body.read)[:finger_print]
+    rescue:
+      parameters = params[:finger_print]
+    end
     available = FingerPrint.new_fingerprint(parameters[:xcoord] , parameters[:ycoord], parameters[:mac])
     #debugger
     # available = 0  means that it's a new fingerprint for a new mac address 
