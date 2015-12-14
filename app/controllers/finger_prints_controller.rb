@@ -40,9 +40,9 @@ class FingerPrintsController < ApplicationController
   # POST /finger_prints.json
   def create
     label = false 
-    begin:
+    begin
       parameters = ActiveSupport::JSON.decode(request.body.read)[:finger_print]
-    rescue:
+    rescue
       parameters = params[:finger_print]
     end
     available = FingerPrint.new_fingerprint(parameters[:xcoord] , parameters[:ycoord], parameters[:mac])
