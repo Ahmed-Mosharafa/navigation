@@ -32385,3 +32385,64 @@ Served asset /routers.js - 304 Not Modified (1ms)
 
 Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2015-12-14 01:15:06 -0400
 Served asset /wifi_finger_prints_records.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-14 01:33:44 -0400
+Connecting to database specified by database.yml
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.6ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (61.2ms)
+Completed 200 OK in 146.3ms (Views: 126.5ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2015-12-14 01:33:45 -0400
+Served asset /beacons.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2015-12-14 01:33:45 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-14 01:33:45 -0400
+Served asset /scaffolds.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2015-12-14 01:33:45 -0400
+Served asset /places.css - 304 Not Modified (63ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2015-12-14 01:33:46 -0400
+Served asset /routers.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2015-12-14 01:33:46 -0400
+Served asset /finger_prints.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-14 01:33:46 -0400
+Served asset /jquery.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-14 01:33:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2015-12-14 01:33:46 -0400
+Served asset /beacons.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2015-12-14 01:33:46 -0400
+Served asset /finger_prints.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2015-12-14 01:33:46 -0400
+Served asset /places.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2015-12-14 01:33:46 -0400
+Served asset /routers.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2015-12-14 01:33:46 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (12ms)
