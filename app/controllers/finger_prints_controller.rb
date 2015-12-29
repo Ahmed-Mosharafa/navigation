@@ -1,4 +1,11 @@
 class FingerPrintsController < ApplicationController
+  #protect_from_forgery
+  skip_before_filter :verify_authenticity_token, if: :json_request?, :only => [:new, :create]
+  #protected
+  #Checks whether it's a json format or not
+  def json_request?
+    request.format.json?
+  end
   # GET /finger_prints
   # GET /finger_prints.json
   def index
@@ -40,11 +47,12 @@ class FingerPrintsController < ApplicationController
   # POST /finger_prints.json
   def create
     label = false 
-    begin
-      parameters = ActiveSupport::JSON.decode(request.body.read)[:finger_print]
-    rescue
-      parameters = params[:finger_print]
-    end
+    # begin
+    #   parameters = ActiveSupport::JSON.decode(request.body.read)[:finger_print]
+    # rescue
+    puts params 
+    parameters = params[:finger_print]
+    # end
     available = FingerPrint.new_fingerprint(parameters[:xcoord] , parameters[:ycoord], parameters[:mac])
     #debugger
     # available = 0  means that it's a new fingerprint for a new mac address 
@@ -66,7 +74,7 @@ class FingerPrintsController < ApplicationController
     end
     #I need to save the fingerprint to the record in both wats 
     WifiFingerPrintsRecord.new_record(available, parameters[:BSSID], parameters[:SSID], parameters[:RSSI], parameters[:channel], parameters[:mac])
-    debugger
+    #debugger
     if (label)
       return 0
     end
