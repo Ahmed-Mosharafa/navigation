@@ -38161,3 +38161,517 @@ Served asset /routers.js - 304 Not Modified (0ms)
 
 Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-01-22 23:14:38 -0400
 Served asset /wifi_finger_prints_records.js - 304 Not Modified (2ms)
+
+
+Started GET "/finger_prints" for 127.0.0.1 at 2016-01-22 23:32:13 -0400
+Processing by FingerPrintsController#index as HTML
+Geokit is using the domain: 
+  [1m[36mFingerPrint Load (0.7ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" [0m
+  Rendered finger_prints/index.html.erb within layouts/application (55.1ms)
+Completed 200 OK in 91.5ms (Views: 86.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:14 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:14 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:14 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:14 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:14 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:14 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:14 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:14 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:14 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:14 -0400
+Served asset /finger_prints.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:14 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:14 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:14 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/finger_prints" for 127.0.0.1 at 2016-01-22 23:32:16 -0400
+Processing by FingerPrintsController#index as HTML
+Geokit is using the domain: 
+  [1m[35mFingerPrint Load (0.6ms)[0m  SELECT "finger_prints".* FROM "finger_prints" 
+  Rendered finger_prints/index.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 61.3ms (Views: 57.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:16 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:17 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:17 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:17 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:17 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:17 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:17 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:17 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:17 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:17 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:17 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:17 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/finger_prints/new" for 127.0.0.1 at 2016-01-22 23:32:20 -0400
+Processing by FingerPrintsController#new as HTML
+Geokit is using the domain: 
+  Rendered finger_prints/_form.html.erb (25.2ms)
+  Rendered finger_prints/new.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 61.8ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:21 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:21 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:21 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:21 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:21 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:21 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:21 -0400
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:21 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:21 -0400
+Served asset /beacons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:21 -0400
+Served asset /finger_prints.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:21 -0400
+Served asset /places.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:21 -0400
+Served asset /routers.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:21 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (1ms)
+
+
+Started POST "/finger_prints" for 127.0.0.1 at 2016-01-22 23:32:42 -0400
+Processing by FingerPrintsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nxopCB0REvHrcsxkmWL1IiWGdcPvaaDwiDcxZu0U2TA=", "finger_print"=>{"place_id"=>"1", "xcoord"=>"-248.32501220703125", "ycoord"=>"98.78399658203125", "BSSID"=>"00:1d:a1:90:83:c2", "SSID"=>"", "RSSI"=>"-87", "SD"=>"", "mac"=>"00:1d:a1:90:83:c2"}, "commit"=>"Create Finger print"}
+Geokit is using the domain: 
+  [1m[36mFingerPrint Load (2.4ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" WHERE "finger_prints"."xcoord" = -248.32501220703125 AND "finger_prints"."ycoord" = 98.78399658203125 AND "finger_prints"."mac" = '00:1d:a1:90:83:c2'[0m
+  [1m[35mFingerPrint Load (1.1ms)[0m  SELECT "finger_prints".* FROM "finger_prints" ORDER BY "finger_prints"."id" DESC LIMIT 1
+  [1m[36mWifiFingerPrintsRecord Load (9.7ms)[0m  [1mSELECT "wifi_finger_prints_records".* FROM "wifi_finger_prints_records" ORDER BY "wifi_finger_prints_records"."id" DESC LIMIT 1[0m
+  [1m[35mWifiFingerPrintsRecord Load (3.1ms)[0m  SELECT "wifi_finger_prints_records".* FROM "wifi_finger_prints_records" WHERE "wifi_finger_prints_records"."fingerprint_id" = 9 AND "wifi_finger_prints_records"."mac" = '13'
+  [1m[36mFingerPrint Load (4.7ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" WHERE "finger_prints"."id" = 9 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36m (0.9ms)[0m  [1mUPDATE "finger_prints" SET "SD" = 0.0, "updated_at" = '2016-01-23 03:32:42.529082' WHERE "finger_prints"."id" = 9[0m
+  [1m[35m (82.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "wifi_finger_prints_records" ("BSSID", "RSSI", "SSID", "channel", "created_at", "fingerprint_id", "mac", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["BSSID", "00:1d:a1:90:83:c2"], ["RSSI", -87], ["SSID", ""], ["channel", nil], ["created_at", Sat, 23 Jan 2016 03:32:42 UTC +00:00], ["fingerprint_id", 8], ["mac", "00:1d:a1:90:83:c2"], ["updated_at", Sat, 23 Jan 2016 03:32:42 UTC +00:00]]
+  [1m[36m (188.0ms)[0m  [1mCOMMIT[0m
+  Rendered finger_prints/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 383.1ms (Views: 28.6ms | ActiveRecord: 296.7ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:43 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:43 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:43 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:43 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:43 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-01-22 23:32:43 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:43 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:43 -0400
+Served asset /beacons.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:43 -0400
+Served asset /finger_prints.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:43 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:43 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-01-22 23:32:43 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/finger_prints" for 127.0.0.1 at 2016-01-22 23:33:09 -0400
+Processing by FingerPrintsController#index as HTML
+Geokit is using the domain: 
+  [1m[35mFingerPrint Load (0.4ms)[0m  SELECT "finger_prints".* FROM "finger_prints" 
+  Rendered finger_prints/index.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 134.5ms (Views: 126.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:09 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:09 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:09 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:09 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:09 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:09 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:09 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:10 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:10 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:10 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:10 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:10 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (1ms)
+
+
+Started GET "/finger_prints/new" for 127.0.0.1 at 2016-01-22 23:33:31 -0400
+Processing by FingerPrintsController#new as HTML
+Geokit is using the domain: 
+  Rendered finger_prints/_form.html.erb (20.8ms)
+  Rendered finger_prints/new.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 57.2ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:31 -0400
+Served asset /finger_prints.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:31 -0400
+Served asset /beacons.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:31 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:31 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:31 -0400
+Served asset /routers.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:31 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:31 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:31 -0400
+Served asset /beacons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:31 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:31 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:31 -0400
+Served asset /routers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:32 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started POST "/finger_prints" for 127.0.0.1 at 2016-01-22 23:33:47 -0400
+Processing by FingerPrintsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nxopCB0REvHrcsxkmWL1IiWGdcPvaaDwiDcxZu0U2TA=", "finger_print"=>{"place_id"=>"1", "xcoord"=>"12", "ycoord"=>"13", "BSSID"=>"seif", "SSID"=>"seif", "RSSI"=>"234", "SD"=>"", "mac"=>"seif"}, "commit"=>"Create Finger print"}
+Geokit is using the domain: 
+  [1m[36mFingerPrint Load (0.5ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" WHERE "finger_prints"."xcoord" = 12.0 AND "finger_prints"."ycoord" = 13.0 AND "finger_prints"."mac" = 'seif'[0m
+  [1m[35mFingerPrint Load (0.9ms)[0m  SELECT "finger_prints".* FROM "finger_prints" ORDER BY "finger_prints"."id" DESC LIMIT 1
+  [1m[36mWifiFingerPrintsRecord Load (1.0ms)[0m  [1mSELECT "wifi_finger_prints_records".* FROM "wifi_finger_prints_records" ORDER BY "wifi_finger_prints_records"."id" DESC LIMIT 1[0m
+  [1m[35mWifiFingerPrintsRecord Load (0.8ms)[0m  SELECT "wifi_finger_prints_records".* FROM "wifi_finger_prints_records" WHERE "wifi_finger_prints_records"."fingerprint_id" = 8 AND "wifi_finger_prints_records"."mac" = '00:1d:a1:90:83:c2'
+  [1m[36mFingerPrint Load (0.4ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" WHERE "finger_prints"."id" = 8 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "finger_prints".* FROM "finger_prints" ORDER BY "finger_prints"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "finger_prints" ("BSSID", "RSSI", "SD", "SSID", "created_at", "mac", "place_id", "updated_at", "xcoord", "ycoord") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["BSSID", "seif"], ["RSSI", 234.0], ["SD", nil], ["SSID", "seif"], ["created_at", Sat, 23 Jan 2016 03:33:47 UTC +00:00], ["mac", "seif"], ["place_id", 1], ["updated_at", Sat, 23 Jan 2016 03:33:47 UTC +00:00], ["xcoord", 12.0], ["ycoord", 13.0]]
+  [1m[36m (142.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/finger_prints/10
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "wifi_finger_prints_records" ("BSSID", "RSSI", "SSID", "channel", "created_at", "fingerprint_id", "mac", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["BSSID", "seif"], ["RSSI", 234], ["SSID", "seif"], ["channel", nil], ["created_at", Sat, 23 Jan 2016 03:33:47 UTC +00:00], ["fingerprint_id", 10], ["mac", "seif"], ["updated_at", Sat, 23 Jan 2016 03:33:47 UTC +00:00]]
+  [1m[35m (182.4ms)[0m  COMMIT
+Completed 302 Found in 375.8ms (ActiveRecord: 330.6ms)
+
+
+Started GET "/finger_prints/10" for 127.0.0.1 at 2016-01-22 23:33:47 -0400
+Processing by FingerPrintsController#show as HTML
+  Parameters: {"id"=>"10"}
+Geokit is using the domain: 
+  [1m[36mFingerPrint Load (0.6ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" WHERE "finger_prints"."id" = $1 LIMIT 1[0m  [["id", "10"]]
+  Rendered finger_prints/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20.8ms (Views: 18.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:47 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:47 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:47 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:48 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:48 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:48 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:48 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:48 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:48 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:48 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:48 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:48 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/finger_prints" for 127.0.0.1 at 2016-01-22 23:33:49 -0400
+Processing by FingerPrintsController#index as HTML
+Geokit is using the domain: 
+  [1m[35mFingerPrint Load (1.5ms)[0m  SELECT "finger_prints".* FROM "finger_prints" 
+  Rendered finger_prints/index.html.erb within layouts/application (105.9ms)
+Completed 200 OK in 130.5ms (Views: 124.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:49 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:49 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:49 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:49 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:49 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-01-22 23:33:49 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:49 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:49 -0400
+Served asset /beacons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:49 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:50 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:50 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-01-22 23:33:50 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
