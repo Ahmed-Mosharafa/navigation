@@ -3,7 +3,7 @@
   <title>Localization test page</title>
 </head>
 <body>
-  <%= form_tag(finger_prints_localization_path, :method => "post", class: "navbar-form", id: "search-form") do %>
+  <%= form_tag(localization_path, :method => "post", class: "navbar-form", id: "search-form") do %>
     <div class="input-append">
       SSID: <input type="text" name="finger_print[0][SSID]" class="span2" id="SSID_0" size="40"/>
       BSSID: <input type="text" name="finger_print[0][BSSID]" class="span2" id="BSSID_0" size="40"/>
