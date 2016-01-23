@@ -11,7 +11,6 @@ class FingerPrint < ActiveRecord::Base
   #if it doesn't exist it returns 0, otherwise it returns it's id
   def self.new_fingerprint(x,y, mac)
     same_fingerp = FingerPrint.where(:xcoord => x, :ycoord => y, :mac => mac).all
-  	#debugger
   	#checks whether the record is empty or not
   	if (FingerPrint.fetch_last_id !=0)
   		#checks whether there are records with the same fingerprint or not
@@ -26,7 +25,6 @@ class FingerPrint < ActiveRecord::Base
 	  		if (last[:mac] != mac)
 	  			FingerPrint.calculate_mean_sd(WifiFingerPrintsRecord.where(:fingerprint_id => last[:fingerprint_id], :mac => last[:mac]).all, last[:fingerprint_id])
   			end
-	  		#debugger
  	  		return same_fingerp[0].id
 	  	end
 	else
@@ -61,12 +59,13 @@ class FingerPrint < ActiveRecord::Base
 	mean_RSSI = FingerPrint.calc_mean(fingerprint_records)
   	sd_rssi   = FingerPrint.calc_standard_deviation(mean_RSSI, fingerprint_records)
   	last = FingerPrint.find_by_id(last_id)
+  ##
 	last.update_attributes(:RSSI => mean_RSSI, :SD => sd_rssi)
   end
 
   def self.fetch_last_id()
   	fp = FingerPrint.last
-  	if (fp == nil)
+  	if (fp == [])
   		return 0
   	else
 	  	id = fp[:id]
