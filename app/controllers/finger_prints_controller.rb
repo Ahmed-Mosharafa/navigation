@@ -123,7 +123,7 @@ class FingerPrintsController < ApplicationController
     puts @coordinates
     respond_to do |format|
       format.html     
-      format.json {render @coordinates}
+      format.json {render json: @coordinates}
     end
   end
 end
