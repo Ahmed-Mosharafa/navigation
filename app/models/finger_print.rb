@@ -10,7 +10,7 @@ class FingerPrint < ActiveRecord::Base
   #checks whether the finger print coming is new or saved before through the x and y coordinates  and the mac address
   #if it doesn't exist it returns 0, otherwise it returns it's id
   def self.new_fingerprint(x,y, mac)
-  	same_fingerp = FingerPrint.where(:xcoord => x, :ycoord => y, :mac => mac).all
+    same_fingerp = FingerPrint.where(:xcoord => x, :ycoord => y, :mac => mac).all
   	#debugger
   	#checks whether the record is empty or not
   	if (FingerPrint.fetch_last_id !=0)
