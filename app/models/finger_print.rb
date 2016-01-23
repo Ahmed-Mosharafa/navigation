@@ -65,7 +65,7 @@ class FingerPrint < ActiveRecord::Base
 
   def self.fetch_last_id()
   	fp = FingerPrint.last
-  	if (fp == [])
+  	if (fp == nil)
   		return 0
   	else
 	  	id = fp[:id]
