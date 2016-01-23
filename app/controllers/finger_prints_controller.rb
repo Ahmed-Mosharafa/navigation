@@ -20,6 +20,7 @@ class FingerPrintsController < ApplicationController
   # GET /finger_prints/1
   # GET /finger_prints/1.json
   def show
+    #debugger
     @finger_print = FingerPrint.find(params[:id])
 
     respond_to do |format|
@@ -27,7 +28,6 @@ class FingerPrintsController < ApplicationController
       format.json { render json: @finger_print }
     end
   end
-
   # GET /finger_prints/new
   # GET /finger_prints/new.json
   def new
@@ -50,7 +50,6 @@ class FingerPrintsController < ApplicationController
     # begin
     #   parameters = ActiveSupport::JSON.decode(request.body.read)[:finger_print]
     # rescue
-    puts params 
     parameters = params[:finger_print]
     # end
     available = FingerPrint.new_fingerprint(parameters[:xcoord] , parameters[:ycoord], parameters[:mac])
@@ -109,6 +108,20 @@ class FingerPrintsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to finger_prints_url }
       format.json { head :no_content }
+    end
+  end
+  #responsible for handling the loc_page view
+  def loc_view
+    
+  end 
+
+  #Passes an array of fingerprint readings to the model to localize  
+  def localization
+    searched   = params[:finger_print]
+    @coordinates = FingerPrint.KNN(searched)
+    respond_to do |format|
+      format.html 
+      format.json {render @coordinates}
     end
   end
 end

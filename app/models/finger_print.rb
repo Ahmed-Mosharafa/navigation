@@ -2,6 +2,10 @@ class FingerPrint < ActiveRecord::Base
   attr_accessible :BSSID, :RSSI, :SD, :SSID, :place_id, :xcoord, :ycoord, :mac
   belongs_to :place
   has_many :wififingerprintsrecords
+  
+  #######################################
+  #FingerPrint database creation
+  #######################################
 
   #checks whether the finger print coming is new or saved before through the x and y coordinates  and the mac address
   #if it doesn't exist it returns 0, otherwise it returns it's id
@@ -66,7 +70,105 @@ class FingerPrint < ActiveRecord::Base
   		return 0
   	else
 	  	id = fp[:id]
-	end
+	  end
+  end
+  
+  #################################################
+  #Localization #
+  #################################################
+  
+  def self.validate_distance(key, value, hash_examined)
+    hash_examined.each do |k, v|
+      if (value < v)
+        hash_examined.delete(k)
+        hash_examined[key] = value
+        hash_examined = FingerPrint.sort_by_value(hash_examined)
+        return hash_examined
+      end
+    end 
+    return hash_examined
+  end
+  #order_flag: ascending => 1
+  #descending =>0
+  def self.sort_by_value(hash_to_sort, order_flag)
+    if (order_flag == 1)
+      hash_to_sort = Hash[hash_to_sort.sort_by {|k,v| v}]
+    elsif (order_flag == 0)
+      hash_to_sort = Hash[hash_to_sort.sort_by {|k,v| v}.reverse]
+    end
+    return hash_to_sort
+  end 
+
+  def self.add_to_hash(key, value, hash_examined, k)
+    length = hash_examined.length 
+    if (length < k)
+      hash_examined[key] = value
+      hash_examined = FingerPrint.sort_by_value(hash_examined, 1)
+    else
+      hash_examined = validate_distance(key, value, hash_examined) 
+    end
+    return hash_examined
+  end   
+
+  def self.append_to_hash(hash_examined, key, value)
+    if (hash_examined.include?(key))
+      hash_examined[key] += value
+    else 
+      hash_examined[key] = value
+    end
+    return hash_examined
+  end  
+  
+  def self.weighted_average(hash_examined, k)
+    #hash_examined =   discard_outliers(hash_examined, k)
+    counter = 0.0
+    xcoord_sum     = 0.0
+    ycoord_sum     = 0.0
+    if (hash_examined.length < k)
+      k = hash_examined.length
+    end
+    keys   = hash_examined.keys
+    for i in 0...k
+      count   = hash_examined[keys[i]]
+      xcoord_sum += count * keys[i][0]
+      ycoord_sum += count * keys[i][1]
+      counter    += count
+    end 
+    #if (counter ==)
+    debugger
+    xcoord = xcoord_sum / counter 
+    ycoord = ycoord_sum / counter
+    return [xcoord,ycoord]
+  end
+  #def discard_outliers(nearest_coord)
+  #  nearest_coord.keys
+  #  nearest_coord.each do |k,v|
+  #
+  #  end  
+  #end  
+  #K hardcoded for now
+  def self.KNN (measurment_hash)
+    k = 3
+    nearest_coord = Hash.new() 
+    measurment_hash.each do |f_id, measurment|
+      records = FingerPrint.where(:BSSID => measurment[:BSSID]).all  
+      rssi_searched = measurment[:RSSI].to_f
+      distances = Hash.new(k) 
+      #find an array of distances 
+      records.each  do |record|
+        distance = record.RSSI - rssi_searched
+        distances = FingerPrint.add_to_hash([record.xcoord, record.ycoord], distance, distances, k)
+      end
+      #here I have the k coordinates of the nearest neighbours along with their distances
+      distances.each do |k,v|
+        nearest_coord = append_to_hash(nearest_coord, k, 1)
+      end  
+    end 
+    debugger
+    nearest_coord =   sort_by_value(nearest_coord,0)
+    #here I have weighted nearest coordinates sorted by the closest one
+    coordinates   = weighted_average(nearest_coord,k)
+    return coordinates
   end
 end
 
