@@ -135,7 +135,7 @@ class FingerPrint < ActiveRecord::Base
       counter    += count
     end 
     #if (counter ==)
-    debugger
+    #debugger
     xcoord = xcoord_sum / counter 
     ycoord = ycoord_sum / counter
     return [xcoord,ycoord]
@@ -164,7 +164,7 @@ class FingerPrint < ActiveRecord::Base
         nearest_coord = append_to_hash(nearest_coord, k, 1)
       end  
     end 
-    debugger
+    #debugger
     nearest_coord =   sort_by_value(nearest_coord,0)
     #here I have weighted nearest coordinates sorted by the closest one
     coordinates   = weighted_average(nearest_coord,k)
