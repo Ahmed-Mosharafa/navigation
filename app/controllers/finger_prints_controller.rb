@@ -120,8 +120,9 @@ class FingerPrintsController < ApplicationController
     #debugger
     searched   = params[:finger_print]
     @coordinates = FingerPrint.KNN(searched)
+    puts @coordinates
     respond_to do |format|
-      format.html 
+      format.html     
       format.json {render @coordinates}
     end
   end
