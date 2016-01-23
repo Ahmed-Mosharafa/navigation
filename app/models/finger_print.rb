@@ -83,7 +83,7 @@ class FingerPrint < ActiveRecord::Base
       if (value < hash_examined[k])
         hash_examined.delete(k)
         hash_examined[key] = value
-        hash_examined = FingerPrint.sort_by_value(hash_examined)
+        hash_examined = FingerPrint.sort_by_value(hash_examined, 1)
         return hash_examined
       end
     end 
