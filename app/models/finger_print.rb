@@ -169,7 +169,8 @@ class FingerPrint < ActiveRecord::Base
     else
       nearest_coord =   sort_by_value(nearest_coord,0)
       #here I have weighted nearest coordinates sorted by the closest one
-      coordinates   = weighted_average(nearest_coord,k)
+      #coordinates   = weighted_average(nearest_coord,k)
+      coordinates = nearest_coord
     end
     return coordinates
   end
