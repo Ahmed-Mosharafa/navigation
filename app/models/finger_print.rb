@@ -78,8 +78,9 @@ class FingerPrint < ActiveRecord::Base
   #################################################
   
   def self.validate_distance(key, value, hash_examined)
-    hash_examined.each do |k, v|
-      if (value < v)
+    keys = hash_examined.keys
+    keys.each do |k|
+      if (value < hash_examined[k])
         hash_examined.delete(k)
         hash_examined[key] = value
         hash_examined = FingerPrint.sort_by_value(hash_examined)
