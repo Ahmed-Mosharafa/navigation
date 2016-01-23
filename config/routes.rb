@@ -1,6 +1,6 @@
 Navigation::Application.routes.draw do
   get 'finger_prints/loc_view' => 'finger_prints#loc_view'
-  get 'finger_prints/localization' => 'finger_prints#localization'
+  post 'finger_prints/localization' => 'finger_prints#localization'
   resources :finger_prints
 
 
@@ -24,7 +24,7 @@ Navigation::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
-  # Sample of regular route:
+  # Sample of regular  route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
