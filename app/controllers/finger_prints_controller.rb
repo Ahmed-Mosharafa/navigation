@@ -1,6 +1,6 @@
 class FingerPrintsController < ApplicationController
   #protect_from_forgery
-  skip_before_filter :verify_authenticity_token, if: :json_request?, :only => [:new, :create]
+  skip_before_filter :verify_authenticity_token, if: :json_request?, :only => [:new, :create, :localization]
   #protected
   #Checks whether it's a json format or not
   def json_request?
@@ -117,7 +117,7 @@ class FingerPrintsController < ApplicationController
 
   #Passes an array of fingerprint readings to the model to localize  
   def localization
-    debugger
+    #debugger
     searched   = params[:finger_print]
     @coordinates = FingerPrint.KNN(searched)
     respond_to do |format|
