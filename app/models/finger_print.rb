@@ -156,7 +156,7 @@ class FingerPrint < ActiveRecord::Base
       distances = Hash.new(k) 
       #find an array of distances 
       records.each  do |record|
-        distance = abs(record.RSSI - rssi_searched)
+        distance = (record.RSSI - rssi_searched).abs
         distances = FingerPrint.add_to_hash([record.xcoord, record.ycoord], distance, distances, k)
       end
       #here I have the k coordinates of the nearest neighbours along with their distances
@@ -176,4 +176,3 @@ class FingerPrint < ActiveRecord::Base
   end
 end
 
-    
