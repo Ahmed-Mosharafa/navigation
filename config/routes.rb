@@ -1,6 +1,6 @@
 Navigation::Application.routes.draw do
   get 'finger_prints/loc_view' => 'finger_prints#loc_view'
-  post 'localize' => 'finger_prints#localization'
+  post 'localization' => 'finger_prints#localization'
   resources :finger_prints
 
 
