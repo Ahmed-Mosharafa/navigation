@@ -23,16 +23,6 @@
   <b>Address:</b>
   <%= @place.address %>
 </p>
-<b>Map Link:</b>
-  <a><%= @place.maplink %></a>
-</p>
-<p>
-  <b>Map: </b>
-  <%= image_tag @place.map.url %>
-  <%= image_tag @place.map.url(:medium) %>
-  <%= image_tag @place.map.url(:thumb) %>
-</p>
 
-<%= link_to 'Webview Map', places_map_view_path() %>
 <%= link_to 'Edit', edit_place_path(@place) %> |
 <%= link_to 'Back', places_path %>
