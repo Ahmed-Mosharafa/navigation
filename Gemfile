@@ -7,10 +7,11 @@ gem 'rails', '3.2.18'
 
 gem 'pg'
 gem 'geokit-rails'
-gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
-#gem 'foreigner'
+#gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+gem 'foreigner'
+gem 'immigrant'
 #gem 'debugger'
-#gem 'measurable'
+#gem 'measurable'		
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
