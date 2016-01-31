@@ -38807,3 +38807,28 @@ Served asset /routers.js - 304 Not Modified (0ms)
 Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-01-22 23:48:58 -0400
 Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (518.7ms)[0m  [1mDROP DATABASE IF EXISTS "navigation_development"[0m
+  [1m[35m (627.9ms)[0m  DROP DATABASE IF EXISTS "navigation_test"
+  [1m[36m (16660.1ms)[0m  [1mCREATE DATABASE "navigation_development" ENCODING = 'unicode'[0m
+  [1m[35m (16257.6ms)[0m  CREATE DATABASE "navigation_test" ENCODING = 'unicode'
+  [1m[36m (696.6ms)[0m  [1mCREATE TABLE "beacons" ("id" serial primary key, "place_id" integer, "coord_x" float, "coord_y" float, "coord_z" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (387.7ms)[0m  CREATE TABLE "finger_prints" ("id" serial primary key, "place_id" integer, "xcoord" float, "ycoord" float, "BSSID" character varying(255), "SSID" character varying(255), "RSSI" float, "SD" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "mac" character varying(255)) 
+  [1m[36m (741.4ms)[0m  [1mCREATE TABLE "places" ("id" serial primary key, "latitude" float, "longitude" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "name" character varying(255), "address" character varying(255), "map_file_name" character varying(255), "map_content_type" character varying(255), "map_file_size" integer, "map_updated_at" timestamp, "maplink" character varying(255)) [0m
+  [1m[35m (197.7ms)[0m  CREATE TABLE "routers" ("id" serial primary key, "mac" character varying(255), "coord_x" float, "coord_y" float, "coord_z" float, "place_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (383.9ms)[0m  [1mCREATE TABLE "wifi_finger_prints_records" ("id" serial primary key, "fingerprint_id" integer, "BSSID" character varying(255), "SSID" character varying(255), "RSSI" integer, "channel" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "mac" character varying(255)) [0m
+  [1m[35m (78.4ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) 
+  [1m[36m (124.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (54.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151214004202')[0m
+  [1m[35m (55.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151212160343')
+  [1m[36m (104.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151214002527')[0m
+  [1m[35m (39.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151016142536')
+  [1m[36m (55.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151016125419')[0m
+  [1m[35m (59.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151126234552')
+  [1m[36m (95.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151210014359')[0m
+  [1m[35m (55.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151016120802')
+  [1m[36m (57.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151212170915')[0m
+  [1m[35m (54.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151016123113')
+  [1m[36m (77.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151003153101')[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
