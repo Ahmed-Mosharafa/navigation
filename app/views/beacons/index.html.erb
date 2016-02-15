@@ -6,6 +6,7 @@
     <th>Coord x</th>
     <th>Coord y</th>
     <th>Coord z</th>
+    <th>Mac Address</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,6 +18,7 @@
     <td><%= beacon.coord_x %></td>
     <td><%= beacon.coord_y %></td>
     <td><%= beacon.coord_z %></td>
+    <td><%= beacon.mac %></td>
     <td><%= link_to 'Show', beacon %></td>
     <td><%= link_to 'Edit', edit_beacon_path(beacon) %></td>
     <td><%= link_to 'Destroy', beacon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
