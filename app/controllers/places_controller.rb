@@ -26,6 +26,7 @@ class PlacesController < ApplicationController
   def search_metadata
 
   end
+
   #calls fetch_metadata on beacons and routers to respond with the routers and beacons information of the place to be rendered afterwards in metadata.html.erb
   def metadata
     @beacons = Beacon.fetch_metadata(params[:PlaceID])
@@ -47,7 +48,10 @@ class PlacesController < ApplicationController
   end
   #responsible for handling the webview of the map
   def map_view
-    @map_link = Place.get_map_link(params[:id])
+    respond_to do |format|
+     format.html 
+     format.json 
+   end
   end 
   # GET /places/new
   # GET /places/new.json
