@@ -3,6 +3,17 @@ class FingerPrint < ActiveRecord::Base
   belongs_to :place
   has_many :wififingerprintsrecords
   
+   def self.to_csv
+    attributes = %w{BSSID RSSI SD SSID place_id xcoord ycoord}
+
+    CSV.generate(headers: true) do |csv|
+      csv << attributes
+
+      all.each do |user|
+        csv << attributes.map{ |attr| user.send(attr) }
+      end
+    end
+  end
   #######################################
   #FingerPrint database creation
   #######################################
@@ -10,6 +21,7 @@ class FingerPrint < ActiveRecord::Base
   #checks whether the finger print coming is new or saved before through the x and y coordinates  and the mac address
   #if it doesn't exist it returns 0, otherwise it returns it's id
   def self.new_fingerprint(x,y, mac)
+    #place_fp = FingerPrint.where(:place_id => place_id)
     same_fingerp = FingerPrint.where(:xcoord => x, :ycoord => y, :mac => mac).all
     #checks whether the record is empty or not
     if (FingerPrint.fetch_last_id !=0)
@@ -18,7 +30,7 @@ class FingerPrint < ActiveRecord::Base
       if (same_fingerp == [])
         #pass the records to the calc mean_sd
         #records is an array of fingerprints in WifiFingerPrintRecord with the same x,y,mac
-        records = WifiFingerPrintsRecord.where(:fingerprint_id => last[:fingerprint_id], :mac => last[:mac]).all 
+        #records = WifiFingerPrintsRecord.where(:fingerprint_id => last[:fingerprint_id], :mac => last[:mac]).all 
         FingerPrint.calculate_mean_sd(records, last[:fingerprint_id])
         return 0
       else
@@ -42,6 +54,7 @@ class FingerPrint < ActiveRecord::Base
     sd = (accum/len) ** 0.5
     return sd
   end
+
   #calculates the mean of the records with the same coordinates(of the same place)
   def self.calc_mean(records)
     accum   = 0.0

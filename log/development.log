@@ -40837,3 +40837,2387 @@ Connecting to database specified by database.yml
  AND t3.nspname = ANY (current_schemas(false))
  ORDER BY c.conname
  [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-15 20:38:08 -0400
+Connecting to database specified by database.yml
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 169.4ms (Views: 128.9ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-02-15 20:38:09 -0400
+Served asset /routers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-02-15 20:38:09 -0400
+Served asset /places.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-02-15 20:38:09 -0400
+Served asset /finger_prints.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-02-15 20:38:09 -0400
+Served asset /beacons.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-15 20:38:09 -0400
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-02-15 20:38:09 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-15 20:38:09 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-15 20:38:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-02-15 20:38:09 -0400
+Served asset /beacons.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-02-15 20:38:09 -0400
+Served asset /finger_prints.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-02-15 20:38:09 -0400
+Served asset /places.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-02-15 20:38:09 -0400
+Served asset /routers.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-02-15 20:38:09 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (12ms)
+
+
+Started GET "/finger_prints" for 127.0.0.1 at 2016-02-15 20:38:13 -0400
+Processing by FingerPrintsController#index as HTML
+Geokit is using the domain: 
+  [1m[35mFingerPrint Load (84.4ms)[0m  SELECT "finger_prints".* FROM "finger_prints" 
+  Rendered finger_prints/index.html.erb within layouts/application (4692.9ms)
+Completed 200 OK in 5085.3ms (Views: 4748.7ms | ActiveRecord: 86.9ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-02-15 20:38:18 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-15 20:38:18 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-02-15 20:38:18 -0400
+Served asset /finger_prints.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-02-15 20:38:18 -0400
+Served asset /places.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-02-15 20:38:18 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-02-15 20:38:18 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-15 20:38:18 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-15 20:38:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-02-15 20:38:18 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-02-15 20:38:18 -0400
+Served asset /finger_prints.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-02-15 20:38:18 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-02-15 20:38:18 -0400
+Served asset /routers.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-02-15 20:38:19 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/map_view" for 127.0.0.1 at 2016-02-15 21:53:02 -0400
+
+ActionController::RoutingError (No route matches [GET] "/map_view"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+  Rendered places/map_view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17.2ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+Served asset /beacons.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/leaflet.css" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+Processing by PlacesController#show as CSS
+  Parameters: {"id"=>"leaflet"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (49.9ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "leaflet"]]
+Completed 404 Not Found in 56.3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (41.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.4ms)
+
+
+Started GET "/places/Leaflet.Coordinates-0.1.5.css" for 127.0.0.1 at 2016-02-15 21:53:13 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/Leaflet.Coordinates-0.1.5.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/places/jquery.min.js" for 127.0.0.1 at 2016-02-15 21:53:14 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/jquery.min.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/places/leaflet-src.js" for 127.0.0.1 at 2016-02-15 21:53:14 -0400
+Processing by PlacesController#show as JS
+  Parameters: {"id"=>"leaflet-src"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "leaflet-src"]]
+Completed 404 Not Found in 2.0ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet-src):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.2ms)
+
+
+Started GET "/places/L.SimpleGraticule.js" for 127.0.0.1 at 2016-02-15 21:53:14 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/L.SimpleGraticule.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/places/jquery.min.js" for 127.0.0.1 at 2016-02-15 21:53:14 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/jquery.min.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/places/leaflet-src.js" for 127.0.0.1 at 2016-02-15 21:53:14 -0400
+Processing by PlacesController#show as JS
+  Parameters: {"id"=>"leaflet-src"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "leaflet-src"]]
+Completed 404 Not Found in 2.1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet-src):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.9ms)
+
+
+Started GET "/places/L.SimpleGraticule.js" for 127.0.0.1 at 2016-02-15 21:53:14 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/L.SimpleGraticule.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+  Rendered places/map_view.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 32.2ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/leaflet.css" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Processing by PlacesController#show as CSS
+  Parameters: {"id"=>"leaflet"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "leaflet"]]
+Completed 404 Not Found in 4.7ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.4ms)
+
+
+Started GET "/places/Leaflet.Coordinates-0.1.5.css" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/Leaflet.Coordinates-0.1.5.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.8ms)
+
+
+Started GET "/places/jquery.min.js" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/jquery.min.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/places/leaflet-src.js" for 127.0.0.1 at 2016-02-15 21:55:42 -0400
+Processing by PlacesController#show as JS
+  Parameters: {"id"=>"leaflet-src"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.8ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "leaflet-src"]]
+Completed 404 Not Found in 7.8ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet-src):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (133.4ms)
+
+
+Started GET "/places/L.SimpleGraticule.js" for 127.0.0.1 at 2016-02-15 21:55:43 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/L.SimpleGraticule.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/places/L.SimpleGraticule.js" for 127.0.0.1 at 2016-02-15 21:55:43 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/L.SimpleGraticule.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2016-02-15 21:56:38 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+  Rendered places/map_view.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 18.5ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/Leaflet.Coordinates-0.1.5.css" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/Leaflet.Coordinates-0.1.5.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.8ms)
+
+
+Started GET "/places/leaflet.css" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+Processing by PlacesController#show as CSS
+  Parameters: {"id"=>"leaflet"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "leaflet"]]
+Completed 404 Not Found in 8.0ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.9ms)
+
+
+Started GET "/places/jquery.min.js" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/jquery.min.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.6ms)
+
+
+Started GET "/places/L.SimpleGraticule.js" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/L.SimpleGraticule.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/places/leaflet-src.js" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+Processing by PlacesController#show as JS
+  Parameters: {"id"=>"leaflet-src"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "leaflet-src"]]
+Completed 404 Not Found in 2.4ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet-src):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/places/L.SimpleGraticule.js" for 127.0.0.1 at 2016-02-15 21:56:39 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/L.SimpleGraticule.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+  Rendered places/map_view.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13.7ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Served asset /beacons.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Served asset /beacons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Served asset /routers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/leaflet.css" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Processing by PlacesController#show as CSS
+  Parameters: {"id"=>"leaflet"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (1.0ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "leaflet"]]
+Completed 404 Not Found in 5.2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (13.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.1ms)
+
+
+Started GET "/places/Leaflet.Coordinates-0.1.5.css" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/Leaflet.Coordinates-0.1.5.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/places/jquery.min.js" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/jquery.min.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.9ms)
+
+
+Started GET "/places/leaflet-src.js" for 127.0.0.1 at 2016-02-15 21:56:54 -0400
+Processing by PlacesController#show as JS
+  Parameters: {"id"=>"leaflet-src"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "leaflet-src"]]
+Completed 404 Not Found in 2.3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet-src):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.9ms)
+
+
+Started GET "/places/L.SimpleGraticule.js" for 127.0.0.1 at 2016-02-15 21:56:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/L.SimpleGraticule.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/places/L.SimpleGraticule.js" for 127.0.0.1 at 2016-02-15 21:56:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/L.SimpleGraticule.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2016-02-15 21:58:07 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+  Rendered places/map_view.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20.0ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-02-15 21:58:07 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-02-15 21:58:07 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-02-15 21:58:07 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-15 21:58:07 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-02-15 21:58:07 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-02-15 21:58:07 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-15 21:58:07 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-15 21:58:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-02-15 21:58:07 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-02-15 21:58:07 -0400
+Served asset /finger_prints.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-02-15 21:58:07 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-02-15 21:58:07 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-02-15 21:58:07 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/leaflet.css" for 127.0.0.1 at 2016-02-15 21:58:07 -0400
+Processing by PlacesController#show as CSS
+  Parameters: {"id"=>"leaflet"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.5ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "leaflet"]]
+Completed 404 Not Found in 4.7ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.2ms)
+
+
+Started GET "/places/Leaflet.Coordinates-0.1.5.css" for 127.0.0.1 at 2016-02-15 21:58:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/Leaflet.Coordinates-0.1.5.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/places/jquery.min.js" for 127.0.0.1 at 2016-02-15 21:58:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/jquery.min.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/places/leaflet-src.js" for 127.0.0.1 at 2016-02-15 21:58:08 -0400
+Processing by PlacesController#show as JS
+  Parameters: {"id"=>"leaflet-src"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "leaflet-src"]]
+Completed 404 Not Found in 3.7ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet-src):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.4ms)
+
+
+Started GET "/places/L.SimpleGraticule.js" for 127.0.0.1 at 2016-02-15 21:58:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/L.SimpleGraticule.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/places/L.SimpleGraticule.js" for 127.0.0.1 at 2016-02-15 21:58:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/L.SimpleGraticule.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2016-02-15 21:59:56 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+  Rendered places/map_view.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 14.5ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-02-15 21:59:56 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-02-15 21:59:56 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-02-15 21:59:56 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-15 21:59:56 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-02-15 21:59:56 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-02-15 21:59:56 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-15 21:59:56 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-15 21:59:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-02-15 21:59:56 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-02-15 21:59:56 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-02-15 21:59:56 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-02-15 21:59:56 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-02-15 21:59:57 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (1ms)
+
+
+Started GET "/places/Leaflet.Coordinates-0.1.5.css" for 127.0.0.1 at 2016-02-15 21:59:57 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/Leaflet.Coordinates-0.1.5.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.6ms)
+
+
+Started GET "/places/leaflet.css" for 127.0.0.1 at 2016-02-15 21:59:57 -0400
+Processing by PlacesController#show as CSS
+  Parameters: {"id"=>"leaflet"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "leaflet"]]
+Completed 404 Not Found in 3.8ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.9ms)
+
+
+Started GET "/places/jquery.min.js" for 127.0.0.1 at 2016-02-15 21:59:57 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/jquery.min.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+
+
+Started GET "/places/leaflet-src.js" for 127.0.0.1 at 2016-02-15 21:59:57 -0400
+Processing by PlacesController#show as JS
+  Parameters: {"id"=>"leaflet-src"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (1.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "leaflet-src"]]
+Completed 404 Not Found in 4.6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet-src):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.4ms)
+
+
+Started GET "/places/L.SimpleGraticule.js" for 127.0.0.1 at 2016-02-15 21:59:57 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/L.SimpleGraticule.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+  Rendered places/map_view.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17.5ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+Served asset /finger_prints.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+Served asset /finger_prints.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/leaflet.css" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+Processing by PlacesController#show as CSS
+  Parameters: {"id"=>"leaflet"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (1.0ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "leaflet"]]
+Completed 404 Not Found in 11.6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.3ms)
+
+
+Started GET "/places/Leaflet.Coordinates-0.1.5.css" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/Leaflet.Coordinates-0.1.5.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.8ms)
+
+
+Started GET "/places/jquery.min.js" for 127.0.0.1 at 2016-02-15 22:00:46 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/jquery.min.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/places/leaflet-src.js" for 127.0.0.1 at 2016-02-15 22:00:47 -0400
+Processing by PlacesController#show as JS
+  Parameters: {"id"=>"leaflet-src"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "leaflet-src"]]
+Completed 404 Not Found in 6.9ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet-src):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.7ms)
+
+
+Started GET "/places/L.SimpleGraticule.js" for 127.0.0.1 at 2016-02-15 22:00:47 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/L.SimpleGraticule.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/places/L.SimpleGraticule.js" for 127.0.0.1 at 2016-02-15 22:00:47 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/L.SimpleGraticule.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/finger_prints" for 127.0.0.1 at 2016-02-21 15:23:32 -0400
+Connecting to database specified by database.yml
+Processing by FingerPrintsController#index as HTML
+Geokit is using the domain: 
+  [1m[36mFingerPrint Load (53.0ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" [0m
+  [1m[35mEXPLAIN (0.3ms)[0m  EXPLAIN SELECT "finger_prints".* FROM "finger_prints" 
+EXPLAIN for: SELECT "finger_prints".* FROM "finger_prints" 
+                            QUERY PLAN
+------------------------------------------------------------------
+ Seq Scan on finger_prints  (cost=0.00..79.18 rows=3018 width=99)
+(1 row)
+
+  Rendered finger_prints/index.html.erb within layouts/application (2877.2ms)
+Completed 200 OK in 4075.1ms (Views: 3320.5ms | ActiveRecord: 533.8ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-02-21 15:23:38 -0400
+Served asset /beacons.css - 200 OK (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-21 15:23:38 -0400
+Served asset /scaffolds.css - 200 OK (7ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-02-21 15:23:38 -0400
+Served asset /wifi_finger_prints_records.css - 200 OK (1ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-02-21 15:23:38 -0400
+Served asset /finger_prints.css - 200 OK (1ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-02-21 15:23:38 -0400
+Served asset /routers.css - 200 OK (1ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-02-21 15:23:38 -0400
+Served asset /places.css - 200 OK (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-21 15:23:38 -0400
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-21 15:23:38 -0400
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-02-21 15:23:38 -0400
+Served asset /beacons.js - 200 OK (1ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-02-21 15:23:38 -0400
+Served asset /finger_prints.js - 200 OK (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-02-21 15:23:38 -0400
+Served asset /places.js - 200 OK (1ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-02-21 15:23:38 -0400
+Served asset /routers.js - 200 OK (1ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-02-21 15:23:38 -0400
+Served asset /wifi_finger_prints_records.js - 200 OK (1ms)
+
+
+Started GET "/finger_prints.csv" for 127.0.0.1 at 2016-02-21 15:24:46 -0400
+
+SyntaxError (/home/saasbook/project/navigation/app/controllers/finger_prints_controller.rb:131: syntax error, unexpected $end, expecting keyword_end):
+  activesupport (3.2.18) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.18) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.18) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.18) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.7) lib/rack/etag.rb:23:in `call'
+  rack (1.4.7) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.18) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.18) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `_run__69484168__call__49233597__callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started GET "/finger_prints.csv" for 127.0.0.1 at 2016-02-21 15:27:33 -0400
+Processing by FingerPrintsController#index as CSV
+Geokit is using the domain: 
+  [1m[36mFingerPrint Load (40.8ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" [0m
+Completed 500 Internal Server Error in 763.9ms
+
+NoMethodError (undefined method `to_csv' for #<Array:0xb52c0d20>):
+  app/controllers/finger_prints_controller.rb:17:in `block (2 levels) in index'
+  app/controllers/finger_prints_controller.rb:14:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (296.7ms)
+
+
+Started GET "/finger_prints.csv" for 127.0.0.1 at 2016-02-21 15:34:10 -0400
+Processing by FingerPrintsController#index as CSV
+Geokit is using the domain: 
+  [1m[35mFingerPrint Load (29.1ms)[0m  SELECT "finger_prints".* FROM "finger_prints" 
+Completed 500 Internal Server Error in 800.8ms
+
+NoMethodError (undefined method `to_csv' for #<Array:0xb5d1a758>):
+  app/controllers/finger_prints_controller.rb:17:in `block (2 levels) in index'
+  app/controllers/finger_prints_controller.rb:14:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (319.1ms)
+
+
+Started GET "/finger_prints.csv" for 127.0.0.1 at 2016-02-21 15:35:08 -0400
+Processing by FingerPrintsController#index as CSV
+Geokit is using the domain: 
+  [1m[36mFingerPrint Load (40.0ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" [0m
+Completed 500 Internal Server Error in 861.1ms
+
+NoMethodError (undefined method `to_csv' for #<Array:0xb509b4dc>):
+  app/controllers/finger_prints_controller.rb:17:in `block (2 levels) in index'
+  app/controllers/finger_prints_controller.rb:14:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (317.0ms)
+
+
+Started GET "/finger_prints.csv" for 127.0.0.1 at 2016-02-21 15:35:14 -0400
+Processing by FingerPrintsController#index as CSV
+Geokit is using the domain: 
+  [1m[35mFingerPrint Load (32.4ms)[0m  SELECT "finger_prints".* FROM "finger_prints" 
+Completed 500 Internal Server Error in 770.3ms
+
+NoMethodError (undefined method `to_csv' for #<Array:0xb52a91c0>):
+  app/controllers/finger_prints_controller.rb:17:in `block (2 levels) in index'
+  app/controllers/finger_prints_controller.rb:14:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (375.0ms)
+
+
+Started GET "/finger_prints.csv" for 127.0.0.1 at 2016-02-21 15:36:18 -0400
+Processing by FingerPrintsController#index as CSV
+Geokit is using the domain: 
+  [1m[36mFingerPrint Load (30.7ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" [0m
+Completed 500 Internal Server Error in 833.9ms
+
+NoMethodError (undefined method `to_csv' for #<Array:0xb4d7283c>):
+  app/controllers/finger_prints_controller.rb:17:in `block (2 levels) in index'
+  app/controllers/finger_prints_controller.rb:14:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (286.2ms)
+
+
+Started GET "/finger_prints.csv" for 127.0.0.1 at 2016-02-21 15:36:30 -0400
+Processing by FingerPrintsController#index as CSV
+Geokit is using the domain: 
+  [1m[35mFingerPrint Load (29.5ms)[0m  SELECT "finger_prints".* FROM "finger_prints" 
+Completed 500 Internal Server Error in 752.6ms
+
+NoMethodError (undefined method `to_csv' for #<Array:0xb5ce0c74>):
+  app/controllers/finger_prints_controller.rb:17:in `block (2 levels) in index'
+  app/controllers/finger_prints_controller.rb:14:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (378.9ms)
+
+
+Started GET "/finger_prints.csv" for 127.0.0.1 at 2016-02-21 15:36:48 -0400
+Processing by FingerPrintsController#index as CSV
+Geokit is using the domain: 
+  [1m[36mFingerPrint Load (41.2ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" [0m
+Completed 500 Internal Server Error in 921.1ms
+
+NoMethodError (undefined method `to_csv' for #<Array:0xb4fefbdc>):
+  app/controllers/finger_prints_controller.rb:17:in `block (2 levels) in index'
+  app/controllers/finger_prints_controller.rb:14:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (353.2ms)
+
+
+Started GET "/finger_prints.csv" for 127.0.0.1 at 2016-02-21 15:37:59 -0400
+Processing by FingerPrintsController#index as CSV
+Geokit is using the domain: 
+  [1m[35mFingerPrint Load (37.1ms)[0m  SELECT "finger_prints".* FROM "finger_prints" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" [0m
+Completed 500 Internal Server Error in 894.9ms
+
+NoMethodError (undefined method `to_csv' for #<ActiveRecord::Relation:0xb4e64c54>):
+  app/controllers/finger_prints_controller.rb:17:in `block (2 levels) in index'
+  app/controllers/finger_prints_controller.rb:14:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (300.5ms)
+
+
+Started GET "/finger_prints.csv" for 127.0.0.1 at 2016-02-21 15:38:09 -0400
+Processing by FingerPrintsController#index as CSV
+Geokit is using the domain: 
+  [1m[35mFingerPrint Load (34.5ms)[0m  SELECT "finger_prints".* FROM "finger_prints" 
+Completed 500 Internal Server Error in 218.9ms
+
+NameError (uninitialized constant FingerPrint::CSV):
+  app/models/finger_print.rb:9:in `to_csv'
+  app/controllers/finger_prints_controller.rb:17:in `block (2 levels) in index'
+  app/controllers/finger_prints_controller.rb:14:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.3ms)
+
+
+Started GET "/finger_prints.csv" for 127.0.0.1 at 2016-02-21 15:39:52 -0400
+Connecting to database specified by database.yml
+Processing by FingerPrintsController#index as CSV
+Geokit is using the domain: 
+  [1m[36mFingerPrint Load (29.8ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "finger_prints".* FROM "finger_prints" 
+Completed 500 Internal Server Error in 367.0ms
+
+NoMethodError (undefined method `BSSID,' for #<FingerPrint:0xb50e7b0c>):
+  app/models/finger_print.rb:13:in `block (3 levels) in to_csv'
+  app/models/finger_print.rb:13:in `map'
+  app/models/finger_print.rb:13:in `block (2 levels) in to_csv'
+  app/models/finger_print.rb:12:in `each'
+  app/models/finger_print.rb:12:in `block in to_csv'
+  app/models/finger_print.rb:9:in `to_csv'
+  app/controllers/finger_prints_controller.rb:17:in `block (2 levels) in index'
+  app/controllers/finger_prints_controller.rb:14:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started GET "/finger_prints.csv" for 127.0.0.1 at 2016-02-21 15:40:12 -0400
+Processing by FingerPrintsController#index as CSV
+Geokit is using the domain: 
+  [1m[36mFingerPrint Load (30.7ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "finger_prints".* FROM "finger_prints" 
+  Rendered text template (0.0ms)
+Sent data fingerprints-2016-02-21.csv  (23.6ms)
+Completed 200 OK in 481.8ms (Views: 23.4ms | ActiveRecord: 32.1ms)
+
+
+Started GET "/finger_prints.csv" for 127.0.0.1 at 2016-03-02 10:45:30 -0400
+Processing by FingerPrintsController#index as CSV
+Geokit is using the domain: 
+  [1m[36mFingerPrint Load (42.1ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "finger_prints".* FROM "finger_prints" 
+  Rendered text template (0.0ms)
+Sent data fingerprints-2016-03-02.csv  (0.9ms)
+Completed 200 OK in 461.1ms (Views: 0.8ms | ActiveRecord: 42.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-02 10:45:42 -0400
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[36mPlace Load (64.7ms)[0m  [1mSELECT "places".* FROM "places" [0m
+  Rendered places/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 192.2ms (Views: 109.2ms | ActiveRecord: 66.4ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-03-02 10:45:43 -0400
+Served asset /beacons.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-03-02 10:45:43 -0400
+Served asset /finger_prints.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-03-02 10:45:43 -0400
+Served asset /places.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-03-02 10:45:43 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-03-02 10:45:43 -0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-03-02 10:45:43 -0400
+Served asset /routers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-03-02 10:45:43 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-02 10:45:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-03-02 10:45:43 -0400
+Served asset /beacons.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-03-02 10:45:43 -0400
+Served asset /finger_prints.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-03-02 10:45:43 -0400
+Served asset /places.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-03-02 10:45:43 -0400
+Served asset /routers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-03-02 10:45:43 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (1ms)
+
+
+Started GET "/map_view" for 127.0.0.1 at 2016-03-02 10:46:15 -0400
+
+ActionController::RoutingError (No route matches [GET] "/map_view"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/places/1" for 127.0.0.1 at 2016-03-02 10:46:37 -0400
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (50.6ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered places/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 80.0ms (Views: 26.9ms | ActiveRecord: 50.7ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-03-02 10:46:37 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-03-02 10:46:37 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-03-02 10:46:37 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-03-02 10:46:37 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-03-02 10:46:37 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-03-02 10:46:37 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-03-02 10:46:37 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-02 10:46:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-03-02 10:46:37 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-03-02 10:46:37 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-03-02 10:46:37 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-03-02 10:46:37 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-03-02 10:46:37 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/places/map_view" for 127.0.0.1 at 2016-03-02 10:50:39 -0400
+Processing by PlacesController#map_view as HTML
+Geokit is using the domain: 
+  Rendered places/map_view.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 39.7ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-03-02 10:50:39 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-03-02 10:50:39 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-03-02 10:50:39 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-03-02 10:50:39 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-03-02 10:50:39 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-03-02 10:50:39 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-03-02 10:50:39 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-02 10:50:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-03-02 10:50:39 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-03-02 10:50:39 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-03-02 10:50:39 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-03-02 10:50:39 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-03-02 10:50:39 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+
+
+Started GET "/places/leaflet.css" for 127.0.0.1 at 2016-03-02 10:50:39 -0400
+Processing by PlacesController#show as CSS
+  Parameters: {"id"=>"leaflet"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "leaflet"]]
+Completed 404 Not Found in 5.6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.4ms)
+
+
+Started GET "/places/Leaflet.Coordinates-0.1.5.css" for 127.0.0.1 at 2016-03-02 10:50:40 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/Leaflet.Coordinates-0.1.5.css"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/places/jquery.min.js" for 127.0.0.1 at 2016-03-02 10:50:40 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/jquery.min.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/places/leaflet-src.js" for 127.0.0.1 at 2016-03-02 10:50:40 -0400
+Processing by PlacesController#show as JS
+  Parameters: {"id"=>"leaflet-src"}
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1  [["id", "leaflet-src"]]
+Completed 404 Not Found in 1.8ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet-src):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/places/L.SimpleGraticule.js" for 127.0.0.1 at 2016-03-02 10:50:40 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/L.SimpleGraticule.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/places/jquery.min.js" for 127.0.0.1 at 2016-03-02 10:50:44 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/jquery.min.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/places/leaflet-src.js" for 127.0.0.1 at 2016-03-02 10:50:44 -0400
+Processing by PlacesController#show as JS
+  Parameters: {"id"=>"leaflet-src"}
+Geokit is using the domain: 
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "leaflet-src"]]
+Completed 404 Not Found in 2.4ms
+
+ActiveRecord::RecordNotFound (Couldn't find Place with id=leaflet-src):
+  app/controllers/places_controller.rb:42:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started GET "/places/L.SimpleGraticule.js" for 127.0.0.1 at 2016-03-02 10:50:44 -0400
+
+ActionController::RoutingError (No route matches [GET] "/places/L.SimpleGraticule.js"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/places/" for 127.0.0.1 at 2016-03-02 16:31:30 -0400
+Processing by PlacesController#index as HTML
+Geokit is using the domain: 
+  [1m[35mPlace Load (0.6ms)[0m  SELECT "places".* FROM "places" 
+  Rendered places/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 35.7ms (Views: 15.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/beacons.css?body=1" for 127.0.0.1 at 2016-03-02 16:31:30 -0400
+Served asset /beacons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.css?body=1" for 127.0.0.1 at 2016-03-02 16:31:30 -0400
+Served asset /finger_prints.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-03-02 16:31:30 -0400
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.css?body=1" for 127.0.0.1 at 2016-03-02 16:31:30 -0400
+Served asset /wifi_finger_prints_records.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-03-02 16:31:30 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.css?body=1" for 127.0.0.1 at 2016-03-02 16:31:30 -0400
+Served asset /routers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-03-02 16:31:30 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-03-02 16:31:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beacons.js?body=1" for 127.0.0.1 at 2016-03-02 16:31:30 -0400
+Served asset /beacons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/finger_prints.js?body=1" for 127.0.0.1 at 2016-03-02 16:31:30 -0400
+Served asset /finger_prints.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-03-02 16:31:30 -0400
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers.js?body=1" for 127.0.0.1 at 2016-03-02 16:31:30 -0400
+Served asset /routers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wifi_finger_prints_records.js?body=1" for 127.0.0.1 at 2016-03-02 16:31:30 -0400
+Served asset /wifi_finger_prints_records.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/finger_prints.csv" for 127.0.0.1 at 2016-03-02 16:34:17 -0400
+Processing by FingerPrintsController#index as CSV
+Geokit is using the domain: 
+  [1m[36mFingerPrint Load (29.1ms)[0m  [1mSELECT "finger_prints".* FROM "finger_prints" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "finger_prints".* FROM "finger_prints" 
+  Rendered text template (0.0ms)
+Sent data fingerprints-2016-03-02.csv  (1.6ms)
+Completed 200 OK in 510.4ms (Views: 1.4ms | ActiveRecord: 30.6ms)

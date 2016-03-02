@@ -14,11 +14,12 @@ class FingerPrintsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @finger_prints }
+      format.csv { send_data FingerPrint.scoped.to_csv, filename: "fingerprints-#{Date.today}.csv"}
     end
   end
 
   # GET /finger_prints/1
-  # GET /finger_prints/1.json
+  # GET /finger_prints/1.jsonl
   def show
     #debugger
     @finger_print = FingerPrint.find(params[:id])
@@ -50,7 +51,7 @@ class FingerPrintsController < ApplicationController
     # begin
     #   parameters = ActiveSupport::JSON.decode(request.body.read)[:finger_print]
     # rescue
-    parameters = params[:finger_print]
+    parameters = params[:finger_print] #params fingerprint containing the fingerprint fields including place id
     # end
     available = FingerPrint.new_fingerprint(parameters[:xcoord] , parameters[:ycoord], parameters[:mac])
     #debugger
@@ -58,7 +59,7 @@ class FingerPrintsController < ApplicationController
     # this means that I want to save it
     if (available == 0)
       @finger_print = FingerPrint.new(parameters)
-      available = FingerPrint.fetch_last_id() + 1  
+      available = FingerPrint.fetch_last_id() + 1  #assign the fingerprint id
       #debugger
       respond_to do |format|
         if @finger_print.save
@@ -118,6 +119,7 @@ class FingerPrintsController < ApplicationController
   #Passes an array of fingerprint readings to the model to localize  
   def localization
     #debugger
+
     searched   = params[:finger_print]
     @coordinates = FingerPrint.KNN(searched)
     puts @coordinates
