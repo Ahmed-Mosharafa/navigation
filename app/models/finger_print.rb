@@ -30,7 +30,7 @@ class FingerPrint < ActiveRecord::Base
       if (same_fingerp == [])
         #pass the records to the calc mean_sd
         #records is an array of fingerprints in WifiFingerPrintRecord with the same x,y,mac
-        #records = WifiFingerPrintsRecord.where(:fingerprint_id => last[:fingerprint_id], :mac => last[:mac]).all 
+        records = WifiFingerPrintsRecord.where(:fingerprint_id => last[:fingerprint_id], :mac => last[:mac]).all 
         FingerPrint.calculate_mean_sd(records, last[:fingerprint_id])
         return 0
       else
