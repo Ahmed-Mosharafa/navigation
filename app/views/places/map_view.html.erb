@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <title>Fingerprinting Map</title>
 
-    <link rel="stylesheet" href="leaflet.css" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
     <link rel="stylesheet" href="Leaflet.Coordinates-0.1.5.css" />
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.9/d3.min.js"></script>
@@ -57,9 +57,8 @@
 <body>
     <div id="map"></div>
     <div id="info" class="info legend leaflet-control">Zoom Level</div>
-    <script src="jquery.min.js"></script>
-    <script src="leaflet-src.js"></script>
-    <script src="L.SimpleGraticule.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
     <script type="text/JavaScript">
 
         // Create the map
@@ -75,7 +74,7 @@
             touchZoom: true
         });
         var gridOptions = {
-            interval: 10,
+            interval: 5,
                 showshowOriginLabel: true,
                 redraw: 'moveend',
         };
@@ -113,12 +112,12 @@
         //    $('#info').text(e.latlng);
         //s});
         map.on('click', function(e){
-            // Normalize coordinates to nearest 5
+            // Normalize coordinates to nearest 1
             var normalizedLat = Math.floor(e.latlng.lat/5)*5;
             var normalizedLng = Math.floor(e.latlng.lng/5)*5;
             
            $("#info").text(normalizedLat + "," + normalizedLng);
-           //Android.initializeWifiScan(normalizedLat, normalizedLng);
+           Android.initializeWifiScan("2", normalizedLat, normalizedLng);
            L.marker(new L.LatLng(normalizedLat + 2.5, normalizedLng + 2.5), {icon: navIcon}).addTo(map);
         });
 
