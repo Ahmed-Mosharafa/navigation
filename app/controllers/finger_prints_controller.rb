@@ -119,7 +119,6 @@ class FingerPrintsController < ApplicationController
   #Passes an array of fingerprint readings to the model to localize  
   def localization
     #debugger
-
     searched   = params[:finger_print]
     @coordinates = FingerPrint.KNN(searched)
     puts @coordinates

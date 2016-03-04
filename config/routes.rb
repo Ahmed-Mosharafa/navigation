@@ -7,6 +7,10 @@ Navigation::Application.routes.draw do
 
   get 'finger_prints/loc_view' => 'finger_prints#loc_view'
   post 'localization' => 'finger_prints#localization'
+  #magnetic lozalization
+  get 'magnetic/loc_view' => 'magnetics#loc_view'
+  post 'magnetic/localization' => 'magnetics#localization'
+
   resources :finger_prints
 
 

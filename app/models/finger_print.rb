@@ -118,7 +118,7 @@ class FingerPrint < ActiveRecord::Base
       hash_examined[key] = value
       hash_examined = FingerPrint.sort_by_value(hash_examined, 1)
     else
-      hash_examined = validate_distance(key, value, hash_examined) 
+      hash_examined = FingerPrint.validate_distance(key, value, hash_examined) 
     end
     return hash_examined
   end   

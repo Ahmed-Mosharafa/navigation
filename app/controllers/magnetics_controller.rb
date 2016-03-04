@@ -75,4 +75,19 @@ class MagneticsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  #responsible for handling the loc_page view
+  def loc_view
+    
+  end 
+
+  def localization
+    #debugger
+    searched   = params[:magnetic]
+    @coordinates = Magnetic.KNN(searched)
+    puts @coordinates
+    respond_to do |format|
+      format.html     
+      format.json {render json: @coordinates}
+    end
+  end
 end

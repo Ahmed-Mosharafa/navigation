@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <title>Magnetic localization test page</title>
+</head>
+<body>
+  <%= form_tag(magnetic_localization_path, :method => "post", class: "navbar-form", id: "search-form") do %>
+    <div class="input-append">
+      Place id: <input type="text" name="magnetic[0][place_id]" class="span2" id="place_id_0" size="40"/>
+      x: <input type="text" name="magnetic[0][x]" class="span2" id="x_0" size="40"/>
+      y: <input type="text" name="magnetic[0][y]" class="span2" id="y_0" size="40"/>
+      z: <input type="text" name="magnetic[0][z]" class="span2" id="z_0" size="40"/>
+      <br/>
+      Place id: <input type="text" name="magnetic[0][place_id]" class="span2" id="place_id_0" size="40"/>
+      x: <input type="text" name="magnetic[1][x]" class="span2" id="x_1" size="40"/>
+      y: <input type="text" name="magnetic[1][y]" class="span2" id="y_1" size="40"/>
+      z: <input type="text" name="magnetic[1][z]" class="span2" id="z_1" size="40"/> 
+      <button class="btn" type="submit"><i class="icon-search"></i>search</button>
+    </div>
+  <% end %>
+  <%= yield %>
+</body>
