@@ -1,5 +1,6 @@
 class MagneticsController < ApplicationController
   # GET /magnetics
+    skip_before_filter :verify_authenticity_token, if: :json_request?, :only => [:new, :create, :localization]
   # GET /magnetics.json
   def index
     @magnetics = Magnetic.all
