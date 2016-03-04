@@ -1,0 +1,45 @@
+<h1>Listing magnetics</h1>
+
+<table>
+  <tr>
+    <th>Place</th>
+    <th>X</th>
+    <th>Y</th>
+    <th>Z</th>
+    <th>Angle</th>
+    <th>Magnitude</th>
+    <th>Xcoord</th>
+    <th>Ycoord</th>
+    <th>Xsd</th>
+    <th>Ysd</th>
+    <th>Zsd</th>
+    <th>Magnitudesd</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @magnetics.each do |magnetic| %>
+  <tr>
+    <td><%= magnetic.place_id %></td>
+    <td><%= magnetic.x %></td>
+    <td><%= magnetic.y %></td>
+    <td><%= magnetic.z %></td>
+    <td><%= magnetic.angle %></td>
+    <td><%= magnetic.magnitude %></td>
+    <td><%= magnetic.xcoord %></td>
+    <td><%= magnetic.ycoord %></td>
+    <td><%= magnetic.xsd %></td>
+    <td><%= magnetic.ysd %></td>
+    <td><%= magnetic.zsd %></td>
+    <td><%= magnetic.magnitudesd %></td>
+    <td><%= link_to 'Show', magnetic %></td>
+    <td><%= link_to 'Edit', edit_magnetic_path(magnetic) %></td>
+    <td><%= link_to 'Destroy', magnetic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Magnetic', new_magnetic_path %>

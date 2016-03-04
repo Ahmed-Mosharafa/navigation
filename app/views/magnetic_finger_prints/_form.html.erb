@@ -1,0 +1,45 @@
+<%= form_for(@magnetic_finger_print) do |f| %>
+  <% if @magnetic_finger_print.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@magnetic_finger_print.errors.count, "error") %> prohibited this magnetic_finger_print from being saved:</h2>
+
+      <ul>
+      <% @magnetic_finger_print.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :place_id %><br />
+    <%= f.text_field :place_id %>
+  </div>
+  <div class="field">
+    <%= f.label :x %><br />
+    <%= f.text_field :x %>
+  </div>
+  <div class="field">
+    <%= f.label :y %><br />
+    <%= f.text_field :y %>
+  </div>
+  <div class="field">
+    <%= f.label :z %><br />
+    <%= f.text_field :z %>
+  </div>
+  <div class="field">
+    <%= f.label :angle %><br />
+    <%= f.text_field :angle %>
+  </div>
+  <div class="field">
+    <%= f.label :magnitude %><br />
+    <%= f.text_field :magnitude %>
+  </div>
+  <div class="field">
+    <%= f.label :magnetic_id %><br />
+    <%= f.number_field :magnetic_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  place_id: 1.5
+  x: 1.5
+  'y': 1.5
+  z: 1.5
+  angle: 1.5
+  magnitude: 1.5
+  xcoord: 1.5
+  ycoord: 1.5
+  xsd: 1.5
+  ysd: 1.5
+  zsd: 1.5
+  magnitudesd: 1.5
+
+two:
+  place_id: 1.5
+  x: 1.5
+  'y': 1.5
+  z: 1.5
+  angle: 1.5
+  magnitude: 1.5
+  xcoord: 1.5
+  ycoord: 1.5
+  xsd: 1.5
+  ysd: 1.5
+  zsd: 1.5
+  magnitudesd: 1.5

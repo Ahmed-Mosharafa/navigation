@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20160215100644) do
+ActiveRecord::Schema.define(:version => 20160303235739) do
 
   create_table "beacons", :force => true do |t|
     t.integer  "place_id"
@@ -34,6 +34,35 @@ ActiveRecord::Schema.define(:version => 20160215100644) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "mac"
+  end
+
+  create_table "magnetic_finger_prints", :force => true do |t|
+    t.float    "place_id"
+    t.float    "x"
+    t.float    "y"
+    t.float    "z"
+    t.float    "angle"
+    t.float    "magnitude"
+    t.integer  "magnetic_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "magnetics", :force => true do |t|
+    t.float    "place_id"
+    t.float    "x"
+    t.float    "y"
+    t.float    "z"
+    t.float    "angle"
+    t.float    "magnitude"
+    t.float    "xcoord"
+    t.float    "ycoord"
+    t.float    "xsd"
+    t.float    "ysd"
+    t.float    "zsd"
+    t.float    "magnitudesd"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "places", :force => true do |t|

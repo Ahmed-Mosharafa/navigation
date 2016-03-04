@@ -1,0 +1,35 @@
+<h1>Listing magnetic_finger_prints</h1>
+
+<table>
+  <tr>
+    <th>Place</th>
+    <th>X</th>
+    <th>Y</th>
+    <th>Z</th>
+    <th>Angle</th>
+    <th>Magnitude</th>
+    <th>Magnetic</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @magnetic_finger_prints.each do |magnetic_finger_print| %>
+  <tr>
+    <td><%= magnetic_finger_print.place_id %></td>
+    <td><%= magnetic_finger_print.x %></td>
+    <td><%= magnetic_finger_print.y %></td>
+    <td><%= magnetic_finger_print.z %></td>
+    <td><%= magnetic_finger_print.angle %></td>
+    <td><%= magnetic_finger_print.magnitude %></td>
+    <td><%= magnetic_finger_print.magnetic_id %></td>
+    <td><%= link_to 'Show', magnetic_finger_print %></td>
+    <td><%= link_to 'Edit', edit_magnetic_finger_print_path(magnetic_finger_print) %></td>
+    <td><%= link_to 'Destroy', magnetic_finger_print, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Magnetic finger print', new_magnetic_finger_print_path %>

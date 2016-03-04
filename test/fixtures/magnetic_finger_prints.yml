@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  place_id: 1.5
+  x: 1.5
+  'y': 1.5
+  z: 1.5
+  angle: 1.5
+  magnitude: 1.5
+  magnetic_id: 1
+
+two:
+  place_id: 1.5
+  x: 1.5
+  'y': 1.5
+  z: 1.5
+  angle: 1.5
+  magnitude: 1.5
+  magnetic_id: 1
