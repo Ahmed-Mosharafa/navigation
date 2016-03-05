@@ -2,7 +2,7 @@ class Magnetic < ActiveRecord::Base
   attr_accessible :angle, :magnitude, :magnitudesd, :place_id, :x, :xcoord, :xsd, :y, :ycoord, :ysd, :z, :zsd
   has_many :magneticfingerprints
   def self.to_csv
-    attributes = %w{BSSID RSSI SD SSID place_id xcoord ycoord}
+    attributes = %w{angle magnitude magnitudesd place_id x y z xcoord ycoord xsd ysd zsd}
 
     CSV.generate(headers: true) do |csv|
       csv << attributes
