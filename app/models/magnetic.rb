@@ -1,6 +1,17 @@
 class Magnetic < ActiveRecord::Base
   attr_accessible :angle, :magnitude, :magnitudesd, :place_id, :x, :xcoord, :xsd, :y, :ycoord, :ysd, :z, :zsd
   has_many :magneticfingerprints
+  def self.to_csv
+    attributes = %w{BSSID RSSI SD SSID place_id xcoord ycoord}
+
+    CSV.generate(headers: true) do |csv|
+      csv << attributes
+
+      all.each do |user|
+        csv << attributes.map{ |attr| user.send(attr) }
+      end
+    end
+  end
   ###########################
   ##Fingerprints allocation##
   ###########################

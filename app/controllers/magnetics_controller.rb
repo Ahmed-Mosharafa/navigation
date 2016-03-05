@@ -11,6 +11,7 @@ class MagneticsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @magnetics }
+      format.csv { send_data FingerPrint.scoped.to_csv, filename: "fingerprints-#{Date.today}.csv"}
     end
   end
 
