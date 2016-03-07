@@ -20,70 +20,65 @@ class FingerPrint < ActiveRecord::Base
 
   #checks whether the finger print coming is new or saved before through the x and y coordinates  and the mac address
   #if it doesn't exist it returns 0, otherwise it returns it's id
-  def self.new_fingerprint(x,y, mac)
-    #place_fp = FingerPrint.where(:place_id => place_id)
-    same_fingerp = FingerPrint.where(:xcoord => x, :ycoord => y, :mac => mac).all
-    #checks whether the record is empty or not
-    if (FingerPrint.fetch_last_id !=0)
-      #checks whether there are records with the same fingerprint or not
-      last    = WifiFingerPrintsRecord.last
-      if (same_fingerp == [])
-        #pass the records to the calc mean_sd
-        #records is an array of fingerprints in WifiFingerPrintRecord with the same x,y,mac
-        records = WifiFingerPrintsRecord.where(:fingerprint_id => last[:fingerprint_id], :mac => last[:mac]).all 
-        FingerPrint.calculate_mean_sd(records, last[:fingerprint_id])
-        return 0
-      else
-        if (last[:mac] != mac)
-          FingerPrint.calculate_mean_sd(WifiFingerPrintsRecord.where(:fingerprint_id => last[:fingerprint_id], :mac => last[:mac]).all, last[:fingerprint_id])
-        end
-        return same_fingerp[0].id
-      end
-  else
-    return 0 
-  end 
-  end
-  #calculates the standard deviation of the records with the same coordinates(of the same place)
-  def self.calc_standard_deviation(mean, records)
-    #debugger
-    accum  = 0.0
-    len = records.length
-    records.each do |element|   
-      accum = accum + ((element[:RSSI] - mean) ** 2)
-    end
-    sd = (accum/len) ** 0.5
-    return sd
-  end
-
-  #calculates the mean of the records with the same coordinates(of the same place)
-  def self.calc_mean(records)
-    accum   = 0.0
-    len  = records.length
-    records.each do |element|
-      accum = accum + element[:RSSI] 
-    end
-    mean = accum / len
-    return mean
-  end
-  #calls mean and standard deviation to save the mean RSSI and the SD to the record if you finished reading the fingerprints for this coordinates
-  #with the same mac address(for the same router)
-  #params: fingerprint_records: an array of the records with the same xcoord, ycoord, mac
-  def self.calculate_mean_sd(fingerprint_records, last_id)
-  mean_RSSI = FingerPrint.calc_mean(fingerprint_records)
-    sd_rssi   = FingerPrint.calc_standard_deviation(mean_RSSI, fingerprint_records)
-    last = FingerPrint.find_by_id(last_id)
-  ##
-  last.update_attributes(:RSSI => mean_RSSI, :SD => sd_rssi)
-  end
-
-  def self.fetch_last_id()
-    fp = FingerPrint.last
-    if (fp == nil)
-      return 0
+  # def self.new_fingerprint(x,y, mac)
+  #   #place_fp = FingerPrint.where(:place_id => place_id)
+  #   #place_fp = Magnetic.where(:place_id => parameters[:place_id]) #divide and conqeur
+  #   #records_fp = MagneticFingerPrint.where(:place_id => parameters[:place_id])
+  
+  #   same_fingerp = FingerPrint.where(:xcoord => x, :ycoord => y, :mac => mac).all
+  #   #checks whether the record is empty or not
+  #   if (FingerPrint.fetch_last_id !=0)
+  #     #checks whether there are records with the same fingerprint or not
+  #     last    = WifiFingerPrintsRecord.last
+  #     if (same_fingerp == [])
+  #       #pass the records to the calc mean_sd
+  #       #records is an array of fingerprints in WifiFingerPrintRecord with the same x,y,mac
+  #       records = WifiFingerPrintsRecord.where(:fingerprint_id => last[:fingerprint_id], :mac => last[:mac]).all 
+  #       FingerPrint.calculate_mean_sd(records, last[:fingerprint_id])
+  #       return 0
+  #     else
+  #       if (last[:mac] != mac)
+  #         FingerPrint.calculate_mean_sd(WifiFingerPrintsRecord.where(:fingerprint_id => last[:fingerprint_id], :mac => last[:mac]).all, last[:fingerprint_id])
+  #       end
+  #       return same_fingerp[0].id
+  #     end
+  # else
+  #   return 0 
+  # end 
+  # end
+    def self.check_exist(parameters)
+    place_fp = FingerPrint.where(:place_id => parameters[:place_id]) #divide and conqeur
+    records_fp = WifiFingerPrintsRecord.where(:place_id => parameters[:place_id])
+    found = place_fp.where(:BSSID => parameters[:BSSID], :xcoord => parameters[:xcoord], :ycoord=>parameters[:ycoord]) #triplet indicating a unique fp
+    if (found==[])      
+      created = FingerPrint.create(parameters)
+      WifiFingerPrintsRecord.create(:fingerprint_id => created[:id], :BSSID => parameters[:BSSID], :SSID => parameters[:SSID], :RSSI => parameters[:RSSI], :channel => parameters[:channel], :mac => parameters[:mac])
+      return created 
     else
-      id = fp[:id]
+      debugger
+      WifiFingerPrintsRecord.create(:fingerprint_id => found[0][:id], :BSSID => parameters[:BSSID], :SSID => parameters[:SSID], :RSSI => parameters[:RSSI], :channel => parameters[:channel], :mac => parameters[:mac])
+      return calc_mean_sd(records_fp.where(:fingerprint_id => found[0][:id]), parameters, place_fp)     
     end
   end
+  def self.calc_mean_sd(found, parameters, place_fp)
+    found = found.all
+    #mean calculation
+    accum_x   = parameters[:RSSI].to_f
+    len  = found.length + 1
+    found.each do |element|
+      accum_x = accum_x + element[:RSSI] 
+    end
+    mean_x = accum_x / len
+    #standard deviation calculator
+    len = found.length
+    debugger
+    found.each do |element|   
+      accum_x = accum_x + ((element[:RSSI] - mean_x) ** 2)
+    end
+    desired = place_fp.where(:BSSID => parameters[:BSSID], :xcoord => parameters[:xcoord], :ycoord=>parameters[:ycoord]) #triplet indicating a unique fp
+    desired.update_all(:RSSI => mean_x, :SD => (accum_x / len))
+    return desired
+  end 
   
   #################################################
   #Localization #
@@ -162,9 +157,10 @@ class FingerPrint < ActiveRecord::Base
   #K hardcoded for now
   def self.KNN (measurment_hash)
     k = 3
+    place_fp = FingerPrint.where(:place_id => measurement_hash["0"][:place_id]) #divide and conqeur
     nearest_coord = Hash.new() 
     measurment_hash.each do |f_id, measurment|
-      records = FingerPrint.where(:BSSID => measurment[:BSSID]).all  
+      records = place_fp.where(:BSSID => measurment[:BSSID]).all  
       rssi_searched = measurment[:RSSI].to_f
       distances = Hash.new(k) 
       #find an array of distances 
