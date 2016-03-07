@@ -48,8 +48,8 @@ class MagneticsController < ApplicationController
     @magnetic = Magnetic.check_exist(params[:magnetic])
 
     respond_to do |format|
-        format.html { redirect_to @magnetic.find(params[id]), notice: 'Magnetic was successfully created.' }
-        format.json { render json: @magnetic.find(params[id]), status: :created, location: @magnetic }
+        format.html { redirect_to @magnetic.find(params[:id]), notice: 'Magnetic was successfully created.' }
+        format.json { render json: @magnetic.find(params[:id]), status: :created, location: @magnetic }
     end
   end
 
