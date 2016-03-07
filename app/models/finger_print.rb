@@ -55,7 +55,7 @@ class FingerPrint < ActiveRecord::Base
       WifiFingerPrintsRecord.create(:fingerprint_id => created[:id], :BSSID => parameters[:BSSID], :SSID => parameters[:SSID], :RSSI => parameters[:RSSI], :channel => parameters[:channel], :mac => parameters[:mac])
       return created 
     else
-      debugger
+      #debugger
       WifiFingerPrintsRecord.create(:fingerprint_id => found[0][:id], :BSSID => parameters[:BSSID], :SSID => parameters[:SSID], :RSSI => parameters[:RSSI], :channel => parameters[:channel], :mac => parameters[:mac])
       return calc_mean_sd(records_fp.where(:fingerprint_id => found[0][:id]), parameters, place_fp)     
     end
@@ -71,7 +71,7 @@ class FingerPrint < ActiveRecord::Base
     mean_x = accum_x / len
     #standard deviation calculator
     len = found.length
-    debugger
+    #debugger
     found.each do |element|   
       accum_x = accum_x + ((element[:RSSI] - mean_x) ** 2)
     end
@@ -155,11 +155,11 @@ class FingerPrint < ActiveRecord::Base
   #  end  
   #end  
   #K hardcoded for now
-  def self.KNN (measurment_hash)
+  def self.KNN (measurement_hash)
     k = 3
     place_fp = FingerPrint.where(:place_id => measurement_hash["0"][:place_id]) #divide and conqeur
     nearest_coord = Hash.new() 
-    measurment_hash.each do |f_id, measurment|
+    measurement_hash.each do |f_id, measurment|
       records = place_fp.where(:BSSID => measurment[:BSSID]).all  
       rssi_searched = measurment[:RSSI].to_f
       distances = Hash.new(k) 
