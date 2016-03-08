@@ -14,38 +14,7 @@ class FingerPrint < ActiveRecord::Base
       end
     end
   end
-  #######################################
-  #FingerPrint database creation
-  #######################################
 
-  #checks whether the finger print coming is new or saved before through the x and y coordinates  and the mac address
-  #if it doesn't exist it returns 0, otherwise it returns it's id
-  # def self.new_fingerprint(x,y, mac)
-  #   #place_fp = FingerPrint.where(:place_id => place_id)
-  #   #place_fp = Magnetic.where(:place_id => parameters[:place_id]) #divide and conqeur
-  #   #records_fp = MagneticFingerPrint.where(:place_id => parameters[:place_id])
-  
-  #   same_fingerp = FingerPrint.where(:xcoord => x, :ycoord => y, :mac => mac).all
-  #   #checks whether the record is empty or not
-  #   if (FingerPrint.fetch_last_id !=0)
-  #     #checks whether there are records with the same fingerprint or not
-  #     last    = WifiFingerPrintsRecord.last
-  #     if (same_fingerp == [])
-  #       #pass the records to the calc mean_sd
-  #       #records is an array of fingerprints in WifiFingerPrintRecord with the same x,y,mac
-  #       records = WifiFingerPrintsRecord.where(:fingerprint_id => last[:fingerprint_id], :mac => last[:mac]).all 
-  #       FingerPrint.calculate_mean_sd(records, last[:fingerprint_id])
-  #       return 0
-  #     else
-  #       if (last[:mac] != mac)
-  #         FingerPrint.calculate_mean_sd(WifiFingerPrintsRecord.where(:fingerprint_id => last[:fingerprint_id], :mac => last[:mac]).all, last[:fingerprint_id])
-  #       end
-  #       return same_fingerp[0].id
-  #     end
-  # else
-  #   return 0 
-  # end 
-  # end
     def self.check_exist(parameters)
     place_fp = FingerPrint.where(:place_id => parameters[:place_id]) #divide and conqeur
     records_fp = WifiFingerPrintsRecord.where(:place_id => parameters[:place_id])
@@ -56,9 +25,7 @@ class FingerPrint < ActiveRecord::Base
       return created 
     else
       #debugger
-      WifiFingerPrintsRecord.create(:fingerprint_id => found[0][:id], :BSSID => parameters[:BSSID], :SSID => parameters[:SSID], :RSSI => parameters[:RSSI], :channel => parameters[:channel], :mac => parameters[:mac])
-      puts "debugger"
-      puts records_fp.where(:fingerprint_id => found[0][:id])
+      WifiFingerPrintsRecord.create(:fingerprint_id => found[0][:id], :BSSID => parameters[:BSSID], :SSID => parameters[:SSID], :RSSI => parameters[:RSSI], :channel => parameters[:channel], :mac => parameters[:mac], :place_id => parameters[:place_id])
       return calc_mean_sd(records_fp.where(:fingerprint_id => found[0][:id]), parameters, place_fp)     
     end
   end
