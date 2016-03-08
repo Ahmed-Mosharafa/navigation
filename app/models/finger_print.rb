@@ -15,7 +15,7 @@ class FingerPrint < ActiveRecord::Base
     end
   end
 
-    def self.check_exist(parameters)
+  def self.check_exist(parameters)
     place_fp = FingerPrint.where(:place_id => parameters[:place_id]) #divide and conqeur
     records_fp = WifiFingerPrintsRecord.where(:place_id => parameters[:place_id])
     found = place_fp.where(:BSSID => parameters[:BSSID], :xcoord => parameters[:xcoord], :ycoord=>parameters[:ycoord]) #triplet indicating a unique fp
