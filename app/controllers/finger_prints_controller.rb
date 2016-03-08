@@ -50,8 +50,8 @@ class FingerPrintsController < ApplicationController
     @finger_print = FingerPrint.check_exist(params[:finger_print])
 
     respond_to do |format|
-        format.html { }
-        format.json { }
+        format.html { redirect_to @finger_print, notice: 'FingerPrint was successfully created.' }
+        format.json { render json: @finger_print, status: :created, location: @finger_print }
     end
   end
 
