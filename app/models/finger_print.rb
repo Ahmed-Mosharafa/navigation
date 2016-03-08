@@ -57,7 +57,8 @@ class FingerPrint < ActiveRecord::Base
     else
       #debugger
       WifiFingerPrintsRecord.create(:fingerprint_id => found[0][:id], :BSSID => parameters[:BSSID], :SSID => parameters[:SSID], :RSSI => parameters[:RSSI], :channel => parameters[:channel], :mac => parameters[:mac])
-      puts records_fp.where("debug" + :fingerprint_id => found[0][:id]) + "debugging "
+      puts "debugger"
+      puts records_fp.where(:fingerprint_id => found[0][:id])
       return calc_mean_sd(records_fp.where(:fingerprint_id => found[0][:id]), parameters, place_fp)     
     end
   end
