@@ -46,7 +46,7 @@ class FingerPrint < ActiveRecord::Base
     end
     desired = place_fp.where(:BSSID => parameters[:BSSID], :xcoord => parameters[:xcoord], :ycoord=>parameters[:ycoord]) #triplet indicating a unique fp
     desired.update_all(:RSSI => mean_x, :SD => (accum_x / len))
-    return desired
+    return desired[0]
   end 
   
   #################################################
