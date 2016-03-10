@@ -129,12 +129,12 @@ class FingerPrint < ActiveRecord::Base
     place_fp = FingerPrint.where(:place_id => measurement_hash["0"][:place_id]) #divide and conqeur
     nearest_coord = Hash.new() 
     measurement_hash.each do |f_id, measurment|
-      records = place_fp.where(:BSSID => measurment[:BSSID]).all  
+      records = place_fp.where(:BSSID => measurment[:BSSID]).all  #khefaha henna
       rssi_searched = measurment[:RSSI].to_f
       distances = Hash.new(k) 
       #find an array of distances 
       records.each  do |record|
-        distance = (record.RSSI - rssi_searched).abs
+        distance = (record.RSSI.abs - rssi_searched.abs).abs
         distances = FingerPrint.add_to_hash([record.xcoord, record.ycoord], distance, distances, k)
       end
       #here I have the k coordinates of the nearest neighbours along with their distances
