@@ -125,7 +125,7 @@ class FingerPrint < ActiveRecord::Base
   #end  
   #K hardcoded for now
   def self.KNN (measurement_hash)
-    k = 3
+    k = 1
     place_fp = FingerPrint.where(:place_id => measurement_hash["0"][:place_id]) #divide and conqeur
     nearest_coord = Hash.new() 
     measurement_hash.each do |f_id, measurment|
