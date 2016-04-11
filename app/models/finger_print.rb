@@ -107,9 +107,9 @@ class FingerPrint < ActiveRecord::Base
     keys   = hash_examined.keys
     for i in 0...k
       count   = hash_examined[keys[i]]
-      xcoord_sum += count * keys[i][0]
-      ycoord_sum += count * keys[i][1]
-      counter    += count
+      xcoord_sum += 1.0/count * keys[i][0]
+      ycoord_sum += 1.0/count * keys[i][1]
+      counter    += 1.0/count
     end 
     #if (counter ==)
     #debugger
@@ -125,7 +125,7 @@ class FingerPrint < ActiveRecord::Base
   #end  
   #K hardcoded for now
   def self.KNN (measurement_hash)
-    k = 1
+    k = 3
     place_fp = FingerPrint.where(:place_id => measurement_hash["0"][:place_id]) #divide and conqeur
     nearest_coord = Hash.new() 
     measurement_hash.each do |f_id, measurment|
@@ -148,7 +148,7 @@ class FingerPrint < ActiveRecord::Base
       nearest_coord =   sort_by_value(nearest_coord,0)
       puts nearest_coord
       #here I have weighted nearest coordinates sorted by the closest one
-      coordinates   = weighted_average(nearest_coord,3)
+      coordinates   = weighted_average(distances,3)
     end
     return coordinates
   end
